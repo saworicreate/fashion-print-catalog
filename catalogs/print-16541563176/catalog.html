@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボタニカルコレクション 2026春夏 - ファッションカタログ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: #fafafa;
+            --card-bg: #ffffff;
+            --accent: #667eea;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--accent), #764ba2);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .collection-info {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .collection-info h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .patterns-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .pattern-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            min-height: 350px;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .pattern-image {
+            flex: 0 0 60%;
+            position: relative;
+            background: linear-gradient(45deg, #f0f0f0, #e8e8e8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .pattern-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.1) 10px,
+                rgba(255,255,255,0.1) 20px
+            );
+        }
+
+        .pattern-placeholder {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, var(--accent), #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .pattern-placeholder:hover {
+            transform: scale(1.05);
+        }
+
+        .pattern-details {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pattern-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .pattern-id {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .pattern-description {
+            font-size: 1rem;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .pattern-specs {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .spec-label {
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        .spec-value {
+            font-weight: 400;
+            color: var(--text-dark);
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .color-chip {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .style-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .style-tag {
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .variations {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .pattern-card {
+                flex-direction: column;
+                min-height: auto;
+            }
+            
+            .pattern-image {
+                flex: none;
+                height: 250px;
+            }
+            
+            .pattern-details {
+                padding: 1.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+            
+            .header {
+                background: none !important;
+                color: black;
+                padding: 2rem 0;
+            }
+            
+            .pattern-card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+                margin-bottom: 1rem;
+            }
+            
+            .pattern-card:hover {
+                transform: none;
+                box-shadow: none;
+            }
+            
+            .pattern-placeholder:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>ボタニカルコレクション</h1>
+            <p class="subtitle">2026年春夏コレクション - プロフェッショナルファッションカタログ</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="collection-info">
+            <h2>コレクション概要</h2>
+            <p>自然の美しさからインスピレーションを受けた2026年春夏ボタニカルコレクション。トロピカルな葉から繊細な花まで、現代的な解釈で表現された10のユニークなパターンをご紹介します。</p>
+            <p><strong>作成日:</strong> 2025年7月26日 | <strong>テーマ:</strong> ボタニカル | <strong>シーズン:</strong> 2026年春夏</p>
+        </div>
+
+        <div class="patterns-grid">
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        トロピカル<br>リーフ
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">トロピカルリーフ</h3>
+                        <div class="pattern-id">Pattern #001</div>
+                        <p class="pattern-description">
+                            大きなトロピカルリーフを水彩風に表現。モンステラデリシオーサとフィドルリーフフィグを流れるようなオーガニックな配置で描いた、モダンなボタニカルイラストレーション。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #7CB342;"></div>
+                                <div class="color-chip" style="background-color: #AED581;"></div>
+                                <div class="color-chip" style="background-color: #C8E6C9;"></div>
+                                <div class="color-chip" style="background-color: #E8F5E8;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">大サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">トロピカル</span>
+                                <span class="style-tag">水彩風</span>
+                                <span class="style-tag">大胆</span>
+                                <span class="style-tag">モダン</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">カラー展開3色、スケール調整可能</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        ワイルド<br>フラワー<br>メドウ
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">ワイルドフラワーメドウ</h3>
+                        <div class="pattern-id">Pattern #002</div>
+                        <p class="pattern-description">
+                            野生の草花を描いたメドウパターン。コーンフラワー、ポピー、カモミールなど、繊細な茎と花びらを自然な配置で表現したヴィンテージボタニカルスタイル。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #BA68C8;"></div>
+                                <div class="color-chip" style="background-color: #CE93D8;"></div>
+                                <div class="color-chip" style="background-color: #E1BEE7;"></div>
+                                <div class="color-chip" style="background-color: #F3E5F5;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">中サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">ワイルド</span>
+                                <span class="style-tag">ヴィンテージ</span>
+                                <span class="style-tag">繊細</span>
+                                <span class="style-tag">パステル</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">密度調整、カラー展開4色</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        ユーカリ<br>ブランチ
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">ユーカリブランチ</h3>
+                        <div class="pattern-id">Pattern #003</div>
+                        <p class="pattern-description">
+                            シルバーグリーンの葉を持つユーカリの枝を描いたミニマルなボタニカルデザイン。クリーンなラインとコンテンポラリーなスタイルで、エレガントな間隔で配置。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #8D6E63;"></div>
+                                <div class="color-chip" style="background-color: #A1887F;"></div>
+                                <div class="color-chip" style="background-color: #D7CCC8;"></div>
+                                <div class="color-chip" style="background-color: #EFEBE9;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">大サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">ミニマル</span>
+                                <span class="style-tag">モダン</span>
+                                <span class="style-tag">エレガント</span>
+                                <span class="style-tag">ナチュラル</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">配置パターン3種、カラー展開2色</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        サクラ<br>ブロッサム
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">サクラブロッサム</h3>
+                        <div class="pattern-id">Pattern #004</div>
+                        <p class="pattern-description">
+                            繊細なピンクの花を咲かせた桜の枝を描いた和風インスパイアのボタニカルアート。流れるような枝の構造と柔らかな春の雰囲気を水彩技法で表現。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #FF8A65;"></div>
+                                <div class="color-chip" style="background-color: #FFAB91;"></div>
+                                <div class="color-chip" style="background-color: #FFE0B2;"></div>
+                                <div class="color-chip" style="background-color: #FFF3E0;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">中サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">和風</span>
+                                <span class="style-tag">春らしい</span>
+                                <span class="style-tag">優雅</span>
+                                <span class="style-tag">繊細</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">密度バリエーション、カラー展開3色</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        サボテン<br>ガーデン
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">サボテンガーデン</h3>
+                        <div class="pattern-id">Pattern #005</div>
+                        <p class="pattern-description">
+                            様々なサボテンと多肉植物を幾何学的な形で表現。モダンなデザートボタニカルスタイルで、構造的な構成とコンテンポラリーなカラーパレットを使用。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #7CB342;"></div>
+                                <div class="color-chip" style="background-color: #AED581;"></div>
+                                <div class="color-chip" style="background-color: #8D6E63;"></div>
+                                <div class="color-chip" style="background-color: #A1887F;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">小サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">幾何学的</span>
+                                <span class="style-tag">モダン</span>
+                                <span class="style-tag">構造的</span>
+                                <span class="style-tag">デザート</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">配置パターン4種、サイズ展開</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        オーシャン<br>ケルプ
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">オーシャンケルプ</h3>
+                        <div class="pattern-id">Pattern #006</div>
+                        <p class="pattern-description">
+                            海中のケルプフォレスト、流れる海藻、マリンボタニカル要素を表現。流動的な動きとオーシャンインスパイアのカラーで、オーガニックな海中パターン。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #42A5F5;"></div>
+                                <div class="color-chip" style="background-color: #81C784;"></div>
+                                <div class="color-chip" style="background-color: #B3E5FC;"></div>
+                                <div class="color-chip" style="background-color: #E1F5FE;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">大サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">流動的</span>
+                                <span class="style-tag">オーガニック</span>
+                                <span class="style-tag">マリン</span>
+                                <span class="style-tag">神秘的</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">動きのパターン3種、カラー展開2色</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        ハーブ<br>ガーデン
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">ハーブガーデン</h3>
+                        <div class="pattern-id">Pattern #007</div>
+                        <p class="pattern-description">
+                            料理用ハーブのコレクション。ローズマリー、タイム、セージ、バジルを詳細なボタニカルイラストで描いた、ヴィンテージハーバリウムスタイル。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #7CB342;"></div>
+                                <div class="color-chip" style="background-color: #8D6E63;"></div>
+                                <div class="color-chip" style="background-color: #AED581;"></div>
+                                <div class="color-chip" style="background-color: #D7CCC8;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">中サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">ヴィンテージ</span>
+                                <span class="style-tag">教育的</span>
+                                <span class="style-tag">詳細</span>
+                                <span class="style-tag">ハーブ</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">種類組み合わせ5種、レイアウト調整</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        パーム<br>フロンド
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">パームフロンド</h3>
+                        <div class="pattern-id">Pattern #008</div>
+                        <p class="pattern-description">
+                            ヤシの葉とバナナリーフを描いたトロピカルリゾートスタイル。大胆なグラフィック形状とサマーバケーション感、ハイコントラストなモダンボタニカルデザイン。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #7CB342;"></div>
+                                <div class="color-chip" style="background-color: #FF8A65;"></div>
+                                <div class="color-chip" style="background-color: #FFAB91;"></div>
+                                <div class="color-chip" style="background-color: #AED581;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">大サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">グラフィック</span>
+                                <span class="style-tag">リゾート</span>
+                                <span class="style-tag">大胆</span>
+                                <span class="style-tag">サマー</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">コントラスト調整、カラー展開3色</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        フォレスト<br>ファーン
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">フォレストファーン</h3>
+                        <div class="pattern-id">Pattern #009</div>
+                        <p class="pattern-description">
+                            様々なサイズの森のシダをレイヤードした森林ボタニカルデザイン。霧がかった森の雰囲気、詳細なシダの模様、自然なグリーングラデーション。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #7CB342;"></div>
+                                <div class="color-chip" style="background-color: #8D6E63;"></div>
+                                <div class="color-chip" style="background-color: #AED581;"></div>
+                                <div class="color-chip" style="background-color: #C8E6C9;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">中サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">レイヤード</span>
+                                <span class="style-tag">フォレスト</span>
+                                <span class="style-tag">自然</span>
+                                <span class="style-tag">ミスティ</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">レイヤー構成3種、透明度調整</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <div class="pattern-placeholder">
+                        ラベンダー<br>フィールド
+                    </div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">ラベンダーフィールド</h3>
+                        <div class="pattern-id">Pattern #010</div>
+                        <p class="pattern-description">
+                            ラベンダー畑のパターン、紫の花の列、プロヴァンス田園風景スタイル。ロマンティックなボタニカルデザインで、香り立つような雰囲気を水彩ウォッシュ技法で表現。
+                        </p>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">カラーパレット</span>
+                            <div class="color-palette">
+                                <div class="color-chip" style="background-color: #BA68C8;"></div>
+                                <div class="color-chip" style="background-color: #CE93D8;"></div>
+                                <div class="color-chip" style="background-color: #E1BEE7;"></div>
+                                <div class="color-chip" style="background-color: #F3E5F5;"></div>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スケール</span>
+                            <span class="spec-value">小サイズ</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">スタイル</span>
+                            <div class="style-tags">
+                                <span class="style-tag">ロマンティック</span>
+                                <span class="style-tag">プロヴァンス</span>
+                                <span class="style-tag">香り</span>
+                                <span class="style-tag">水彩</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">バリエーション</span>
+                            <div class="variations">密度パターン3種、カラー展開2色</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="collection-info">
+            <h2>応用分野</h2>
+            <p>これらのパターンは、アパレル、インテリア、ステーショナリー、パッケージデザインなど、幅広い分野でご活用いただけます。各パターンは50%縮小、標準、150%拡大のスケールオプションと、リピート、ランダム配置、ボーダー配置のレイアウトタイプをご用意しています。</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple image zoom interaction using CSS only (already implemented with hover effects)
+        document.querySelectorAll('.pattern-placeholder').forEach(placeholder => {
+            placeholder.addEventListener('click', function() {
+                // Could add modal functionality here if needed
+                console.log('Pattern clicked:', this.textContent.trim());
+            });
+        });
+    </script>
+</body>
+</html>

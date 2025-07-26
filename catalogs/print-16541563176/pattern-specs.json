@@ -1,0 +1,158 @@
+{
+  "collection": {
+    "year": 2026,
+    "season": "春夏",
+    "theme": "ボタニカル",
+    "created_date": "2025-07-26"
+  },
+  "color_palettes": {
+    "fresh_green": {
+      "primary": "#7CB342",
+      "secondary": ["#AED581", "#C8E6C9", "#E8F5E8"]
+    },
+    "sunset_warm": {
+      "primary": "#FF8A65",
+      "secondary": ["#FFAB91", "#FFE0B2", "#FFF3E0"]
+    },
+    "ocean_blue": {
+      "primary": "#42A5F5",
+      "secondary": ["#81C784", "#B3E5FC", "#E1F5FE"]
+    },
+    "earth_tone": {
+      "primary": "#8D6E63",
+      "secondary": ["#A1887F", "#D7CCC8", "#EFEBE9"]
+    },
+    "lavender_soft": {
+      "primary": "#BA68C8",
+      "secondary": ["#CE93D8", "#E1BEE7", "#F3E5F5"]
+    }
+  },
+  "patterns": [
+    {
+      "id": 1,
+      "name": "トロピカルリーフ",
+      "prompt": "Large tropical leaves in watercolor style, monstera deliciosa and fiddle leaf fig, flowing organic arrangement, soft gradients, fresh spring colors, modern botanical illustration",
+      "colors": {
+        "primary": "#7CB342",
+        "secondary": ["#AED581", "#C8E6C9", "#E8F5E8"]
+      },
+      "scale": "large",
+      "style": ["トロピカル", "水彩風", "大胆", "モダン"],
+      "variations": ["カラー展開3色", "スケール調整可能"]
+    },
+    {
+      "id": 2,
+      "name": "ワイルドフラワーメドウ",
+      "prompt": "Wild meadow flowers, cornflower, poppy, chamomile, delicate stems and petals, scattered natural placement, vintage botanical style, soft pastel tones",
+      "colors": {
+        "primary": "#BA68C8",
+        "secondary": ["#CE93D8", "#E1BEE7", "#F3E5F5"]
+      },
+      "scale": "medium",
+      "style": ["ワイルド", "ヴィンテージ", "繊細", "パステル"],
+      "variations": ["密度調整", "カラー展開4色"]
+    },
+    {
+      "id": 3,
+      "name": "ユーカリブランチ",
+      "prompt": "Eucalyptus branches with silvery leaves, minimalist botanical design, clean lines, contemporary style, neutral earth tones, elegant spacing",
+      "colors": {
+        "primary": "#8D6E63",
+        "secondary": ["#A1887F", "#D7CCC8", "#EFEBE9"]
+      },
+      "scale": "large",
+      "style": ["ミニマル", "モダン", "エレガント", "ナチュラル"],
+      "variations": ["配置パターン3種", "カラー展開2色"]
+    },
+    {
+      "id": 4,
+      "name": "サクラブロッサム",
+      "prompt": "Cherry blossom branches with delicate pink flowers, Japanese inspired botanical art, flowing branch structure, soft spring atmosphere, watercolor technique",
+      "colors": {
+        "primary": "#FF8A65",
+        "secondary": ["#FFAB91", "#FFE0B2", "#FFF3E0"]
+      },
+      "scale": "medium",
+      "style": ["和風", "春らしい", "優雅", "繊細"],
+      "variations": ["密度バリエーション", "カラー展開3色"]
+    },
+    {
+      "id": 5,
+      "name": "サボテンガーデン",
+      "prompt": "Various cacti and succulents, geometric shapes, modern desert botanical style, clean illustration, contemporary color palette, structured composition",
+      "colors": {
+        "primary": "#7CB342",
+        "secondary": ["#AED581", "#8D6E63", "#A1887F"]
+      },
+      "scale": "small",
+      "style": ["幾何学的", "モダン", "構造的", "デザート"],
+      "variations": ["配置パターン4種", "サイズ展開"]
+    },
+    {
+      "id": 6,
+      "name": "オーシャンケルプ",
+      "prompt": "Underwater kelp forest, flowing seaweed, marine botanical elements, fluid movement, ocean-inspired colors, organic underwater patterns",
+      "colors": {
+        "primary": "#42A5F5",
+        "secondary": ["#81C784", "#B3E5FC", "#E1F5FE"]
+      },
+      "scale": "large",
+      "style": ["流動的", "オーガニック", "マリン", "神秘的"],
+      "variations": ["動きのパターン3種", "カラー展開2色"]
+    },
+    {
+      "id": 7,
+      "name": "ハーブガーデン",
+      "prompt": "Culinary herbs collection, rosemary, thyme, sage, basil, detailed botanical illustration, vintage herbarium style, educational botanical art",
+      "colors": {
+        "primary": "#7CB342",
+        "secondary": ["#8D6E63", "#AED581", "#D7CCC8"]
+      },
+      "scale": "medium",
+      "style": ["ヴィンテージ", "教育的", "詳細", "ハーブ"],
+      "variations": ["種類組み合わせ5種", "レイアウト調整"]
+    },
+    {
+      "id": 8,
+      "name": "パームフロンド",
+      "prompt": "Palm fronds and banana leaves, tropical resort style, bold graphic shapes, summer vacation vibes, high contrast modern botanical design",
+      "colors": {
+        "primary": "#7CB342",
+        "secondary": ["#FF8A65", "#FFAB91", "#AED581"]
+      },
+      "scale": "large",
+      "style": ["グラフィック", "リゾート", "大胆", "サマー"],
+      "variations": ["コントラスト調整", "カラー展開3色"]
+    },
+    {
+      "id": 9,
+      "name": "フォレストファーン",
+      "prompt": "Forest ferns in various sizes, layered woodland botanical design, misty forest atmosphere, detailed frond patterns, natural green gradients",
+      "colors": {
+        "primary": "#7CB342",
+        "secondary": ["#8D6E63", "#AED581", "#C8E6C9"]
+      },
+      "scale": "medium",
+      "style": ["レイヤード", "フォレスト", "自然", "ミスティ"],
+      "variations": ["レイヤー構成3種", "透明度調整"]
+    },
+    {
+      "id": 10,
+      "name": "ラベンダーフィールド",
+      "prompt": "Lavender field pattern, rows of purple flowers, Provence countryside style, romantic botanical design, soft fragrant atmosphere, watercolor wash technique",
+      "colors": {
+        "primary": "#BA68C8",
+        "secondary": ["#CE93D8", "#E1BEE7", "#F3E5F5"]
+      },
+      "scale": "small",
+      "style": ["ロマンティック", "プロヴァンス", "香り", "水彩"],
+      "variations": ["密度パターン3種", "カラー展開2色"]
+    }
+  ],
+  "variation_strategy": {
+    "color_variations": "各パターン2-4色展開",
+    "scale_options": ["50%縮小", "標準", "150%拡大"],
+    "layout_types": ["リピート", "ランダム配置", "ボーダー配置"],
+    "application": ["アパレル", "インテリア", "ステーショナリー", "パッケージ"]
+  }
+}

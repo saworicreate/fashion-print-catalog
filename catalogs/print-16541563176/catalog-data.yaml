@@ -1,0 +1,339 @@
+# ボタニカルコレクション 2026春夏 - 編集可能データファイル
+
+collection:
+  year: 2026
+  season: "春夏"
+  theme: "ボタニカル"
+  created_date: "2025-07-26"
+  description: "自然の美しさからインスピレーションを受けた2026年春夏ボタニカルコレクション。トロピカルな葉から繊細な花まで、現代的な解釈で表現された10のユニークなパターン。"
+
+# カラーパレット定義
+color_palettes:
+  fresh_green:
+    name: "フレッシュグリーン"
+    primary: "#7CB342"
+    secondary:
+      - "#AED581"  # ライトグリーン
+      - "#C8E6C9"  # ミントグリーン
+      - "#E8F5E8"  # ペールグリーン
+    
+  sunset_warm:
+    name: "サンセットウォーム"
+    primary: "#FF8A65"
+    secondary:
+      - "#FFAB91"  # ピーチ
+      - "#FFE0B2"  # ウォームベージュ
+      - "#FFF3E0"  # クリーム
+    
+  ocean_blue:
+    name: "オーシャンブルー"
+    primary: "#42A5F5"
+    secondary:
+      - "#81C784"  # シーグリーン
+      - "#B3E5FC"  # スカイブルー
+      - "#E1F5FE"  # ペールブルー
+    
+  earth_tone:
+    name: "アーストーン"
+    primary: "#8D6E63"
+    secondary:
+      - "#A1887F"  # ライトブラウン
+      - "#D7CCC8"  # ベージュ
+      - "#EFEBE9"  # オフホワイト
+    
+  lavender_soft:
+    name: "ラベンダーソフト"
+    primary: "#BA68C8"
+    secondary:
+      - "#CE93D8"  # ライトパープル
+      - "#E1BEE7"  # ソフトピンク
+      - "#F3E5F5"  # ペールラベンダー
+
+# パターンデータ
+patterns:
+  - id: 1
+    name: "トロピカルリーフ"
+    name_en: "Tropical Leaf"
+    description: "大きなトロピカルリーフを水彩風に表現。モンステラデリシオーサとフィドルリーフフィグを流れるようなオーガニックな配置で描いた、モダンなボタニカルイラストレーション。"
+    prompt: "Large tropical leaves in watercolor style, monstera deliciosa and fiddle leaf fig, flowing organic arrangement, soft gradients, fresh spring colors, modern botanical illustration"
+    color_palette: "fresh_green"
+    scale: "large"
+    style_tags:
+      - "トロピカル"
+      - "水彩風"
+      - "大胆"
+      - "モダン"
+    variations:
+      - "カラー展開3色"
+      - "スケール調整可能"
+    applications:
+      - "アパレル"
+      - "インテリア"
+      - "リゾートウェア"
+    image_path: "./patterns/pattern_1.png"
+    color_chip_path: "./colors/chip_1.png"
+    
+  - id: 2
+    name: "ワイルドフラワーメドウ"
+    name_en: "Wild Flower Meadow"
+    description: "野生の草花を描いたメドウパターン。コーンフラワー、ポピー、カモミールなど、繊細な茎と花びらを自然な配置で表現したヴィンテージボタニカルスタイル。"
+    prompt: "Wild meadow flowers, cornflower, poppy, chamomile, delicate stems and petals, scattered natural placement, vintage botanical style, soft pastel tones"
+    color_palette: "lavender_soft"
+    scale: "medium"
+    style_tags:
+      - "ワイルド"
+      - "ヴィンテージ"
+      - "繊細"
+      - "パステル"
+    variations:
+      - "密度調整"
+      - "カラー展開4色"
+    applications:
+      - "ドレス"
+      - "ブラウス"
+      - "ホームテキスタイル"
+    image_path: "./patterns/pattern_2.png"
+    color_chip_path: "./colors/chip_2.png"
+    
+  - id: 3
+    name: "ユーカリブランチ"
+    name_en: "Eucalyptus Branch"
+    description: "シルバーグリーンの葉を持つユーカリの枝を描いたミニマルなボタニカルデザイン。クリーンなラインとコンテンポラリーなスタイルで、エレガントな間隔で配置。"
+    prompt: "Eucalyptus branches with silvery leaves, minimalist botanical design, clean lines, contemporary style, neutral earth tones, elegant spacing"
+    color_palette: "earth_tone"
+    scale: "large"
+    style_tags:
+      - "ミニマル"
+      - "モダン"
+      - "エレガント"
+      - "ナチュラル"
+    variations:
+      - "配置パターン3種"
+      - "カラー展開2色"
+    applications:
+      - "ビジネスウェア"
+      - "インテリア"
+      - "モダンファッション"
+    image_path: "./patterns/pattern_3.png"
+    color_chip_path: "./colors/chip_3.png"
+    
+  - id: 4
+    name: "サクラブロッサム"
+    name_en: "Cherry Blossom"
+    description: "繊細なピンクの花を咲かせた桜の枝を描いた和風インスパイアのボタニカルアート。流れるような枝の構造と柔らかな春の雰囲気を水彩技法で表現。"
+    prompt: "Cherry blossom branches with delicate pink flowers, Japanese inspired botanical art, flowing branch structure, soft spring atmosphere, watercolor technique"
+    color_palette: "sunset_warm"
+    scale: "medium"
+    style_tags:
+      - "和風"
+      - "春らしい"
+      - "優雅"
+      - "繊細"
+    variations:
+      - "密度バリエーション"
+      - "カラー展開3色"
+    applications:
+      - "春コレクション"
+      - "和装"
+      - "フェミニンウェア"
+    image_path: "./patterns/pattern_4.png"
+    color_chip_path: "./colors/chip_4.png"
+    
+  - id: 5
+    name: "サボテンガーデン"
+    name_en: "Cactus Garden"
+    description: "様々なサボテンと多肉植物を幾何学的な形で表現。モダンなデザートボタニカルスタイルで、構造的な構成とコンテンポラリーなカラーパレットを使用。"
+    prompt: "Various cacti and succulents, geometric shapes, modern desert botanical style, clean illustration, contemporary color palette, structured composition"
+    color_palette: "fresh_green"  # メイン、サブカラーはearthtone
+    scale: "small"
+    style_tags:
+      - "幾何学的"
+      - "モダン"
+      - "構造的"
+      - "デザート"
+    variations:
+      - "配置パターン4種"
+      - "サイズ展開"
+    applications:
+      - "カジュアルウェア"
+      - "アクセサリー"
+      - "インテリア"
+    image_path: "./patterns/pattern_5.png"
+    color_chip_path: "./colors/chip_5.png"
+    
+  - id: 6
+    name: "オーシャンケルプ"
+    name_en: "Ocean Kelp"
+    description: "海中のケルプフォレスト、流れる海藻、マリンボタニカル要素を表現。流動的な動きとオーシャンインスパイアのカラーで、オーガニックな海中パターン。"
+    prompt: "Underwater kelp forest, flowing seaweed, marine botanical elements, fluid movement, ocean-inspired colors, organic underwater patterns"
+    color_palette: "ocean_blue"
+    scale: "large"
+    style_tags:
+      - "流動的"
+      - "オーガニック"
+      - "マリン"
+      - "神秘的"
+    variations:
+      - "動きのパターン3種"
+      - "カラー展開2色"
+    applications:
+      - "サマーウェア"
+      - "スイムウェア"
+      - "マリンアクセサリー"
+    image_path: "./patterns/pattern_6.png"
+    color_chip_path: "./colors/chip_6.png"
+    
+  - id: 7
+    name: "ハーブガーデン"
+    name_en: "Herb Garden"
+    description: "料理用ハーブのコレクション。ローズマリー、タイム、セージ、バジルを詳細なボタニカルイラストで描いた、ヴィンテージハーバリウムスタイル。"
+    prompt: "Culinary herbs collection, rosemary, thyme, sage, basil, detailed botanical illustration, vintage herbarium style, educational botanical art"
+    color_palette: "fresh_green"  # メイン、サブカラーはearthtone
+    scale: "medium"
+    style_tags:
+      - "ヴィンテージ"
+      - "教育的"
+      - "詳細"
+      - "ハーブ"
+    variations:
+      - "種類組み合わせ5種"
+      - "レイアウト調整"
+    applications:
+      - "エプロン"
+      - "キッチンテキスタイル"
+      - "ガーデニングウェア"
+    image_path: "./patterns/pattern_7.png"
+    color_chip_path: "./colors/chip_7.png"
+    
+  - id: 8
+    name: "パームフロンド"
+    name_en: "Palm Frond"
+    description: "ヤシの葉とバナナリーフを描いたトロピカルリゾートスタイル。大胆なグラフィック形状とサマーバケーション感、ハイコントラストなモダンボタニカルデザイン。"
+    prompt: "Palm fronds and banana leaves, tropical resort style, bold graphic shapes, summer vacation vibes, high contrast modern botanical design"
+    color_palette: "fresh_green"  # メイン、サブカラーはsunset_warm
+    scale: "large"
+    style_tags:
+      - "グラフィック"
+      - "リゾート"
+      - "大胆"
+      - "サマー"
+    variations:
+      - "コントラスト調整"
+      - "カラー展開3色"
+    applications:
+      - "リゾートウェア"
+      - "サマードレス"
+      - "ビーチウェア"
+    image_path: "./patterns/pattern_8.png"
+    color_chip_path: "./colors/chip_8.png"
+    
+  - id: 9
+    name: "フォレストファーン"
+    name_en: "Forest Fern"
+    description: "様々なサイズの森のシダをレイヤードした森林ボタニカルデザイン。霧がかった森の雰囲気、詳細なシダの模様、自然なグリーングラデーション。"
+    prompt: "Forest ferns in various sizes, layered woodland botanical design, misty forest atmosphere, detailed frond patterns, natural green gradients"
+    color_palette: "fresh_green"  # メイン、サブカラーはearthtone
+    scale: "medium"
+    style_tags:
+      - "レイヤード"
+      - "フォレスト"
+      - "自然"
+      - "ミスティ"
+    variations:
+      - "レイヤー構成3種"
+      - "透明度調整"
+    applications:
+      - "アウトドアウェア"
+      - "カジュアルウェア"
+      - "エコファッション"
+    image_path: "./patterns/pattern_9.png"
+    color_chip_path: "./colors/chip_9.png"
+    
+  - id: 10
+    name: "ラベンダーフィールド"
+    name_en: "Lavender Field"
+    description: "ラベンダー畑のパターン、紫の花の列、プロヴァンス田園風景スタイル。ロマンティックなボタニカルデザインで、香り立つような雰囲気を水彩ウォッシュ技法で表現。"
+    prompt: "Lavender field pattern, rows of purple flowers, Provence countryside style, romantic botanical design, soft fragrant atmosphere, watercolor wash technique"
+    color_palette: "lavender_soft"
+    scale: "small"
+    style_tags:
+      - "ロマンティック"
+      - "プロヴァンス"
+      - "香り"
+      - "水彩"
+    variations:
+      - "密度パターン3種"
+      - "カラー展開2色"
+    applications:
+      - "ロマンティックウェア"
+      - "リネン"
+      - "フレグランス商品"
+    image_path: "./patterns/pattern_10.png"
+    color_chip_path: "./colors/chip_10.png"
+
+# バリエーション戦略
+variation_strategy:
+  color_variations: "各パターン2-4色展開"
+  scale_options:
+    - name: "縮小"
+      value: "50%"
+      description: "密なリピートパターン用"
+    - name: "標準"
+      value: "100%"
+      description: "バランスの取れた汎用サイズ"
+    - name: "拡大"
+      value: "150%"
+      description: "インパクトのある大柄デザイン用"
+  layout_types:
+    - name: "リピート"
+      description: "連続的なパターン配置"
+    - name: "ランダム配置"
+      description: "自然な散らし配置"
+    - name: "ボーダー配置"
+      description: "装飾的なボーダーライン"
+  applications:
+    apparel:
+      - "ドレス"
+      - "ブラウス"
+      - "Tシャツ"
+      - "スカート"
+    interior:
+      - "カーテン"
+      - "クッション"
+      - "壁紙"
+      - "寝具"
+    stationery:
+      - "ノート"
+      - "手帳"
+      - "包装紙"
+      - "カード"
+    packaging:
+      - "化粧品"
+      - "食品"
+      - "ギフトボックス"
+
+# 技術仕様
+technical_specs:
+  file_formats:
+    vector:
+      - "AI"
+      - "SVG"
+    raster:
+      - "PNG (300dpi以上)"
+      - "JPEG (300dpi以上)"
+    print:
+      - "CMYK対応"
+  quality_assurance:
+    - "商用利用可能"
+    - "高品質印刷対応"
+    - "カラーバリエーション完全対応"
+    - "スケーラブルデザイン"
+
+# メタデータ
+metadata:
+  catalog_version: "1.0"
+  last_updated: "2025-07-26"
+  total_patterns: 10
+  designer: "ボタニカルコレクション チーム"
+  copyright: "© 2025 ボタニカルコレクション"
+  license: "商用利用可能"
