@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "year": 2026,
+    "season": "Spring/Summer",
+    "theme": "Eco Palm Cool",
+    "collection_name": "エコ・パームクール2026SS"
+  },
+  "patterns": [
+    {
+      "id": 1,
+      "name": "トロピカルパーム",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, tropical palm leaves with geometric eco symbols, continuous motif of sustainable palm fronds in cooling breeze effect, no borders, perfect repeat, modern botanical illustration style",
+      "repeat_type": "half-drop",
+      "colors": {
+        "primary": "#2D5A3D",
+        "secondary": ["#7FB069", "#A8E6A3", "#E8F5E8", "#4A7C59"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "botanical", "eco-friendly"]
+    },
+    {
+      "id": 2,
+      "name": "クールリーフジオメトリー",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, stylized cooling leaves with geometric recycling symbols, continuous motif of sustainable leaf patterns, no borders, perfect repeat, minimalist geometric approach",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#1B4D3E",
+        "secondary": ["#66C2A5", "#B2DF8A", "#F0F8F0", "#3D8B73"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "geometric", "contemporary"]
+    },
+    {
+      "id": 3,
+      "name": "エコウィンドパターン",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, flowing wind currents with eco-friendly symbols and palm silhouettes, continuous motif of cooling breezes, no borders, perfect repeat, abstract flowing design",
+      "repeat_type": "brick",
+      "colors": {
+        "primary": "#4A8B6F",
+        "secondary": ["#8FBC8F", "#C1E1C1", "#F5FFF5", "#2E7D5A"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "abstract", "flowing"]
+    },
+    {
+      "id": 4,
+      "name": "サステナブルトロピック",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, sustainable tropical motifs with recycling elements and cooling palm patterns, continuous motif of eco-conscious paradise, no borders, perfect repeat, modern tropical illustration",
+      "repeat_type": "half-drop",
+      "colors": {
+        "primary": "#355E3B",
+        "secondary": ["#90EE90", "#ADDFAD", "#F0FFF0", "#50C878"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "tropical", "sustainable"]
+    },
+    {
+      "id": 5,
+      "name": "クールブリーズミニマル",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, minimalist cooling breeze lines with subtle palm leaf shadows, continuous motif of gentle air flow, no borders, perfect repeat, ultra-minimal linear design",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#2F5F4F",
+        "secondary": ["#98FB98", "#C0FFC0", "#F8FFF8", "#6B8E6B"]
+      },
+      "scale": "small",
+      "style": ["textile", "seamless", "repeating", "minimal", "linear"]
+    }
+  ],
+  "technical_specifications": {
+    "repeat_requirements": "All patterns must tile perfectly without visible seams",
+    "color_matching": "Pantone color matching required for production",
+    "fabric_compatibility": "Optimized for cotton, linen, and eco-friendly synthetic blends",
+    "print_method": "Digital textile printing recommended"
+  }
+}

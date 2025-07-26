@@ -1,0 +1,269 @@
+# エコ・パームクール2026SS ファッションカタログデータ
+# 編集可能なYAMLデータファイル
+
+collection:
+  title: "エコ・パームクール2026SS"
+  year: 2026
+  season: "Spring/Summer"  
+  theme: "Eco Palm Cool"
+  subtitle: "2026年 春夏コレクション"
+  description: "持続可能なパームモチーフとクールなブリーズ効果を組み合わせたエコフレンドリーコレクション"
+
+patterns:
+  - id: 1
+    name: "トロピカルパーム"
+    name_en: "Tropical Palm"
+    pattern_id: "01"
+    image_path: "./patterns/pattern_1.png"
+    color_chip: "./colors/chip_1.png"
+    
+    specifications:
+      repeat_type: "ハーフドロップ"
+      repeat_type_en: "half-drop"
+      scale: "ラージ"
+      scale_en: "large"
+      usage:
+        - "テキスタイル"
+        - "ボタニカル"
+      style:
+        - "エコフレンドリー"
+        - "seamless"
+        - "repeating"
+        - "botanical"
+        - "eco-friendly"
+    
+    colors:
+      primary:
+        hex: "#2D5A3D"
+        name: "ダークグリーン"
+        name_en: "Dark Green"
+      secondary:
+        - hex: "#7FB069"
+          name: "ライトグリーン"
+          name_en: "Light Green"
+        - hex: "#A8E6A3"
+          name: "ペールグリーン"
+          name_en: "Pale Green"
+        - hex: "#E8F5E8"
+          name: "ベリーペールグリーン"
+          name_en: "Very Pale Green"
+        - hex: "#4A7C59"
+          name: "ミディアムグリーン"
+          name_en: "Medium Green"
+    
+    prompt: "seamless repeating textile pattern, tileable fabric design, tropical palm leaves with geometric eco symbols, continuous motif of sustainable palm fronds in cooling breeze effect, no borders, perfect repeat, modern botanical illustration style"
+
+  - id: 2
+    name: "クールリーフジオメトリー"
+    name_en: "Cool Leaf Geometry"
+    pattern_id: "02"
+    image_path: "./patterns/pattern_2.png"
+    color_chip: "./colors/chip_2.png"
+    
+    specifications:
+      repeat_type: "ストレート"
+      repeat_type_en: "straight"
+      scale: "ミディアム"
+      scale_en: "medium"
+      usage:
+        - "ジオメトリック"
+        - "テキスタイル"
+      style:
+        - "コンテンポラリー"
+        - "textile"
+        - "seamless"
+        - "repeating"
+        - "geometric"
+        - "contemporary"
+    
+    colors:
+      primary:
+        hex: "#1B4D3E"
+        name: "ダークティール"
+        name_en: "Dark Teal"
+      secondary:
+        - hex: "#66C2A5"
+          name: "ティール"
+          name_en: "Teal"
+        - hex: "#B2DF8A"
+          name: "ライトグリーン"
+          name_en: "Light Green"
+        - hex: "#F0F8F0"
+          name: "オフホワイトグリーン"
+          name_en: "Off White Green"
+        - hex: "#3D8B73"
+          name: "ミディアムティール"
+          name_en: "Medium Teal"
+    
+    prompt: "seamless repeating textile pattern, tileable fabric design, stylized cooling leaves with geometric recycling symbols, continuous motif of sustainable leaf patterns, no borders, perfect repeat, minimalist geometric approach"
+
+  - id: 3
+    name: "エコウィンドパターン"
+    name_en: "Eco Wind Pattern"
+    pattern_id: "03"
+    image_path: "./patterns/pattern_3.png"
+    color_chip: "./colors/chip_3.png"
+    
+    specifications:
+      repeat_type: "ブリック"
+      repeat_type_en: "brick"
+      scale: "ミディアム"
+      scale_en: "medium"
+      usage:
+        - "アブストラクト"
+        - "フローイング"
+      style:
+        - "テキスタイル"
+        - "textile"
+        - "seamless"
+        - "repeating"
+        - "abstract"
+        - "flowing"
+    
+    colors:
+      primary:
+        hex: "#4A8B6F"
+        name: "ジェイドグリーン"
+        name_en: "Jade Green"
+      secondary:
+        - hex: "#8FBC8F"
+          name: "ダークシーグリーン"
+          name_en: "Dark Sea Green"
+        - hex: "#C1E1C1"
+          name: "ライトグリーン"
+          name_en: "Light Green"
+        - hex: "#F5FFF5"
+          name: "ミントクリーム"
+          name_en: "Mint Cream"
+        - hex: "#2E7D5A"
+          name: "フォレストグリーン"
+          name_en: "Forest Green"
+    
+    prompt: "seamless repeating textile pattern, tileable fabric design, flowing wind currents with eco-friendly symbols and palm silhouettes, continuous motif of cooling breezes, no borders, perfect repeat, abstract flowing design"
+
+  - id: 4
+    name: "サステナブルトロピック"
+    name_en: "Sustainable Tropic"
+    pattern_id: "04"
+    image_path: "./patterns/pattern_4.png"
+    color_chip: "./colors/chip_4.png"
+    
+    specifications:
+      repeat_type: "ハーフドロップ"
+      repeat_type_en: "half-drop"
+      scale: "ラージ"
+      scale_en: "large"
+      usage:
+        - "トロピカル"
+        - "サステナブル"
+      style:
+        - "テキスタイル"
+        - "textile"
+        - "seamless"
+        - "repeating"
+        - "tropical"
+        - "sustainable"
+    
+    colors:
+      primary:
+        hex: "#355E3B"
+        name: "ハンターグリーン"
+        name_en: "Hunter Green"
+      secondary:
+        - hex: "#90EE90"
+          name: "ライトグリーン"
+          name_en: "Light Green"
+        - hex: "#ADDFAD"
+          name: "ペールグリーン"
+          name_en: "Pale Green"
+        - hex: "#F0FFF0"
+          name: "ハニーデュー"
+          name_en: "Honeydew"
+        - hex: "#50C878"
+          name: "エメラルドグリーン"
+          name_en: "Emerald Green"
+    
+    prompt: "seamless repeating textile pattern, tileable fabric design, sustainable tropical motifs with recycling elements and cooling palm patterns, continuous motif of eco-conscious paradise, no borders, perfect repeat, modern tropical illustration"
+
+  - id: 5
+    name: "クールブリーズミニマル"
+    name_en: "Cool Breeze Minimal"
+    pattern_id: "05"
+    image_path: "./patterns/pattern_5.png"
+    color_chip: "./colors/chip_5.png"
+    
+    specifications:
+      repeat_type: "ストレート"
+      repeat_type_en: "straight"
+      scale: "スモール"
+      scale_en: "small"
+      usage:
+        - "ミニマル"
+        - "リニア"
+      style:
+        - "テキスタイル"
+        - "textile"
+        - "seamless"
+        - "repeating"
+        - "minimal"
+        - "linear"
+    
+    colors:
+      primary:
+        hex: "#2F5F4F"
+        name: "ダークスレートグレー"
+        name_en: "Dark Slate Gray"
+      secondary:
+        - hex: "#98FB98"
+          name: "ペールグリーン"
+          name_en: "Pale Green"
+        - hex: "#C0FFC0"
+          name: "ライトグリーン"
+          name_en: "Light Green"
+        - hex: "#F8FFF8"
+          name: "ゴーストホワイト"
+          name_en: "Ghost White"
+        - hex: "#6B8E6B"
+          name: "ダークオリーブグリーン"
+          name_en: "Dark Olive Green"
+    
+    prompt: "seamless repeating textile pattern, tileable fabric design, minimalist cooling breeze lines with subtle palm leaf shadows, continuous motif of gentle air flow, no borders, perfect repeat, ultra-minimal linear design"
+
+technical_specifications:
+  repeat_requirements: "すべてのパターンは完璧にタイル表示され、継ぎ目が見えないこと"
+  color_matching: "生産用にPantoneカラーマッチングが必要"
+  fabric_compatibility: "コットン、リネン、エコフレンドリー合成繊維ブレンドに最適化"
+  print_method: "デジタルテキスタイル印刷を推奨"
+  
+  repeat_requirements_en: "All patterns must tile perfectly without visible seams"
+  color_matching_en: "Pantone color matching required for production"
+  fabric_compatibility_en: "Optimized for cotton, linen, and eco-friendly synthetic blends"
+  print_method_en: "Digital textile printing recommended"
+
+design_system:
+  fonts:
+    header: "Playfair Display"
+    body: "Inter"
+  colors:
+    background: "#fafafa"
+    card: "#ffffff"
+    accent: "#667eea"
+  styling:
+    shadow: "0 10px 30px rgba(0,0,0,0.1)"
+    border_radius: "20px"
+    image_ratio: "60% / 40%"
+
+file_structure:
+  html_catalog: "catalog.html"
+  md_catalog: "catalog.md"
+  yaml_data: "catalog-data.yaml"
+  specs_file: "pattern-specs.json"
+  patterns_dir: "patterns/"
+  colors_dir: "colors/"
+
+metadata:
+  created_date: "2025-07-26"
+  version: "1.0"
+  author: "Fashion Design Team"
+  catalog_type: "Professional Fashion Catalog"
+  language: "Japanese/English"
