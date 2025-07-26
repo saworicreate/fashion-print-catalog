@@ -1,0 +1,177 @@
+catalog_info:
+  title: "ボタニカル柄コレクション"
+  season: "春夏 2026"
+  theme: "ボタニカル柄"
+  subtitle: "自然の美しさをファッションに"
+  description: "植物の美しさと自然の魅力をモダンなファッションデザインに落とし込んだコレクション"
+
+patterns:
+  - id: 1
+    name: "ホワイトローズガーデン"
+    name_en: "White Rose Garden"
+    description: "エレガントな白いバラと柔らかな緑の葉を水彩風で表現。ロマンティックな植物イラストレーションで、自然で有機的な配置が特徴の夢のような雰囲気のデザインです。"
+    prompt: "Elegant white roses with soft green leaves, delicate watercolor style, romantic botanical illustration, natural organic arrangement, subtle texture, minimalist composition, dreamy atmosphere"
+    image_path: "./patterns/pattern_1.png"
+    color_chip_path: "./colors/chip_1.png"
+    colors:
+      primary: "#F8F8F8"
+      secondary:
+        - "#E8F5E8"
+        - "#F0F0F0" 
+        - "#D4E6D4"
+    scale: "large"
+    usage: "インパクトのあるメインデザインとして使用"
+    styles:
+      - "エレガント"
+      - "ロマンティック"
+      - "水彩風"
+      - "オーガニック"
+
+  - id: 2
+    name: "トロピカルリーフ"
+    name_en: "Tropical Leaf"
+    description: "鮮やかな緑のトロピカルなヤシの葉とモンステラ植物の植物パターン。モダンでミニマリストなスタイルで、クリーンなラインと現代的なデザインが夏の爽やかさを演出します。"
+    prompt: "Tropical palm leaves and monstera plants, vibrant green botanical pattern, modern minimalist style, clean lines, contemporary design, fresh summer feeling"
+    image_path: "./patterns/pattern_2.png"
+    color_chip_path: "./colors/chip_2.png"
+    colors:
+      primary: "#228B22"
+      secondary:
+        - "#32CD32"
+        - "#90EE90"
+        - "#006400"
+    scale: "medium"
+    usage: "バランスの取れた汎用性の高いサイズ"
+    styles:
+      - "モダン"
+      - "トロピカル"
+      - "ミニマル"
+      - "フレッシュ"
+
+  - id: 3
+    name: "ワイルドフラワーメドウ"
+    name_en: "Wild Flower Meadow"
+    description: "デイジー、コーンフラワー、ポピーなどの野生の草花を散りばめた自然な配置。ヴィンテージ植物イラストスタイルで手描きの美学を表現し、陽気な春の気分を演出します。"
+    prompt: "Wild meadow flowers including daisies, cornflowers, and poppies, scattered natural arrangement, vintage botanical illustration style, hand-drawn aesthetic, cheerful spring mood"
+    image_path: "./patterns/pattern_3.png"
+    color_chip_path: "./colors/chip_3.png"
+    colors:
+      primary: "#FF69B4"
+      secondary:
+        - "#87CEEB"
+        - "#FFD700"
+        - "#98FB98"
+    scale: "small"
+    usage: "アクセントや総柄として活用"
+    styles:
+      - "ヴィンテージ"
+      - "ナチュラル"
+      - "手描き風"
+      - "カジュアル"
+
+  - id: 4
+    name: "ユーカリブランチ"
+    name_en: "Eucalyptus Branch"
+    description: "シルバーグリーンの葉を持つユーカリの枝をミニマリスト植物デザインで表現。モダンなスカンジナビアスタイルで、クリーンな幾何学的配置と洗練されたニュートラルトーンが特徴です。"
+    prompt: "Eucalyptus branches with silver-green leaves, minimalist botanical design, modern scandinavian style, clean geometric arrangement, sophisticated neutral tones"
+    image_path: "./patterns/pattern_4.png"
+    color_chip_path: "./colors/chip_4.png"
+    colors:
+      primary: "#B2C5B2"
+      secondary:
+        - "#D3D3D3"
+        - "#F5F5DC"
+        - "#778B77"
+    scale: "large"
+    usage: "インパクトのあるメインデザインとして使用"
+    styles:
+      - "スカンジナビアン"
+      - "ソフィスティケート"
+      - "ミニマル"
+      - "モノトーン"
+
+  - id: 5
+    name: "ハーブガーデン"
+    name_en: "Herb Garden"
+    description: "バジル、ローズマリー、タイム、セージなどのキッチンハーブを詳細な植物イラストで表現。教育的なヴィンテージスタイルで、精密な線画と自然なアーシーカラーが特徴です。"
+    prompt: "Kitchen herbs including basil, rosemary, thyme, and sage, detailed botanical illustration, educational vintage style, precise line work, earthy natural colors"
+    image_path: "./patterns/pattern_5.png"
+    color_chip_path: "./colors/chip_5.png"
+    colors:
+      primary: "#556B2F"
+      secondary:
+        - "#9ACD32"
+        - "#8FBC8F"
+        - "#6B8E23"
+    scale: "medium"
+    usage: "バランスの取れた汎用性の高いサイズ"
+    styles:
+      - "ヴィンテージ"
+      - "教育的"
+      - "詳細"
+      - "アーシー"
+
+design_strategy:
+  color_palette_strategy:
+    primary_themes:
+      - "ナチュラルグリーン"
+      - "ソフトピンク"
+      - "クリーンホワイト"
+      - "アーシートーン"
+    seasonal_consideration: "春夏の軽やかさを表現する明るく爽やかな色調"
+    market_positioning: "幅広い年齢層に対応する上品でトレンド感のあるカラーリング"
+
+  variation_strategy:
+    size_variations:
+      large: "インパクトのあるメインデザインとして使用"
+      medium: "バランスの取れた汎用性の高いサイズ"
+      small: "アクセントや総柄として活用"
+    
+    style_combinations:
+      - "エレガント × ロマンティック"
+      - "モダン × ミニマル"
+      - "ヴィンテージ × ナチュラル"
+
+applications:
+  apparel:
+    - "ブラウス"
+    - "ワンピース"
+    - "スカート"
+    - "カジュアルウェア"
+  
+  home_textiles:
+    - "カーテン"
+    - "クッション"
+    - "テーブルクロス"
+    - "ベッドリネン"
+  
+  accessories:
+    - "スカーフ"
+    - "バッグ"
+    - "ポーチ"
+    - "ハンカチ"
+
+technical_specs:
+  fonts:
+    header: "Playfair Display"  # CDN読み込み
+    body: "Inter"
+  
+  colors:
+    background: "#fafafa"
+    card_background: "#ffffff"
+    accent: "#667eea"
+  
+  layout:
+    card_layout: "左に画像60%、右に詳細40%"
+    shadow: "box-shadow: 0 10px 30px rgba(0,0,0,0.1)"
+    border_radius: "20px"
+    responsive: true
+
+metadata:
+  created_date: "2026-01-01"  # 推定作成日
+  version: "1.0"
+  format: "春夏2026コレクション用カタログ"
+  files_generated:
+    - "catalog.html"  # フルデザイン版
+    - "catalog.md"    # GitHub表示用
+    - "catalog-data.yaml"  # 編集可能データファイル

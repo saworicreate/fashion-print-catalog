@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボタニカル柄コレクション - 春夏 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .catalog-grid {
+            display: grid;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .pattern-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .pattern-image {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .pattern-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .pattern-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .pattern-details {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pattern-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .pattern-id {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .pattern-description {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .color-palette {
+            margin-bottom: 25px;
+        }
+
+        .color-palette h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .color-chips {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .color-chip-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .color-values {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .color-value {
+            background: #f5f5f5;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-family: monospace;
+            color: #555;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .spec-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .spec-value {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .style-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .style-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .applications {
+            margin-top: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .applications h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .app-category {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9ff;
+            border-radius: 15px;
+        }
+
+        .app-category h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .app-list {
+            list-style: none;
+        }
+
+        .app-list li {
+            padding: 5px 0;
+            color: #666;
+        }
+
+        /* Modal for image zoom */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            cursor: pointer;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pattern-card {
+                grid-template-columns: 1fr;
+            }
+            
+            .pattern-details {
+                padding: 30px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .specs {
+                grid-template-columns: 1fr;
+            }
+            
+            .color-chips {
+                justify-content: center;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                max-width: none;
+                padding: 20px;
+            }
+            
+            .pattern-card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+                margin-bottom: 30px;
+            }
+            
+            .pattern-card:hover {
+                transform: none;
+            }
+            
+            .modal {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ボタニカル柄コレクション</h1>
+            <p class="subtitle">春夏 2026 - 自然の美しさをファッションに</p>
+        </header>
+
+        <div class="catalog-grid">
+            <!-- Pattern 1: ホワイトローズガーデン -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="openModal('./patterns/pattern_1.png')">
+                    <img src="./patterns/pattern_1.png" alt="ホワイトローズガーデン">
+                </div>
+                <div class="pattern-details">
+                    <div class="pattern-id">Pattern #001</div>
+                    <h3 class="pattern-name">ホワイトローズガーデン</h3>
+                    <p class="pattern-description">エレガントな白いバラと柔らかな緑の葉を水彩風で表現。ロマンティックな植物イラストレーションで、自然で有機的な配置が特徴の夢のような雰囲気のデザインです。</p>
+                    
+                    <div class="color-palette">
+                        <h4>カラーパレット</h4>
+                        <div class="color-chips">
+                            <img src="./colors/chip_1.png" alt="Color Chip 1" class="color-chip-img">
+                        </div>
+                        <div class="color-values">
+                            <span class="color-value">#F8F8F8</span>
+                            <span class="color-value">#E8F5E8</span>
+                            <span class="color-value">#F0F0F0</span>
+                            <span class="color-value">#D4E6D4</span>
+                        </div>
+                    </div>
+
+                    <div class="specs">
+                        <div class="spec-item">
+                            <div class="spec-label">スケール</div>
+                            <div class="spec-value">Large</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">用途</div>
+                            <div class="spec-value">メインデザイン</div>
+                        </div>
+                    </div>
+
+                    <div class="style-tags">
+                        <span class="style-tag">エレガント</span>
+                        <span class="style-tag">ロマンティック</span>
+                        <span class="style-tag">水彩風</span>
+                        <span class="style-tag">オーガニック</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 2: トロピカルリーフ -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="openModal('./patterns/pattern_2.png')">
+                    <img src="./patterns/pattern_2.png" alt="トロピカルリーフ">
+                </div>
+                <div class="pattern-details">
+                    <div class="pattern-id">Pattern #002</div>
+                    <h3 class="pattern-name">トロピカルリーフ</h3>
+                    <p class="pattern-description">鮮やかな緑のトロピカルなヤシの葉とモンステラ植物の植物パターン。モダンでミニマリストなスタイルで、クリーンなラインと現代的なデザインが夏の爽やかさを演出します。</p>
+                    
+                    <div class="color-palette">
+                        <h4>カラーパレット</h4>
+                        <div class="color-chips">
+                            <img src="./colors/chip_2.png" alt="Color Chip 2" class="color-chip-img">
+                        </div>
+                        <div class="color-values">
+                            <span class="color-value">#228B22</span>
+                            <span class="color-value">#32CD32</span>
+                            <span class="color-value">#90EE90</span>
+                            <span class="color-value">#006400</span>
+                        </div>
+                    </div>
+
+                    <div class="specs">
+                        <div class="spec-item">
+                            <div class="spec-label">スケール</div>
+                            <div class="spec-value">Medium</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">用途</div>
+                            <div class="spec-value">汎用デザイン</div>
+                        </div>
+                    </div>
+
+                    <div class="style-tags">
+                        <span class="style-tag">モダン</span>
+                        <span class="style-tag">トロピカル</span>
+                        <span class="style-tag">ミニマル</span>
+                        <span class="style-tag">フレッシュ</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 3: ワイルドフラワーメドウ -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="openModal('./patterns/pattern_3.png')">
+                    <img src="./patterns/pattern_3.png" alt="ワイルドフラワーメドウ">
+                </div>
+                <div class="pattern-details">
+                    <div class="pattern-id">Pattern #003</div>
+                    <h3 class="pattern-name">ワイルドフラワーメドウ</h3>
+                    <p class="pattern-description">デイジー、コーンフラワー、ポピーなどの野生の草花を散りばめた自然な配置。ヴィンテージ植物イラストスタイルで手描きの美学を表現し、陽気な春の気分を演出します。</p>
+                    
+                    <div class="color-palette">
+                        <h4>カラーパレット</h4>
+                        <div class="color-chips">
+                            <img src="./colors/chip_3.png" alt="Color Chip 3" class="color-chip-img">
+                        </div>
+                        <div class="color-values">
+                            <span class="color-value">#FF69B4</span>
+                            <span class="color-value">#87CEEB</span>
+                            <span class="color-value">#FFD700</span>
+                            <span class="color-value">#98FB98</span>
+                        </div>
+                    </div>
+
+                    <div class="specs">
+                        <div class="spec-item">
+                            <div class="spec-label">スケール</div>
+                            <div class="spec-value">Small</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">用途</div>
+                            <div class="spec-value">アクセント・総柄</div>
+                        </div>
+                    </div>
+
+                    <div class="style-tags">
+                        <span class="style-tag">ヴィンテージ</span>
+                        <span class="style-tag">ナチュラル</span>
+                        <span class="style-tag">手描き風</span>
+                        <span class="style-tag">カジュアル</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 4: ユーカリブランチ -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="openModal('./patterns/pattern_4.png')">
+                    <img src="./patterns/pattern_4.png" alt="ユーカリブランチ">
+                </div>
+                <div class="pattern-details">
+                    <div class="pattern-id">Pattern #004</div>
+                    <h3 class="pattern-name">ユーカリブランチ</h3>
+                    <p class="pattern-description">シルバーグリーンの葉を持つユーカリの枝をミニマリスト植物デザインで表現。モダンなスカンジナビアスタイルで、クリーンな幾何学的配置と洗練されたニュートラルトーンが特徴です。</p>
+                    
+                    <div class="color-palette">
+                        <h4>カラーパレット</h4>
+                        <div class="color-chips">
+                            <img src="./colors/chip_4.png" alt="Color Chip 4" class="color-chip-img">
+                        </div>
+                        <div class="color-values">
+                            <span class="color-value">#B2C5B2</span>
+                            <span class="color-value">#D3D3D3</span>
+                            <span class="color-value">#F5F5DC</span>
+                            <span class="color-value">#778B77</span>
+                        </div>
+                    </div>
+
+                    <div class="specs">
+                        <div class="spec-item">
+                            <div class="spec-label">スケール</div>
+                            <div class="spec-value">Large</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">用途</div>
+                            <div class="spec-value">メインデザイン</div>
+                        </div>
+                    </div>
+
+                    <div class="style-tags">
+                        <span class="style-tag">スカンジナビアン</span>
+                        <span class="style-tag">ソフィスティケート</span>
+                        <span class="style-tag">ミニマル</span>
+                        <span class="style-tag">モノトーン</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 5: ハーブガーデン -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="openModal('./patterns/pattern_5.png')">
+                    <img src="./patterns/pattern_5.png" alt="ハーブガーデン">
+                </div>
+                <div class="pattern-details">
+                    <div class="pattern-id">Pattern #005</div>
+                    <h3 class="pattern-name">ハーブガーデン</h3>
+                    <p class="pattern-description">バジル、ローズマリー、タイム、セージなどのキッチンハーブを詳細な植物イラストで表現。教育的なヴィンテージスタイルで、精密な線画と自然なアーシーカラーが特徴です。</p>
+                    
+                    <div class="color-palette">
+                        <h4>カラーパレット</h4>
+                        <div class="color-chips">
+                            <img src="./colors/chip_5.png" alt="Color Chip 5" class="color-chip-img">
+                        </div>
+                        <div class="color-values">
+                            <span class="color-value">#556B2F</span>
+                            <span class="color-value">#9ACD32</span>
+                            <span class="color-value">#8FBC8F</span>
+                            <span class="color-value">#6B8E23</span>
+                        </div>
+                    </div>
+
+                    <div class="specs">
+                        <div class="spec-item">
+                            <div class="spec-label">スケール</div>
+                            <div class="spec-value">Medium</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">用途</div>
+                            <div class="spec-value">汎用デザイン</div>
+                        </div>
+                    </div>
+
+                    <div class="style-tags">
+                        <span class="style-tag">ヴィンテージ</span>
+                        <span class="style-tag">教育的</span>
+                        <span class="style-tag">詳細</span>
+                        <span class="style-tag">アーシー</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="applications">
+            <h2>適用例</h2>
+            <div class="app-grid">
+                <div class="app-category">
+                    <h3>アパレル</h3>
+                    <ul class="app-list">
+                        <li>ブラウス</li>
+                        <li>ワンピース</li>
+                        <li>スカート</li>
+                        <li>カジュアルウェア</li>
+                    </ul>
+                </div>
+                <div class="app-category">
+                    <h3>ホームテキスタイル</h3>
+                    <ul class="app-list">
+                        <li>カーテン</li>
+                        <li>クッション</li>
+                        <li>テーブルクロス</li>
+                        <li>ベッドリネン</li>
+                    </ul>
+                </div>
+                <div class="app-category">
+                    <h3>アクセサリー</h3>
+                    <ul class="app-list">
+                        <li>スカーフ</li>
+                        <li>バッグ</li>
+                        <li>ポーチ</li>
+                        <li>ハンカチ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for image zoom -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+{
+  "season": "春夏 2026",
+  "theme": "ボタニカル柄",
+  "patterns": [
+    {
+      "id": 1,
+      "name": "ホワイトローズガーデン",
+      "prompt": "Elegant white roses with soft green leaves, delicate watercolor style, romantic botanical illustration, natural organic arrangement, subtle texture, minimalist composition, dreamy atmosphere",
+      "colors": {
+        "primary": "#F8F8F8",
+        "secondary": ["#E8F5E8", "#F0F0F0", "#D4E6D4"]
+      },
+      "scale": "large",
+      "style": ["エレガント", "ロマンティック", "水彩風", "オーガニック"]
+    },
+    {
+      "id": 2,
+      "name": "トロピカルリーフ",
+      "prompt": "Tropical palm leaves and monstera plants, vibrant green botanical pattern, modern minimalist style, clean lines, contemporary design, fresh summer feeling",
+      "colors": {
+        "primary": "#228B22",
+        "secondary": ["#32CD32", "#90EE90", "#006400"]
+      },
+      "scale": "medium",
+      "style": ["モダン", "トロピカル", "ミニマル", "フレッシュ"]
+    },
+    {
+      "id": 3,
+      "name": "ワイルドフラワーメドウ",
+      "prompt": "Wild meadow flowers including daisies, cornflowers, and poppies, scattered natural arrangement, vintage botanical illustration style, hand-drawn aesthetic, cheerful spring mood",
+      "colors": {
+        "primary": "#FF69B4",
+        "secondary": ["#87CEEB", "#FFD700", "#98FB98"]
+      },
+      "scale": "small",
+      "style": ["ヴィンテージ", "ナチュラル", "手描き風", "カジュアル"]
+    },
+    {
+      "id": 4,
+      "name": "ユーカリブランチ",
+      "prompt": "Eucalyptus branches with silver-green leaves, minimalist botanical design, modern scandinavian style, clean geometric arrangement, sophisticated neutral tones",
+      "colors": {
+        "primary": "#B2C5B2",
+        "secondary": ["#D3D3D3", "#F5F5DC", "#778B77"]
+      },
+      "scale": "large",
+      "style": ["スカンジナビアン", "ソフィスティケート", "ミニマル", "モノトーン"]
+    },
+    {
+      "id": 5,
+      "name": "ハーブガーデン",
+      "prompt": "Kitchen herbs including basil, rosemary, thyme, and sage, detailed botanical illustration, educational vintage style, precise line work, earthy natural colors",
+      "colors": {
+        "primary": "#556B2F",
+        "secondary": ["#9ACD32", "#8FBC8F", "#6B8E23"]
+      },
+      "scale": "medium",
+      "style": ["ヴィンテージ", "教育的", "詳細", "アーシー"]
+    }
+  ],
+  "color_palette_strategy": {
+    "primary_themes": ["ナチュラルグリーン", "ソフトピンク", "クリーンホワイト", "アーシートーン"],
+    "seasonal_consideration": "春夏の軽やかさを表現する明るく爽やかな色調",
+    "market_positioning": "幅広い年齢層に対応する上品でトレンド感のあるカラーリング"
+  },
+  "variation_strategy": {
+    "size_variations": {
+      "large": "インパクトのあるメインデザインとして使用",
+      "medium": "バランスの取れた汎用性の高いサイズ",
+      "small": "アクセントや総柄として活用"
+    },
+    "style_combinations": [
+      "エレガント × ロマンティック",
+      "モダン × ミニマル",
+      "ヴィンテージ × ナチュラル"
+    ],
+    "target_applications": [
+      "アパレル（ブラウス、ワンピース、スカート）",
+      "ホームテキスタイル（カーテン、クッション）",
+      "アクセサリー（スカーフ、バッグ）"
+    ]
+  }
+}
