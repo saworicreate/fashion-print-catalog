@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 春夏コレクション - ボタニカルパターンカタログ</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .pattern-grid {
+            display: grid;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .pattern-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            min-height: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .pattern-image-container {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .pattern-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .pattern-image:hover {
+            transform: scale(1.1);
+        }
+
+        .pattern-details {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pattern-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .pattern-description {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .color-chips-container {
+            margin-bottom: 25px;
+        }
+
+        .color-chips-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .color-chips {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .color-chip {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: transform 0.2s ease;
+        }
+
+        .color-chip:hover {
+            transform: scale(1.2);
+        }
+
+        .color-chip-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .pattern-specs {
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .spec-label {
+            font-weight: 500;
+            color: #666;
+        }
+
+        .spec-value {
+            color: #333;
+            font-weight: 400;
+        }
+
+        .pattern-id {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            color: #667eea;
+            font-size: 0.9rem;
+        }
+
+        /* Modal for image expansion */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            cursor: pointer;
+        }
+
+        .modal-content {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 5%;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pattern-card {
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+            
+            .pattern-image-container {
+                height: 250px;
+            }
+            
+            .pattern-details {
+                padding: 30px;
+            }
+            
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .pattern-name {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .pattern-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+                margin-bottom: 30px;
+            }
+            
+            .pattern-card:hover {
+                transform: none;
+                box-shadow: none;
+            }
+            
+            .pattern-image:hover {
+                transform: none;
+            }
+            
+            .modal {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>2026 春夏コレクション</h1>
+            <p>ボタニカルパターン - プロフェッショナルファッションカタログ</p>
+        </header>
+
+        <div class="pattern-grid">
+            <!-- Pattern 1: Tropical Leaves Cascade -->
+            <div class="pattern-card">
+                <div class="pattern-image-container" onclick="openModal('modal1')">
+                    <img src="./patterns/pattern_1.png" alt="Tropical Leaves Cascade" class="pattern-image">
+                    <div class="pattern-id">#001</div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Tropical Leaves Cascade</h2>
+                        <p class="pattern-description">
+                            トロピカルなモンステラとヤシの葉が美しくカスケードする、豪華で洗練されたボタニカルパターン。
+                            リゾートウェアやサマードレスに最適な、エキゾチックな魅力を演出します。
+                        </p>
+                        <div class="color-chips-container">
+                            <div class="color-chips-title">カラーパレット</div>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <img src="./colors/chip_1.png" alt="Primary Color" class="color-chip-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">リピートタイプ:</span>
+                            <span class="spec-value">ハーフドロップ</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スケール:</span>
+                            <span class="spec-value">大</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">用途:</span>
+                            <span class="spec-value">リゾートウェア、サマードレス</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スタイル:</span>
+                            <span class="spec-value">ボタニカル、トロピカル</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 2: Delicate Cherry Blossoms -->
+            <div class="pattern-card">
+                <div class="pattern-image-container" onclick="openModal('modal2')">
+                    <img src="./patterns/pattern_2.png" alt="Delicate Cherry Blossoms" class="pattern-image">
+                    <div class="pattern-id">#002</div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Delicate Cherry Blossoms</h2>
+                        <p class="pattern-description">
+                            繊細な桜の枝と舞い散る花びらが織りなす、日本の美意識を表現したエレガントなパターン。
+                            春の装いやフォーマルウェアに上品な華やかさを添えます。
+                        </p>
+                        <div class="color-chips-container">
+                            <div class="color-chips-title">カラーパレット</div>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <img src="./colors/chip_2.png" alt="Primary Color" class="color-chip-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">リピートタイプ:</span>
+                            <span class="spec-value">ストレート</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スケール:</span>
+                            <span class="spec-value">中</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">用途:</span>
+                            <span class="spec-value">スプリングウェア、フォーマル</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スタイル:</span>
+                            <span class="spec-value">ボタニカル、フローラル</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 3: Eucalyptus Branch Network -->
+            <div class="pattern-card">
+                <div class="pattern-image-container" onclick="openModal('modal3')">
+                    <img src="./patterns/pattern_3.png" alt="Eucalyptus Branch Network" class="pattern-image">
+                    <div class="pattern-id">#003</div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Eucalyptus Branch Network</h2>
+                        <p class="pattern-description">
+                            シルバーグリーンのユーカリの枝葉が幾何学的に配置された、モダンで洗練されたミニマルパターン。
+                            ビジネスカジュアルやアーバンスタイルに最適です。
+                        </p>
+                        <div class="color-chips-container">
+                            <div class="color-chips-title">カラーパレット</div>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <img src="./colors/chip_3.png" alt="Primary Color" class="color-chip-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">リピートタイプ:</span>
+                            <span class="spec-value">ブリック</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スケール:</span>
+                            <span class="spec-value">中</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">用途:</span>
+                            <span class="spec-value">ビジネスカジュアル、アーバン</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スタイル:</span>
+                            <span class="spec-value">ボタニカル、ミニマル</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 4: Wildflower Meadow -->
+            <div class="pattern-card">
+                <div class="pattern-image-container" onclick="openModal('modal4')">
+                    <img src="./patterns/pattern_4.png" alt="Wildflower Meadow" class="pattern-image">
+                    <div class="pattern-id">#004</div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Wildflower Meadow</h2>
+                        <p class="pattern-description">
+                            野原に咲く色とりどりの野花と草が散りばめられた、自然の美しさをそのまま表現したパターン。
+                            カジュアルウェアやボヘミアンスタイルに自然な魅力を与えます。
+                        </p>
+                        <div class="color-chips-container">
+                            <div class="color-chips-title">カラーパレット</div>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <img src="./colors/chip_4.png" alt="Primary Color" class="color-chip-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">リピートタイプ:</span>
+                            <span class="spec-value">ハーフドロップ</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スケール:</span>
+                            <span class="spec-value">小</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">用途:</span>
+                            <span class="spec-value">カジュアル、ボヘミアン</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スタイル:</span>
+                            <span class="spec-value">ボタニカル、ワイルドフラワー</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 5: Fern Frond Symphony -->
+            <div class="pattern-card">
+                <div class="pattern-image-container" onclick="openModal('modal5')">
+                    <img src="./patterns/pattern_5.png" alt="Fern Frond Symphony" class="pattern-image">
+                    <div class="pattern-id">#005</div>
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Fern Frond Symphony</h2>
+                        <p class="pattern-description">
+                            重なり合うシダの葉が織りなす、有機的で対称美を持つ詳細なボタニカルイラストレーション。
+                            アートウェアやハイエンドファッションに洗練された自然美を表現します。
+                        </p>
+                        <div class="color-chips-container">
+                            <div class="color-chips-title">カラーパレット</div>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <img src="./colors/chip_5.png" alt="Primary Color" class="color-chip-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pattern-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">リピートタイプ:</span>
+                            <span class="spec-value">ストレート</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スケール:</span>
+                            <span class="spec-value">大</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">用途:</span>
+                            <span class="spec-value">アートウェア、ハイエンド</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">スタイル:</span>
+                            <span class="spec-value">ボタニカル、シダ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for image expansion -->
+    <div id="modal1" class="modal" onclick="closeModal('modal1')">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="./patterns/pattern_1.png" alt="Tropical Leaves Cascade">
+    </div>
+    <div id="modal2" class="modal" onclick="closeModal('modal2')">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="./patterns/pattern_2.png" alt="Delicate Cherry Blossoms">
+    </div>
+    <div id="modal3" class="modal" onclick="closeModal('modal3')">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="./patterns/pattern_3.png" alt="Eucalyptus Branch Network">
+    </div>
+    <div id="modal4" class="modal" onclick="closeModal('modal4')">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="./patterns/pattern_4.png" alt="Wildflower Meadow">
+    </div>
+    <div id="modal5" class="modal" onclick="closeModal('modal5')">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="./patterns/pattern_5.png" alt="Fern Frond Symphony">
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Close modal when clicking outside of image
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    modal.style.display = "none";
+                });
+            }
+        });
+    </script>
+</body>
+</html>

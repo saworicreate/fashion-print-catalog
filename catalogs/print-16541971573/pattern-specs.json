@@ -1,0 +1,67 @@
+{
+  "year": 2026,
+  "season": "spring_summer",
+  "theme": "botanical",
+  "patterns": [
+    {
+      "id": 1,
+      "name": "Tropical Leaves Cascade",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, tropical monstera and palm leaves, continuous motif cascade, no borders, perfect repeat, botanical illustration style, lush foliage arrangement",
+      "repeat_type": "half_drop",
+      "colors": {
+        "primary": "#2D5016",
+        "secondary": ["#7FB069", "#C7D2CC", "#F2F7F2"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "botanical", "tropical"]
+    },
+    {
+      "id": 2,
+      "name": "Delicate Cherry Blossoms",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, delicate cherry blossom branches with petals, continuous floral motif, no borders, perfect repeat, soft botanical watercolor style, scattered petals",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#FFB7C5",
+        "secondary": ["#8B4B3B", "#F5F5DC", "#E6E6FA"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "botanical", "floral"]
+    },
+    {
+      "id": 3,
+      "name": "Eucalyptus Branch Network",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, eucalyptus branches with silver-green leaves, continuous organic network, no borders, perfect repeat, minimalist botanical style, geometric arrangement",
+      "repeat_type": "brick",
+      "colors": {
+        "primary": "#9CAF88",
+        "secondary": ["#C0C5C1", "#F8F8FF", "#708090"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "botanical", "minimalist"]
+    },
+    {
+      "id": 4,
+      "name": "Wildflower Meadow",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, mixed wildflowers and grass meadow, continuous field motif, no borders, perfect repeat, natural botanical style, scattered wildflower arrangement",
+      "repeat_type": "half_drop",
+      "colors": {
+        "primary": "#4A7C59",
+        "secondary": ["#FFD700", "#FF6B6B", "#87CEEB", "#F0E68C"]
+      },
+      "scale": "small",
+      "style": ["textile", "seamless", "repeating", "botanical", "wildflower"]
+    },
+    {
+      "id": 5,
+      "name": "Fern Frond Symphony",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, overlapping fern fronds and leaves, continuous layered motif, no borders, perfect repeat, detailed botanical illustration, organic symmetry",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#355E3B",
+        "secondary": ["#228B22", "#90EE90", "#F5FFFA"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "botanical", "fern"]
+    }
+  ]
+}

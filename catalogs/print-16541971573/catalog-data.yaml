@@ -1,0 +1,160 @@
+# 2026 春夏コレクション - ボタニカルパターンカタログデータ
+# このファイルを編集してカタログの内容を管理できます
+
+collection:
+  year: 2026
+  season: "春夏"
+  theme: "ボタニカル"
+  title: "2026 春夏コレクション"
+  subtitle: "ボタニカルパターン - プロフェッショナルファッションカタログ"
+  description: "自然の美しさを纏う"
+
+patterns:
+  - id: "001"
+    name: "Tropical Leaves Cascade"
+    name_ja: "トロピカルリーフカスケード"
+    description_ja: "トロピカルなモンステラとヤシの葉が美しくカスケードする、豪華で洗練されたボタニカルパターン。リゾートウェアやサマードレスに最適な、エキゾチックな魅力を演出します。"
+    image_path: "./patterns/pattern_1.png"
+    color_chip_path: "./colors/chip_1.png"
+    specifications:
+      repeat_type: "ハーフドロップ"
+      repeat_type_en: "half_drop"
+      scale: "大"
+      scale_en: "large"
+      usage: "リゾートウェア、サマードレス"
+      usage_en: "Resort wear, Summer dresses"
+      style: "ボタニカル、トロピカル"
+      style_en: "Botanical, Tropical"
+    colors:
+      primary: "#2D5016"
+      secondary: ["#7FB069", "#C7D2CC", "#F2F7F2"]
+
+  - id: "002"
+    name: "Delicate Cherry Blossoms"
+    name_ja: "デリケートチェリーブロッサム"
+    description_ja: "繊細な桜の枝と舞い散る花びらが織りなす、日本の美意識を表現したエレガントなパターン。春の装いやフォーマルウェアに上品な華やかさを添えます。"
+    image_path: "./patterns/pattern_2.png"
+    color_chip_path: "./colors/chip_2.png"
+    specifications:
+      repeat_type: "ストレート"
+      repeat_type_en: "straight"
+      scale: "中"
+      scale_en: "medium"
+      usage: "スプリングウェア、フォーマル"
+      usage_en: "Spring wear, Formal"
+      style: "ボタニカル、フローラル"
+      style_en: "Botanical, Floral"
+    colors:
+      primary: "#FFB7C5"
+      secondary: ["#8B4B3B", "#F5F5DC", "#E6E6FA"]
+
+  - id: "003"
+    name: "Eucalyptus Branch Network"
+    name_ja: "ユーカリブランチネットワーク"
+    description_ja: "シルバーグリーンのユーカリの枝葉が幾何学的に配置された、モダンで洗練されたミニマルパターン。ビジネスカジュアルやアーバンスタイルに最適です。"
+    image_path: "./patterns/pattern_3.png"
+    color_chip_path: "./colors/chip_3.png"
+    specifications:
+      repeat_type: "ブリック"
+      repeat_type_en: "brick"
+      scale: "中"
+      scale_en: "medium"
+      usage: "ビジネスカジュアル、アーバン"
+      usage_en: "Business casual, Urban"
+      style: "ボタニカル、ミニマル"
+      style_en: "Botanical, Minimal"
+    colors:
+      primary: "#9CAF88"
+      secondary: ["#C0C5C1", "#F8F8FF", "#708090"]
+
+  - id: "004"
+    name: "Wildflower Meadow"
+    name_ja: "ワイルドフラワーメドウ"
+    description_ja: "野原に咲く色とりどりの野花と草が散りばめられた、自然の美しさをそのまま表現したパターン。カジュアルウェアやボヘミアンスタイルに自然な魅力を与えます。"
+    image_path: "./patterns/pattern_4.png"
+    color_chip_path: "./colors/chip_4.png"
+    specifications:
+      repeat_type: "ハーフドロップ"
+      repeat_type_en: "half_drop"
+      scale: "小"
+      scale_en: "small"
+      usage: "カジュアル、ボヘミアン"
+      usage_en: "Casual, Bohemian"
+      style: "ボタニカル、ワイルドフラワー"
+      style_en: "Botanical, Wildflower"
+    colors:
+      primary: "#4A7C59"
+      secondary: ["#FFD700", "#FF6B6B", "#87CEEB", "#F0E68C"]
+
+  - id: "005"
+    name: "Fern Frond Symphony"
+    name_ja: "ファーンフロンドシンフォニー"
+    description_ja: "重なり合うシダの葉が織りなす、有機的で対称美を持つ詳細なボタニカルイラストレーション。アートウェアやハイエンドファッションに洗練された自然美を表現します。"
+    image_path: "./patterns/pattern_5.png"
+    color_chip_path: "./colors/chip_5.png"
+    specifications:
+      repeat_type: "ストレート"
+      repeat_type_en: "straight"
+      scale: "大"
+      scale_en: "large"
+      usage: "アートウェア、ハイエンド"
+      usage_en: "Art wear, High-end"
+      style: "ボタニカル、シダ"
+      style_en: "Botanical, Fern"
+    colors:
+      primary: "#355E3B"
+      secondary: ["#228B22", "#90EE90", "#F5FFFA"]
+
+# デザイン設定
+design:
+  fonts:
+    header: "Playfair Display"
+    body: "Inter"
+    header_cdn: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+  colors:
+    background: "#fafafa"
+    card_background: "#ffffff"
+    accent: "#667eea"
+    text_primary: "#333333"
+    text_secondary: "#666666"
+  layout:
+    card_image_width: "60%"
+    card_details_width: "40%"
+    border_radius: "20px"
+    box_shadow: "0 10px 30px rgba(0,0,0,0.1)"
+    hover_shadow: "0 20px 40px rgba(0,0,0,0.15)"
+
+# ファイル構成
+files:
+  html: "catalog.html"
+  markdown: "catalog.md"
+  data: "catalog-data.yaml"
+  specs: "pattern-specs.json"
+  patterns_dir: "patterns/"
+  colors_dir: "colors/"
+
+# 編集履歴
+edit_history:
+  - date: "2025-07-26"
+    version: "1.0.0"
+    changes: "初期カタログ作成"
+    editor: "Claude Code"
+
+# 使用方法
+usage_notes: |
+  このYAMLファイルを編集することで、カタログの内容を管理できます：
+  
+  1. パターン情報の更新：
+     - patterns セクションで各パターンの名前、説明、仕様を編集
+  
+  2. デザイン設定の変更：
+     - design セクションでフォント、色、レイアウトを調整
+  
+  3. コレクション情報の修正：
+     - collection セクションで年度、シーズン、テーマを更新
+  
+  4. 新しいパターンの追加：
+     - patterns 配列に新しいアイテムを追加
+     - 対応する画像ファイルとカラーチップを準備
+  
+  変更後は catalog.html と catalog.md を再生成してください。
