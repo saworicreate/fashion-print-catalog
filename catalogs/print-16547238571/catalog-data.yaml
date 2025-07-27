@@ -1,0 +1,143 @@
+# Botanical Collection 2026 - Catalog Data
+# 編集可能なデータファイル
+# このファイルを編集することで、カタログの内容を更新できます
+
+collection:
+  name: "Botanical Collection"
+  year: 2026
+  season: "Spring/Summer"
+  theme: "Botanical"
+  created_date: "2025-07-27"
+  subtitle: "プロフェッショナル ファッション カタログ"
+  description: "シームレス リピート パターン | 植物テーマ | 5パターン"
+
+technical_specifications:
+  format: "Seamless repeat patterns"
+  requirements: "Tileable, continuous motifs, no visible seams"
+  color_format: "HEX values"
+  repeat_options:
+    - "straight"
+    - "half-drop" 
+    - "brick"
+
+patterns:
+  - id: 1
+    name: "Wild Meadow Florals"
+    name_japanese: "野生の草花"
+    description: "野生の草花が織りなす繊細なパターン。タンポポ、ポピー、ヤグルマギクが自然な配置で散りばめられた、ボタニカルイラストスタイルの手描き風デザイン。"
+    image_path: "./patterns/pattern_1.png"
+    repeat_type: "ハーフドロップ"
+    scale: "ミディアム"
+    style: "テキスタイル・ボタニカル・オーガニック"
+    colors:
+      primary: "#E8F5E8"
+      secondary:
+        - "#7FB069"
+        - "#D4A574"
+        - "#E07A5F"
+        - "#81B29A"
+        - "#F2CC8F"
+    tags:
+      - "textile"
+      - "seamless"
+      - "repeating"
+      - "botanical"
+      - "organic"
+
+  - id: 2
+    name: "Tropical Leaf Symphony"
+    name_japanese: "トロピカルリーフ"
+    description: "モンステラ、フィロデンドロン、ヤシの葉が重なり合う豊かなトロピカルパターン。リズミカルな構成で現代的なボタニカルスタイルを表現し、活気あるジャングルの雰囲気を演出。"
+    image_path: "./patterns/pattern_2.png"
+    repeat_type: "ブリック"
+    scale: "ラージ"
+    style: "テキスタイル・トロピカル・コンテンポラリー"
+    colors:
+      primary: "#F7F9F7"
+      secondary:
+        - "#2D5016"
+        - "#4A7C59"
+        - "#8FBC8F"
+        - "#228B22"
+        - "#6B8E23"
+    tags:
+      - "textile"
+      - "seamless"
+      - "repeating"
+      - "tropical"
+      - "contemporary"
+
+  - id: 3
+    name: "Herb Garden Delight"
+    name_japanese: "ハーブガーデン"
+    description: "バジル、ローズマリー、タイム、ラベンダーなどの料理用ハーブを繊細な小枝で表現。水彩ボタニカルスタイルで新鮮なガーデンの美学を追求したデザイン。"
+    image_path: "./patterns/pattern_3.png"
+    repeat_type: "ストレート"
+    scale: "スモール"
+    style: "テキスタイル・ハーバル・水彩"
+    colors:
+      primary: "#FEFEFE"
+      secondary:
+        - "#9CAF88"
+        - "#C7B377"
+        - "#8B7355"
+        - "#A0522D"
+        - "#556B2F"
+    tags:
+      - "textile"
+      - "seamless"
+      - "repeating"
+      - "herbal"
+      - "watercolor"
+
+  - id: 4
+    name: "Sakura Blossom Dance"
+    name_japanese: "桜の舞"
+    description: "桜の花びらが優雅に舞い踊る様子を表現した日本風インスパイアのボタニカルデザイン。春の祝祭を象徴する幻想的で軽やかなパターン。"
+    image_path: "./patterns/pattern_4.png"
+    repeat_type: "ハーフドロップ"
+    scale: "ミディアム"
+    style: "テキスタイル・ジャパニーズ・幻想的"
+    colors:
+      primary: "#FDF5F3"
+      secondary:
+        - "#FFB7C5"
+        - "#FF69B4"
+        - "#DA70D6"
+        - "#B19CD9"
+        - "#87CEEB"
+    tags:
+      - "textile"
+      - "seamless"
+      - "repeating"
+      - "japanese"
+      - "ethereal"
+
+  - id: 5
+    name: "Eucalyptus Grove"
+    name_japanese: "ユーカリの森"
+    description: "銀色の葉を持つユーカリの枝が幾何学的な自然パターンを作り出すミニマリストデザイン。現代的なスカンジナビア美学を体現した洗練されたボタニカルパターン。"
+    image_path: "./patterns/pattern_5.png"
+    repeat_type: "ストレート"
+    scale: "ラージ"
+    style: "テキスタイル・ミニマリスト・スカンジナビア"
+    colors:
+      primary: "#F8F8FF"
+      secondary:
+        - "#B8C5B8"
+        - "#8FBC8F"
+        - "#98FB98"
+        - "#90EE90"
+        - "#E0E0E0"
+    tags:
+      - "textile"
+      - "seamless"
+      - "repeating"
+      - "minimalist"
+      - "scandinavian"
+
+# 編集ガイド
+# このYAMLファイルの構造に従って、パターンの詳細を編集できます。
+# 新しいパターンを追加する場合は、patterns配列に新しいエントリを追加してください。
+# カラーは必ずHEXフォーマット（例: #FFFFFF）で指定してください。
+# 画像パスは相対パス（./patterns/pattern_X.png形式）で指定してください。

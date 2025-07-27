@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="200" fill="white"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">Tropical Leaf Symphony</text>
+  
+  <!-- Color chips -->
+  <g>
+    <!-- #F9FBF9 -->
+    <rect x="50" y="50" width="100" height="80" fill="#F9FBF9" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="100" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#F9FBF9</text>
+    
+    <!-- #2D5016 -->
+    <rect x="170" y="50" width="100" height="80" fill="#2D5016" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="220" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#2D5016</text>
+    
+    <!-- #4A7C59 -->
+    <rect x="290" y="50" width="100" height="80" fill="#4A7C59" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="340" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#4A7C59</text>
+    
+    <!-- #8FBC8F -->
+    <rect x="410" y="50" width="100" height="80" fill="#8FBC8F" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="460" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#8FBC8F</text>
+    
+    <!-- #228B22 -->
+    <rect x="530" y="50" width="100" height="80" fill="#228B22" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="580" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#228B22</text>
+    
+    <!-- #6B8E23 -->
+    <rect x="650" y="50" width="100" height="80" fill="#6B8E23" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="700" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#6B8E23</text>
+    
+    <!-- #B8E6B8 -->
+    <rect x="770" y="50" width="100" height="80" fill="#B8E6B8" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="820" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#B8E6B8</text>
+  </g>
+</svg>

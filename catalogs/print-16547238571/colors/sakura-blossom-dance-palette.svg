@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="200" fill="white"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">Sakura Blossom Dance</text>
+  
+  <!-- Color chips -->
+  <g>
+    <!-- #FDF8F6 -->
+    <rect x="50" y="50" width="100" height="80" fill="#FDF8F6" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="100" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#FDF8F6</text>
+    
+    <!-- #FFB7C5 -->
+    <rect x="170" y="50" width="100" height="80" fill="#FFB7C5" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="220" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#FFB7C5</text>
+    
+    <!-- #FF69B4 -->
+    <rect x="290" y="50" width="100" height="80" fill="#FF69B4" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="340" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#FF69B4</text>
+    
+    <!-- #DA70D6 -->
+    <rect x="410" y="50" width="100" height="80" fill="#DA70D6" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="460" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#DA70D6</text>
+    
+    <!-- #B19CD9 -->
+    <rect x="530" y="50" width="100" height="80" fill="#B19CD9" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="580" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#B19CD9</text>
+    
+    <!-- #87CEEB -->
+    <rect x="650" y="50" width="100" height="80" fill="#87CEEB" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="700" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#87CEEB</text>
+    
+    <!-- #F8F5F3 -->
+    <rect x="770" y="50" width="100" height="80" fill="#F8F5F3" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="820" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#F8F5F3</text>
+  </g>
+</svg>

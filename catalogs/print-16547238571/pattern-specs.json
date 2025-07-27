@@ -1,0 +1,76 @@
+{
+  "patterns": [
+    {
+      "id": 1,
+      "name": "Wild Meadow Florals",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, delicate wildflowers and meadow blossoms scattered organically, dandelions poppies cornflowers in soft natural arrangement, continuous motif, no borders, perfect repeat, botanical illustration style, hand-drawn aesthetic",
+      "repeat_type": "half-drop",
+      "colors": {
+        "primary": "#E8F5E8",
+        "secondary": ["#7FB069", "#D4A574", "#E07A5F", "#81B29A", "#F2CC8F"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "botanical", "organic"]
+    },
+    {
+      "id": 2,
+      "name": "Tropical Leaf Symphony",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, lush tropical leaves monstera philodendron palm fronds overlapping in rhythmic composition, continuous motif, no borders, perfect repeat, modern botanical style, vibrant jungle feel",
+      "repeat_type": "brick",
+      "colors": {
+        "primary": "#F7F9F7",
+        "secondary": ["#2D5016", "#4A7C59", "#8FBC8F", "#228B22", "#6B8E23"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "tropical", "contemporary"]
+    },
+    {
+      "id": 3,
+      "name": "Herb Garden Delight",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, culinary herbs basil rosemary thyme lavender arranged in delicate sprigs, continuous motif, no borders, perfect repeat, watercolor botanical style, fresh garden aesthetic",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#FEFEFE",
+        "secondary": ["#9CAF88", "#C7B377", "#8B7355", "#A0522D", "#556B2F"]
+      },
+      "scale": "small",
+      "style": ["textile", "seamless", "repeating", "herbal", "watercolor"]
+    },
+    {
+      "id": 4,
+      "name": "Sakura Blossom Dance",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, cherry blossoms sakura petals floating and falling in graceful motion, continuous motif, no borders, perfect repeat, Japanese-inspired botanical style, spring celebration",
+      "repeat_type": "half-drop",
+      "colors": {
+        "primary": "#FDF5F3",
+        "secondary": ["#FFB7C5", "#FF69B4", "#DA70D6", "#B19CD9", "#87CEEB"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "japanese", "ethereal"]
+    },
+    {
+      "id": 5,
+      "name": "Eucalyptus Grove",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, eucalyptus branches with silvery leaves creating geometric natural patterns, continuous motif, no borders, perfect repeat, minimalist botanical style, modern scandinavian aesthetic",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#F8F8FF",
+        "secondary": ["#B8C5B8", "#8FBC8F", "#98FB98", "#90EE90", "#E0E0E0"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "minimalist", "scandinavian"]
+    }
+  ],
+  "collection_info": {
+    "year": 2026,
+    "season": "Spring/Summer",
+    "theme": "Botanical",
+    "created_date": "2025-07-27",
+    "specifications": {
+      "format": "Seamless repeat patterns",
+      "technical_requirements": "Tileable, continuous motifs, no visible seams",
+      "color_format": "HEX values",
+      "repeat_options": ["straight", "half-drop", "brick"]
+    }
+  }
+}

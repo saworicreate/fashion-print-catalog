@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanical Collection 2026 - Fashion Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .collection-info {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 15px 30px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .pattern-grid {
+            display: grid;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .pattern-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            min-height: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .pattern-image {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .pattern-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .pattern-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .pattern-details {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pattern-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .pattern-description {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .specifications {
+            margin-bottom: 25px;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .spec-label {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .spec-value {
+            color: #666;
+            font-weight: 400;
+        }
+
+        .color-palette {
+            margin-top: 20px;
+        }
+
+        .color-palette-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .color-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .color-chip {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .color-chip:hover {
+            transform: scale(1.1);
+        }
+
+        .color-codes {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .color-code {
+            display: inline-block;
+            margin-right: 12px;
+            margin-bottom: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #e9ecef;
+        }
+
+        .technical-specs {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .tech-spec-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .tech-spec-list {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .tech-spec-list li {
+            margin-bottom: 4px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pattern-card {
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+            
+            .pattern-image {
+                height: 300px;
+            }
+            
+            .pattern-details {
+                padding: 30px 25px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+            
+            header {
+                background: none !important;
+                color: black !important;
+                page-break-after: avoid;
+            }
+            
+            .pattern-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                page-break-inside: avoid;
+                margin-bottom: 30px;
+            }
+            
+            .pattern-card:hover {
+                transform: none;
+            }
+            
+            .color-chip:hover {
+                transform: none;
+            }
+        }
+
+        /* Image zoom overlay for click interaction */
+        .image-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .image-overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .image-overlay.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Botanical Collection</h1>
+        <div class="subtitle">Spring/Summer 2026 - プロフェッショナル ファッション カタログ</div>
+        <div class="collection-info">
+            シームレス リピート パターン | 植物テーマ | 5パターン
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="pattern-grid">
+            <!-- Pattern 1: Wild Meadow Florals -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="showImageOverlay('./patterns/pattern_1.png')">
+                    <img src="./patterns/pattern_1.png" alt="Wild Meadow Florals Pattern">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Wild Meadow Florals</h2>
+                        <div class="pattern-description">
+                            野生の草花が織りなす繊細なパターン。タンポポ、ポピー、ヤグルマギクが自然な配置で散りばめられた、ボタニカルイラストスタイルの手描き風デザイン。
+                        </div>
+                        
+                        <div class="specifications">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ハーフドロップ</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">ミディアム</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スタイル:</span>
+                                <span class="spec-value">テキスタイル・ボタニカル・オーガニック</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-palette">
+                        <div class="color-palette-title">カラーパレット</div>
+                        <div class="color-chips">
+                            <span class="color-chip" style="background-color: #E8F5E8;" title="Primary: #E8F5E8"></span>
+                            <span class="color-chip" style="background-color: #7FB069;" title="Secondary: #7FB069"></span>
+                            <span class="color-chip" style="background-color: #D4A574;" title="Secondary: #D4A574"></span>
+                            <span class="color-chip" style="background-color: #E07A5F;" title="Secondary: #E07A5F"></span>
+                            <span class="color-chip" style="background-color: #81B29A;" title="Secondary: #81B29A"></span>
+                            <span class="color-chip" style="background-color: #F2CC8F;" title="Secondary: #F2CC8F"></span>
+                        </div>
+                        <div class="color-codes">
+                            <span class="color-code">#E8F5E8</span>
+                            <span class="color-code">#7FB069</span>
+                            <span class="color-code">#D4A574</span>
+                            <span class="color-code">#E07A5F</span>
+                            <span class="color-code">#81B29A</span>
+                            <span class="color-code">#F2CC8F</span>
+                        </div>
+                    </div>
+
+                    <div class="technical-specs">
+                        <div class="tech-spec-title">技術仕様</div>
+                        <ul class="tech-spec-list">
+                            <li>シームレス繰り返しパターン</li>
+                            <li>タイル可能、連続モチーフ</li>
+                            <li>境界線なし、完全リピート</li>
+                            <li>HEXカラーフォーマット</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 2: Tropical Leaf Symphony -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="showImageOverlay('./patterns/pattern_2.png')">
+                    <img src="./patterns/pattern_2.png" alt="Tropical Leaf Symphony Pattern">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Tropical Leaf Symphony</h2>
+                        <div class="pattern-description">
+                            モンステラ、フィロデンドロン、ヤシの葉が重なり合う豊かなトロピカルパターン。リズミカルな構成で現代的なボタニカルスタイルを表現し、活気あるジャングルの雰囲気を演出。
+                        </div>
+                        
+                        <div class="specifications">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ブリック</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">ラージ</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スタイル:</span>
+                                <span class="spec-value">テキスタイル・トロピカル・コンテンポラリー</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-palette">
+                        <div class="color-palette-title">カラーパレット</div>
+                        <div class="color-chips">
+                            <span class="color-chip" style="background-color: #F7F9F7;" title="Primary: #F7F9F7"></span>
+                            <span class="color-chip" style="background-color: #2D5016;" title="Secondary: #2D5016"></span>
+                            <span class="color-chip" style="background-color: #4A7C59;" title="Secondary: #4A7C59"></span>
+                            <span class="color-chip" style="background-color: #8FBC8F;" title="Secondary: #8FBC8F"></span>
+                            <span class="color-chip" style="background-color: #228B22;" title="Secondary: #228B22"></span>
+                            <span class="color-chip" style="background-color: #6B8E23;" title="Secondary: #6B8E23"></span>
+                        </div>
+                        <div class="color-codes">
+                            <span class="color-code">#F7F9F7</span>
+                            <span class="color-code">#2D5016</span>
+                            <span class="color-code">#4A7C59</span>
+                            <span class="color-code">#8FBC8F</span>
+                            <span class="color-code">#228B22</span>
+                            <span class="color-code">#6B8E23</span>
+                        </div>
+                    </div>
+
+                    <div class="technical-specs">
+                        <div class="tech-spec-title">技術仕様</div>
+                        <ul class="tech-spec-list">
+                            <li>シームレス繰り返しパターン</li>
+                            <li>タイル可能、連続モチーフ</li>
+                            <li>境界線なし、完全リピート</li>
+                            <li>HEXカラーフォーマット</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 3: Herb Garden Delight -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="showImageOverlay('./patterns/pattern_3.png')">
+                    <img src="./patterns/pattern_3.png" alt="Herb Garden Delight Pattern">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Herb Garden Delight</h2>
+                        <div class="pattern-description">
+                            バジル、ローズマリー、タイム、ラベンダーなどの料理用ハーブを繊細な小枝で表現。水彩ボタニカルスタイルで新鮮なガーデンの美学を追求したデザイン。
+                        </div>
+                        
+                        <div class="specifications">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ストレート</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">スモール</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スタイル:</span>
+                                <span class="spec-value">テキスタイル・ハーバル・水彩</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-palette">
+                        <div class="color-palette-title">カラーパレット</div>
+                        <div class="color-chips">
+                            <span class="color-chip" style="background-color: #FEFEFE;" title="Primary: #FEFEFE"></span>
+                            <span class="color-chip" style="background-color: #9CAF88;" title="Secondary: #9CAF88"></span>
+                            <span class="color-chip" style="background-color: #C7B377;" title="Secondary: #C7B377"></span>
+                            <span class="color-chip" style="background-color: #8B7355;" title="Secondary: #8B7355"></span>
+                            <span class="color-chip" style="background-color: #A0522D;" title="Secondary: #A0522D"></span>
+                            <span class="color-chip" style="background-color: #556B2F;" title="Secondary: #556B2F"></span>
+                        </div>
+                        <div class="color-codes">
+                            <span class="color-code">#FEFEFE</span>
+                            <span class="color-code">#9CAF88</span>
+                            <span class="color-code">#C7B377</span>
+                            <span class="color-code">#8B7355</span>
+                            <span class="color-code">#A0522D</span>
+                            <span class="color-code">#556B2F</span>
+                        </div>
+                    </div>
+
+                    <div class="technical-specs">
+                        <div class="tech-spec-title">技術仕様</div>
+                        <ul class="tech-spec-list">
+                            <li>シームレス繰り返しパターン</li>
+                            <li>タイル可能、連続モチーフ</li>
+                            <li>境界線なし、完全リピート</li>
+                            <li>HEXカラーフォーマット</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 4: Sakura Blossom Dance -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="showImageOverlay('./patterns/pattern_4.png')">
+                    <img src="./patterns/pattern_4.png" alt="Sakura Blossom Dance Pattern">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Sakura Blossom Dance</h2>
+                        <div class="pattern-description">
+                            桜の花びらが優雅に舞い踊る様子を表現した日本風インスパイアのボタニカルデザイン。春の祝祭を象徴する幻想的で軽やかなパターン。
+                        </div>
+                        
+                        <div class="specifications">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ハーフドロップ</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">ミディアム</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スタイル:</span>
+                                <span class="spec-value">テキスタイル・ジャパニーズ・幻想的</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-palette">
+                        <div class="color-palette-title">カラーパレット</div>
+                        <div class="color-chips">
+                            <span class="color-chip" style="background-color: #FDF5F3;" title="Primary: #FDF5F3"></span>
+                            <span class="color-chip" style="background-color: #FFB7C5;" title="Secondary: #FFB7C5"></span>
+                            <span class="color-chip" style="background-color: #FF69B4;" title="Secondary: #FF69B4"></span>
+                            <span class="color-chip" style="background-color: #DA70D6;" title="Secondary: #DA70D6"></span>
+                            <span class="color-chip" style="background-color: #B19CD9;" title="Secondary: #B19CD9"></span>
+                            <span class="color-chip" style="background-color: #87CEEB;" title="Secondary: #87CEEB"></span>
+                        </div>
+                        <div class="color-codes">
+                            <span class="color-code">#FDF5F3</span>
+                            <span class="color-code">#FFB7C5</span>
+                            <span class="color-code">#FF69B4</span>
+                            <span class="color-code">#DA70D6</span>
+                            <span class="color-code">#B19CD9</span>
+                            <span class="color-code">#87CEEB</span>
+                        </div>
+                    </div>
+
+                    <div class="technical-specs">
+                        <div class="tech-spec-title">技術仕様</div>
+                        <ul class="tech-spec-list">
+                            <li>シームレス繰り返しパターン</li>
+                            <li>タイル可能、連続モチーフ</li>
+                            <li>境界線なし、完全リピート</li>
+                            <li>HEXカラーフォーマット</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 5: Eucalyptus Grove -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="showImageOverlay('./patterns/pattern_5.png')">
+                    <img src="./patterns/pattern_5.png" alt="Eucalyptus Grove Pattern">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">Eucalyptus Grove</h2>
+                        <div class="pattern-description">
+                            銀色の葉を持つユーカリの枝が幾何学的な自然パターンを作り出すミニマリストデザイン。現代的なスカンジナビア美学を体現した洗練されたボタニカルパターン。
+                        </div>
+                        
+                        <div class="specifications">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ストレート</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">ラージ</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スタイル:</span>
+                                <span class="spec-value">テキスタイル・ミニマリスト・スカンジナビア</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-palette">
+                        <div class="color-palette-title">カラーパレット</div>
+                        <div class="color-chips">
+                            <span class="color-chip" style="background-color: #F8F8FF;" title="Primary: #F8F8FF"></span>
+                            <span class="color-chip" style="background-color: #B8C5B8;" title="Secondary: #B8C5B8"></span>
+                            <span class="color-chip" style="background-color: #8FBC8F;" title="Secondary: #8FBC8F"></span>
+                            <span class="color-chip" style="background-color: #98FB98;" title="Secondary: #98FB98"></span>
+                            <span class="color-chip" style="background-color: #90EE90;" title="Secondary: #90EE90"></span>
+                            <span class="color-chip" style="background-color: #E0E0E0;" title="Secondary: #E0E0E0"></span>
+                        </div>
+                        <div class="color-codes">
+                            <span class="color-code">#F8F8FF</span>
+                            <span class="color-code">#B8C5B8</span>
+                            <span class="color-code">#8FBC8F</span>
+                            <span class="color-code">#98FB98</span>
+                            <span class="color-code">#90EE90</span>
+                            <span class="color-code">#E0E0E0</span>
+                        </div>
+                    </div>
+
+                    <div class="technical-specs">
+                        <div class="tech-spec-title">技術仕様</div>
+                        <ul class="tech-spec-list">
+                            <li>シームレス繰り返しパターン</li>
+                            <li>タイル可能、連続モチーフ</li>
+                            <li>境界線なし、完全リピート</li>
+                            <li>HEXカラーフォーマット</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Overlay for Zoom -->
+    <div class="image-overlay" id="imageOverlay" onclick="hideImageOverlay()">
+        <img id="overlayImage" src="" alt="Pattern Detail">
+    </div>
+
+    <script>
+        function showImageOverlay(imageSrc) {
+            const overlay = document.getElementById('imageOverlay');
+            const overlayImage = document.getElementById('overlayImage');
+            
+            overlayImage.src = imageSrc;
+            overlay.classList.add('active');
+        }
+
+        function hideImageOverlay() {
+            const overlay = document.getElementById('imageOverlay');
+            overlay.classList.remove('active');
+        }
+
+        // ESC key to close overlay
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                hideImageOverlay();
+            }
+        });
+    </script>
+</body>
+</html>

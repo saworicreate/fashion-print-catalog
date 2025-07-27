@@ -1,0 +1,166 @@
+{
+  "collection_info": {
+    "name": "Botanical Spring Collection 2026",
+    "season": "Spring/Summer",
+    "year": 2026,
+    "theme": "Botanical",
+    "color_strategy": "Nature-inspired harmony with contemporary appeal",
+    "created_date": "2025-07-27"
+  },
+  "color_palettes": {
+    "wild_meadow_florals": {
+      "id": 1,
+      "name": "Wild Meadow Florals",
+      "theme": "Organic meadow with delicate wildflowers",
+      "color_psychology": "Soft, natural, calming with gentle vibrancy",
+      "palette": {
+        "primary": "#F5F9F5",
+        "accent_colors": [
+          "#8FB068",
+          "#D4A574", 
+          "#E07A5F",
+          "#81B29A",
+          "#F2CC8F"
+        ]
+      },
+      "optimized_palette": {
+        "background": "#F7FAF7",
+        "main_botanical": "#7FB069",
+        "warm_earth": "#D4A574",
+        "coral_bloom": "#E07A5F", 
+        "sage_green": "#81B29A",
+        "golden_honey": "#F2CC8F",
+        "supporting_neutral": "#E8F3E8"
+      },
+      "harmony_analysis": "Analogous greens with warm earth tones create natural balance",
+      "application_notes": "Perfect for casual wear, home textiles, children's items"
+    },
+    "tropical_leaf_symphony": {
+      "id": 2,
+      "name": "Tropical Leaf Symphony", 
+      "theme": "Lush tropical foliage with modern appeal",
+      "color_psychology": "Vibrant, energetic, contemporary jungle feeling",
+      "palette": {
+        "primary": "#F8FAF8",
+        "accent_colors": [
+          "#2D5016",
+          "#4A7C59",
+          "#8FBC8F", 
+          "#228B22",
+          "#6B8E23"
+        ]
+      },
+      "optimized_palette": {
+        "background": "#F9FBF9",
+        "deep_forest": "#2D5016",
+        "emerald_shadow": "#4A7C59", 
+        "sage_mist": "#8FBC8F",
+        "vibrant_leaf": "#228B22",
+        "olive_accent": "#6B8E23",
+        "fresh_mint": "#B8E6B8"
+      },
+      "harmony_analysis": "Monochromatic green scheme with varied saturation levels",
+      "application_notes": "Ideal for activewear, contemporary home decor, urban fashion"
+    },
+    "herb_garden_delight": {
+      "id": 3,
+      "name": "Herb Garden Delight",
+      "theme": "Fresh culinary herbs with watercolor softness", 
+      "color_psychology": "Fresh, clean, organic, artisanal quality",
+      "palette": {
+        "primary": "#FEFEFE",
+        "accent_colors": [
+          "#9CAF88",
+          "#C7B377",
+          "#8B7355",
+          "#A0522D", 
+          "#556B2F"
+        ]
+      },
+      "optimized_palette": {
+        "background": "#FEFEFE",
+        "herb_green": "#9CAF88",
+        "golden_thyme": "#C7B377",
+        "rosemary_brown": "#8B7355",
+        "cinnamon_bark": "#A0522D",
+        "sage_olive": "#556B2F",
+        "lavender_grey": "#E8E8E8"
+      },
+      "harmony_analysis": "Earth tone harmony with muted greens and warm browns",
+      "application_notes": "Perfect for kitchen textiles, artisanal packaging, wellness products"
+    },
+    "sakura_blossom_dance": {
+      "id": 4,
+      "name": "Sakura Blossom Dance",
+      "theme": "Japanese cherry blossoms in ethereal motion",
+      "color_psychology": "Romantic, ethereal, celebratory, spring awakening",
+      "palette": {
+        "primary": "#FDF7F5",
+        "accent_colors": [
+          "#FFB7C5",
+          "#FF69B4", 
+          "#DA70D6",
+          "#B19CD9",
+          "#87CEEB"
+        ]
+      },
+      "optimized_palette": {
+        "background": "#FDF8F6",
+        "soft_pink": "#FFB7C5",
+        "cherry_blossom": "#FF69B4",
+        "orchid_dream": "#DA70D6", 
+        "lavender_mist": "#B19CD9",
+        "sky_blue": "#87CEEB",
+        "pearl_white": "#F8F5F3"
+      },
+      "harmony_analysis": "Analogous pink-to-blue gradient with soft romantic appeal",
+      "application_notes": "Ideal for spring fashion, romantic occasions, luxury bedding"
+    },
+    "eucalyptus_grove": {
+      "id": 5,
+      "name": "Eucalyptus Grove",
+      "theme": "Minimalist eucalyptus with Scandinavian aesthetic",
+      "color_psychology": "Clean, calming, sophisticated, modern minimalism",
+      "palette": {
+        "primary": "#F9F9FF",
+        "accent_colors": [
+          "#B8C5B8",
+          "#8FBC8F",
+          "#98FB98",
+          "#90EE90", 
+          "#E0E0E0"
+        ]
+      },
+      "optimized_palette": {
+        "background": "#FAFAFF",
+        "eucalyptus_sage": "#B8C5B8",
+        "muted_green": "#8FBC8F",
+        "fresh_mint": "#98FB98",
+        "light_green": "#90EE90",
+        "silver_grey": "#E0E0E0",
+        "pure_white": "#FFFFFF"
+      },
+      "harmony_analysis": "Monochromatic green-grey palette with high sophistication",
+      "application_notes": "Perfect for modern interiors, minimalist fashion, spa products"
+    }
+  },
+  "design_principles": {
+    "color_harmony": "Each palette follows natural color relationships found in botanical environments",
+    "accessibility": "All color combinations meet WCAG contrast requirements when used appropriately",
+    "versatility": "Colors work across multiple applications from fashion to home decor",
+    "seasonal_relevance": "Spring/Summer 2026 trending colors incorporated with timeless botanical appeal",
+    "cultural_sensitivity": "Japanese-inspired palette honors traditional aesthetics while remaining contemporary"
+  },
+  "technical_specifications": {
+    "color_format": "HEX values for digital and print applications",
+    "print_considerations": "Colors tested for CMYK conversion accuracy",
+    "digital_optimization": "RGB values optimized for screen display",
+    "fabric_application": "Suitable for various textile printing methods including digital and screen printing"
+  },
+  "market_positioning": {
+    "target_demographics": "Eco-conscious consumers, design enthusiasts, wellness-focused buyers",
+    "price_positioning": "Premium contemporary with artisanal appeal",
+    "seasonal_timing": "Spring launch with summer extension possibilities",
+    "brand_alignment": "Sustainable, nature-inspired, contemporary lifestyle"
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="200" fill="white"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">Herb Garden Delight</text>
+  
+  <!-- Color chips -->
+  <g>
+    <!-- #FEFEFE -->
+    <rect x="50" y="50" width="100" height="80" fill="#FEFEFE" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="100" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#FEFEFE</text>
+    
+    <!-- #9CAF88 -->
+    <rect x="170" y="50" width="100" height="80" fill="#9CAF88" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="220" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#9CAF88</text>
+    
+    <!-- #C7B377 -->
+    <rect x="290" y="50" width="100" height="80" fill="#C7B377" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="340" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#C7B377</text>
+    
+    <!-- #8B7355 -->
+    <rect x="410" y="50" width="100" height="80" fill="#8B7355" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="460" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#8B7355</text>
+    
+    <!-- #A0522D -->
+    <rect x="530" y="50" width="100" height="80" fill="#A0522D" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="580" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#A0522D</text>
+    
+    <!-- #556B2F -->
+    <rect x="650" y="50" width="100" height="80" fill="#556B2F" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="700" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#556B2F</text>
+    
+    <!-- #E8E8E8 -->
+    <rect x="770" y="50" width="100" height="80" fill="#E8E8E8" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="820" y="150" text-anchor="middle" font-family="monospace" font-size="12" fill="#333333">#E8E8E8</text>
+  </g>
+</svg>
