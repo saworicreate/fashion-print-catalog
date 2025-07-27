@@ -1,0 +1,72 @@
+{
+  "theme": "エコ・パームクール",
+  "season": "2026春夏",
+  "patterns": [
+    {
+      "id": 1,
+      "name": "エコパーム・リーフ",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, palm leaves and tropical fronds in organic sustainable style, continuous motif, no borders, perfect repeat, eco-friendly palm leaf silhouettes with natural textures, botanical illustration style",
+      "repeat_type": "half-drop",
+      "colors": {
+        "primary": "#2D5D2F",
+        "secondary": ["#7FB069", "#A8D5A8", "#F4F9F4", "#E8F5E8"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "botanical", "eco"]
+    },
+    {
+      "id": 2,
+      "name": "クールウィンド・ストライプ",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, cooling wind stripes with palm shadow effects, continuous motif, no borders, perfect repeat, flowing linear elements suggesting gentle breeze, modern minimalist approach",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#4A90A4",
+        "secondary": ["#87CEEB", "#B8E6B8", "#F0F8F0", "#FFFFFF"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "linear", "cooling"]
+    },
+    {
+      "id": 3,
+      "name": "サステナブル・ドット",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, organic circular dots inspired by palm seeds and natural forms, continuous motif, no borders, perfect repeat, scattered polka dots with eco-conscious spacing, biophilic design elements",
+      "repeat_type": "brick",
+      "colors": {
+        "primary": "#6B8E23",
+        "secondary": ["#9ACD32", "#F5F5DC", "#FFFAF0", "#E6E6FA"]
+      },
+      "scale": "small",
+      "style": ["textile", "seamless", "repeating", "geometric", "organic"]
+    },
+    {
+      "id": 4,
+      "name": "トロピカル・ウェーブ",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, flowing wave patterns with palm tree silhouettes, continuous motif, no borders, perfect repeat, undulating lines suggesting ocean breeze and tropical atmosphere, fluid organic shapes",
+      "repeat_type": "half-drop",
+      "colors": {
+        "primary": "#008B8B",
+        "secondary": ["#20B2AA", "#AFEEEE", "#F0FFFF", "#E0FFFF"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "flowing", "tropical"]
+    },
+    {
+      "id": 5,
+      "name": "エアリー・メッシュ",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, airy mesh structure with palm fiber inspiration, continuous motif, no borders, perfect repeat, breathable geometric grid pattern suggesting cooling ventilation, sustainable textile concept",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#778899",
+        "secondary": ["#B0C4DE", "#E6F3FF", "#F8F8FF", "#FFFFFF"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "geometric", "airy"]
+    }
+  ],
+  "design_notes": {
+    "season_focus": "2026春夏の軽やかさと涼しさを重視",
+    "eco_elements": "持続可能性とパームモチーフの融合",
+    "cooling_factor": "視覚的涼感効果を全パターンに組み込み",
+    "repeat_technology": "シームレス・リピート技術により製造効率を最適化"
+  }
+}

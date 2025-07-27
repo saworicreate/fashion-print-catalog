@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エコ・パームクール - 2026春夏コレクション</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .season-info {
+            font-weight: 300;
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .pattern-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .pattern-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            min-height: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .pattern-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pattern-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .pattern-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .pattern-details {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pattern-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .pattern-description {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .specs-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .specs-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.3rem;
+            font-size: 0.85rem;
+        }
+
+        .spec-label {
+            color: #888;
+        }
+
+        .spec-value {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .colors-section {
+            margin-top: 1.5rem;
+        }
+
+        .color-palette {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .color-chip-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .color-chip {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: transform 0.2s ease;
+        }
+
+        .color-chip:hover {
+            transform: scale(1.1);
+        }
+
+        .color-code {
+            font-size: 0.7rem;
+            font-family: 'Courier New', monospace;
+            color: #555;
+            text-align: center;
+        }
+
+        .primary-color {
+            border: 2px solid #667eea;
+        }
+
+        .design-notes {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .notes-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .note-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f8f9ff;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .note-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+
+        .note-text {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .pattern-card {
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+            
+            .pattern-image {
+                height: 250px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+
+        /* プリント用CSS */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .pattern-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+                margin-bottom: 2rem;
+            }
+            
+            .pattern-card:hover {
+                transform: none;
+            }
+            
+            .pattern-image:hover img {
+                transform: none;
+            }
+            
+            .color-chip:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>エコ・パームクール</h1>
+            <div class="subtitle">プロフェッショナル ファッションカタログ</div>
+            <div class="season-info">2026春夏コレクション</div>
+        </header>
+
+        <div class="pattern-grid">
+            <!-- パターン1: エコパーム・リーフ -->
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <img src="./patterns/pattern_1.png" alt="エコパーム・リーフ">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">エコパーム・リーフ</h2>
+                        <p class="pattern-description">
+                            持続可能なスタイルでデザインされたパームリーフとトロピカルフロンドの シームレスなリピートパターン。オーガニックで自然な質感を持つボタニカルイラストレーションスタイル。
+                        </p>
+                        
+                        <div class="specs-section">
+                            <div class="specs-title">技術仕様</div>
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ハーフドロップ</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">ラージ</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途:</span>
+                                <span class="spec-value">テキスタイル・ボタニカル・エコ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="colors-section">
+                        <div class="specs-title">カラーパレット</div>
+                        <div class="color-palette">
+                            <div class="color-chip-container">
+                                <span class="color-chip primary-color" style="background-color: #2D5D2F;"></span>
+                                <span class="color-code">#2D5D2F</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #7FB069;"></span>
+                                <span class="color-code">#7FB069</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #A8D5A8;"></span>
+                                <span class="color-code">#A8D5A8</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #F4F9F4;"></span>
+                                <span class="color-code">#F4F9F4</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #E8F5E8;"></span>
+                                <span class="color-code">#E8F5E8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- パターン2: クールウィンド・ストライプ -->
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <img src="./patterns/pattern_2.png" alt="クールウィンド・ストライプ">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">クールウィンド・ストライプ</h2>
+                        <p class="pattern-description">
+                            パームシャドウ効果を持つクーリングウィンドストライプのシームレスリピートパターン。穏やかな風を示唆する流れるような線形要素とモダンミニマリストアプローチ。
+                        </p>
+                        
+                        <div class="specs-section">
+                            <div class="specs-title">技術仕様</div>
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ストレート</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">ミディアム</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途:</span>
+                                <span class="spec-value">テキスタイル・リニア・クーリング</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="colors-section">
+                        <div class="specs-title">カラーパレット</div>
+                        <div class="color-palette">
+                            <div class="color-chip-container">
+                                <span class="color-chip primary-color" style="background-color: #4A90A4;"></span>
+                                <span class="color-code">#4A90A4</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #87CEEB;"></span>
+                                <span class="color-code">#87CEEB</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #B8E6B8;"></span>
+                                <span class="color-code">#B8E6B8</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #F0F8F0;"></span>
+                                <span class="color-code">#F0F8F0</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #FFFFFF;"></span>
+                                <span class="color-code">#FFFFFF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- パターン3: サステナブル・ドット -->
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <img src="./patterns/pattern_3.png" alt="サステナブル・ドット">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">サステナブル・ドット</h2>
+                        <p class="pattern-description">
+                            パームシードと自然な形からインスピレーションを得たオーガニックな円形ドットのシームレスリピートパターン。エコ意識のあるスペーシングとバイオフィリックデザイン要素。
+                        </p>
+                        
+                        <div class="specs-section">
+                            <div class="specs-title">技術仕様</div>
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ブリック</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">スモール</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途:</span>
+                                <span class="spec-value">テキスタイル・ジオメトリック・オーガニック</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="colors-section">
+                        <div class="specs-title">カラーパレット</div>
+                        <div class="color-palette">
+                            <div class="color-chip-container">
+                                <span class="color-chip primary-color" style="background-color: #6B8E23;"></span>
+                                <span class="color-code">#6B8E23</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #9ACD32;"></span>
+                                <span class="color-code">#9ACD32</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #F5F5DC;"></span>
+                                <span class="color-code">#F5F5DC</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #FFFAF0;"></span>
+                                <span class="color-code">#FFFAF0</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #E6E6FA;"></span>
+                                <span class="color-code">#E6E6FA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- パターン4: トロピカル・ウェーブ -->
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <img src="./patterns/pattern_4.png" alt="トロピカル・ウェーブ">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">トロピカル・ウェーブ</h2>
+                        <p class="pattern-description">
+                            パームツリーシルエットを持つ流れるようなウェーブパターンのシームレスリピートデザイン。海風とトロピカルな雰囲気を示唆する波形と流体的なオーガニックシェイプ。
+                        </p>
+                        
+                        <div class="specs-section">
+                            <div class="specs-title">技術仕様</div>
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ハーフドロップ</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">ラージ</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途:</span>
+                                <span class="spec-value">テキスタイル・フローイング・トロピカル</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="colors-section">
+                        <div class="specs-title">カラーパレット</div>
+                        <div class="color-palette">
+                            <div class="color-chip-container">
+                                <span class="color-chip primary-color" style="background-color: #008B8B;"></span>
+                                <span class="color-code">#008B8B</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #20B2AA;"></span>
+                                <span class="color-code">#20B2AA</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #AFEEEE;"></span>
+                                <span class="color-code">#AFEEEE</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #F0FFFF;"></span>
+                                <span class="color-code">#F0FFFF</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #E0FFFF;"></span>
+                                <span class="color-code">#E0FFFF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- パターン5: エアリー・メッシュ -->
+            <div class="pattern-card">
+                <div class="pattern-image">
+                    <img src="./patterns/pattern_5.png" alt="エアリー・メッシュ">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h2 class="pattern-name">エアリー・メッシュ</h2>
+                        <p class="pattern-description">
+                            パームファイバーからインスピレーションを得たエアリーメッシュ構造のシームレスリピートパターン。冷却換気を示唆する通気性のある幾何学的グリッドパターンと持続可能なテキスタイルコンセプト。
+                        </p>
+                        
+                        <div class="specs-section">
+                            <div class="specs-title">技術仕様</div>
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ:</span>
+                                <span class="spec-value">ストレート</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール:</span>
+                                <span class="spec-value">ミディアム</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途:</span>
+                                <span class="spec-value">テキスタイル・ジオメトリック・エアリー</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="colors-section">
+                        <div class="specs-title">カラーパレット</div>
+                        <div class="color-palette">
+                            <div class="color-chip-container">
+                                <span class="color-chip primary-color" style="background-color: #778899;"></span>
+                                <span class="color-code">#778899</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #B0C4DE;"></span>
+                                <span class="color-code">#B0C4DE</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #E6F3FF;"></span>
+                                <span class="color-code">#E6F3FF</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #F8F8FF;"></span>
+                                <span class="color-code">#F8F8FF</span>
+                            </div>
+                            <div class="color-chip-container">
+                                <span class="color-chip" style="background-color: #FFFFFF;"></span>
+                                <span class="color-code">#FFFFFF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- デザインノート -->
+        <div class="design-notes">
+            <h2 class="notes-title">デザインノート</h2>
+            
+            <div class="note-item">
+                <div class="note-label">シーズンフォーカス</div>
+                <div class="note-text">2026春夏の軽やかさと涼しさを重視</div>
+            </div>
+            
+            <div class="note-item">
+                <div class="note-label">エコエレメント</div>
+                <div class="note-text">持続可能性とパームモチーフの融合</div>
+            </div>
+            
+            <div class="note-item">
+                <div class="note-label">クーリングファクター</div>
+                <div class="note-text">視覚的涼感効果を全パターンに組み込み</div>
+            </div>
+            
+            <div class="note-item">
+                <div class="note-label">リピートテクノロジー</div>
+                <div class="note-text">シームレス・リピート技術により製造効率を最適化</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

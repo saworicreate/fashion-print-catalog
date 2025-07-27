@@ -1,0 +1,243 @@
+# エコ・パームクール - 2026春夏コレクション
+# プロフェッショナル ファッションカタログ データファイル
+
+collection:
+  name: "エコ・パームクール"
+  season: "2026春夏"
+  theme: "持続可能性とパームモチーフの融合"
+  
+design_philosophy:
+  season_focus: "2026春夏の軽やかさと涼しさを重視"
+  eco_elements: "持続可能性とパームモチーフの融合"
+  cooling_factor: "視覚的涼感効果を全パターンに組み込み"
+  repeat_technology: "シームレス・リピート技術により製造効率を最適化"
+
+patterns:
+  - id: 1
+    name: "エコパーム・リーフ"
+    name_en: "Eco Palm Leaf"
+    description: "持続可能なスタイルでデザインされたパームリーフとトロピカルフロンドのシームレスなリピートパターン。オーガニックで自然な質感を持つボタニカルイラストレーションスタイル。"
+    image_path: "./patterns/pattern_1.png"
+    color_chip_path: "./colors/chip_1.png"
+    
+    technical_specs:
+      repeat_type: "ハーフドロップ"
+      repeat_type_en: "half-drop"
+      scale: "ラージ"
+      scale_en: "large"
+      usage: ["テキスタイル", "ボタニカル", "エコ"]
+      usage_en: ["textile", "botanical", "eco"]
+    
+    color_palette:
+      primary:
+        hex: "#2D5D2F"
+        name: "フォレストグリーン"
+        name_en: "Forest Green"
+      
+      secondary:
+        - hex: "#7FB069"
+          name: "ライトグリーン"
+          name_en: "Light Green"
+        - hex: "#A8D5A8"
+          name: "ペールグリーン"
+          name_en: "Pale Green"
+        - hex: "#F4F9F4"
+          name: "ホワイトグリーン"
+          name_en: "White Green"
+        - hex: "#E8F5E8"
+          name: "ミントホワイト"
+          name_en: "Mint White"
+
+  - id: 2
+    name: "クールウィンド・ストライプ"
+    name_en: "Cool Wind Stripe"
+    description: "パームシャドウ効果を持つクーリングウィンドストライプのシームレスリピートパターン。穏やかな風を示唆する流れるような線形要素とモダンミニマリストアプローチ。"
+    image_path: "./patterns/pattern_2.png"
+    color_chip_path: "./colors/chip_2.png"
+    
+    technical_specs:
+      repeat_type: "ストレート"
+      repeat_type_en: "straight"
+      scale: "ミディアム"
+      scale_en: "medium"
+      usage: ["テキスタイル", "リニア", "クーリング"]
+      usage_en: ["textile", "linear", "cooling"]
+    
+    color_palette:
+      primary:
+        hex: "#4A90A4"
+        name: "スティールブルー"
+        name_en: "Steel Blue"
+      
+      secondary:
+        - hex: "#87CEEB"
+          name: "スカイブルー"
+          name_en: "Sky Blue"
+        - hex: "#B8E6B8"
+          name: "ライトグリーン"
+          name_en: "Light Green"
+        - hex: "#F0F8F0"
+          name: "ハニーデュー"
+          name_en: "Honeydew"
+        - hex: "#FFFFFF"
+          name: "ホワイト"
+          name_en: "White"
+
+  - id: 3
+    name: "サステナブル・ドット"
+    name_en: "Sustainable Dot"
+    description: "パームシードと自然な形からインスピレーションを得たオーガニックな円形ドットのシームレスリピートパターン。エコ意識のあるスペーシングとバイオフィリックデザイン要素。"
+    image_path: "./patterns/pattern_3.png"
+    color_chip_path: "./colors/chip_3.png"
+    
+    technical_specs:
+      repeat_type: "ブリック"
+      repeat_type_en: "brick"
+      scale: "スモール"
+      scale_en: "small"
+      usage: ["テキスタイル", "ジオメトリック", "オーガニック"]
+      usage_en: ["textile", "geometric", "organic"]
+    
+    color_palette:
+      primary:
+        hex: "#6B8E23"
+        name: "オリーブドラブ"
+        name_en: "Olive Drab"
+      
+      secondary:
+        - hex: "#9ACD32"
+          name: "イエローグリーン"
+          name_en: "Yellow Green"
+        - hex: "#F5F5DC"
+          name: "ベージュ"
+          name_en: "Beige"
+        - hex: "#FFFAF0"
+          name: "フローラルホワイト"
+          name_en: "Floral White"
+        - hex: "#E6E6FA"
+          name: "ラベンダー"
+          name_en: "Lavender"
+
+  - id: 4
+    name: "トロピカル・ウェーブ"
+    name_en: "Tropical Wave"
+    description: "パームツリーシルエットを持つ流れるようなウェーブパターンのシームレスリピートデザイン。海風とトロピカルな雰囲気を示唆する波形と流体的なオーガニックシェイプ。"
+    image_path: "./patterns/pattern_4.png"
+    color_chip_path: "./colors/chip_4.png"
+    
+    technical_specs:
+      repeat_type: "ハーフドロップ"
+      repeat_type_en: "half-drop"
+      scale: "ラージ"
+      scale_en: "large"
+      usage: ["テキスタイル", "フローイング", "トロピカル"]
+      usage_en: ["textile", "flowing", "tropical"]
+    
+    color_palette:
+      primary:
+        hex: "#008B8B"
+        name: "ダークシアン"
+        name_en: "Dark Cyan"
+      
+      secondary:
+        - hex: "#20B2AA"
+          name: "ライトシーグリーン"
+          name_en: "Light Sea Green"
+        - hex: "#AFEEEE"
+          name: "ペールターコイズ"
+          name_en: "Pale Turquoise"
+        - hex: "#F0FFFF"
+          name: "アズール"
+          name_en: "Azure"
+        - hex: "#E0FFFF"
+          name: "ライトシアン"
+          name_en: "Light Cyan"
+
+  - id: 5
+    name: "エアリー・メッシュ"
+    name_en: "Airy Mesh"
+    description: "パームファイバーからインスピレーションを得たエアリーメッシュ構造のシームレスリピートパターン。冷却換気を示唆する通気性のある幾何学的グリッドパターンと持続可能なテキスタイルコンセプト。"
+    image_path: "./patterns/pattern_5.png"
+    color_chip_path: "./colors/chip_5.png"
+    
+    technical_specs:
+      repeat_type: "ストレート"
+      repeat_type_en: "straight"
+      scale: "ミディアム"
+      scale_en: "medium"
+      usage: ["テキスタイル", "ジオメトリック", "エアリー"]
+      usage_en: ["textile", "geometric", "airy"]
+    
+    color_palette:
+      primary:
+        hex: "#778899"
+        name: "ライトスレートグレー"
+        name_en: "Light Slate Gray"
+      
+      secondary:
+        - hex: "#B0C4DE"
+          name: "ライトスティールブルー"
+          name_en: "Light Steel Blue"
+        - hex: "#E6F3FF"
+          name: "アリスブルー"
+          name_en: "Alice Blue"
+        - hex: "#F8F8FF"
+          name: "ゴーストホワイト"
+          name_en: "Ghost White"
+        - hex: "#FFFFFF"
+          name: "ホワイト"
+          name_en: "White"
+
+# カタログ設定
+catalog_settings:
+  html_config:
+    fonts:
+      header: "Playfair Display"
+      body: "Inter"
+    
+    colors:
+      background: "#fafafa"
+      card_background: "#ffffff"
+      accent: "#667eea"
+    
+    layout:
+      card_image_width: "60%"
+      card_details_width: "40%"
+      border_radius: "20px"
+      box_shadow: "0 10px 30px rgba(0,0,0,0.1)"
+    
+    responsive:
+      enabled: true
+      breakpoint: "768px"
+    
+    print_styles:
+      enabled: true
+  
+  markdown_config:
+    color_preview:
+      service: "via.placeholder.com"
+      size: "20x20"
+    
+    table_layout: true
+    emoji_enabled: true
+
+# メタデータ
+metadata:
+  created_date: "2025-07-27"
+  version: "1.0"
+  author: "Claude Code"
+  file_format: "YAML"
+  encoding: "UTF-8"
+  
+  files:
+    html: "catalog.html"
+    markdown: "catalog.md"
+    data: "catalog-data.yaml"
+    
+  dependencies:
+    fonts:
+      - "Google Fonts - Playfair Display"
+      - "Google Fonts - Inter"
+    
+    external_services:
+      - "via.placeholder.com (for color previews in markdown)"
