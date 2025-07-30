@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サカゼン 2026年夏ポロシャツ 統合戦略提案書</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2C5A63;
+            font-size: 2.4em;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #2C5A63;
+            padding-bottom: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        h2 {
+            color: #36454F;
+            font-size: 1.6em;
+            margin: 40px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-left: 4px solid #2C5A63;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #2C5A63;
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+        }
+        .summary-box {
+            background: linear-gradient(135deg, #2C5A63 0%, #4F86F7 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 6px 20px rgba(44, 90, 99, 0.3);
+        }
+        .summary-box h2 {
+            color: white;
+            border-left: 4px solid white;
+            margin-top: 0;
+        }
+        .key-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .point-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #2C5A63;
+        }
+        .point-card h4 {
+            color: #2C5A63;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+        }
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .strategy-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+        }
+        .highlight-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .highlight-box h4 {
+            color: #856404;
+            margin: 0 0 10px 0;
+        }
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .benefit-item {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .benefit-item strong {
+            color: #155724;
+        }
+        .competitive-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .competitive-table th {
+            background: #2C5A63;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .competitive-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .competitive-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        .timeline {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .timeline-date {
+            background: #2C5A63;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            min-width: 80px;
+            text-align: center;
+            margin-right: 15px;
+        }
+        .success-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .metric-card {
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #dee2e6;
+        }
+        .metric-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2C5A63;
+            margin-bottom: 5px;
+        }
+        .metric-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .emoji {
+            font-size: 1.3em;
+            margin-right: 8px;
+        }
+        .action-box {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .action-box h3 {
+            color: #155724;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .strong-point {
+            background: #e7f3ff;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>サカゼン 2026年夏ポロシャツ<br>統合戦略提案書</h1>
+        <p class="subtitle">AIリサーチ × ペルソナ分析による戦略的柄提案</p>
+
+        <div class="summary-box">
+            <h2><span class="emoji">🎯</span>戦略サマリー</h2>
+            <p style="font-size: 1.1em; line-height: 1.7;">
+                2026年夏シーズンに向けて、<span class="strong-point">「クワイエット・ラグジュアリー」</span>と<span class="strong-point">「着痩せ効果」</span>を軸とした戦略的柄展開を提案いたします。最新のトレンドリサーチとペルソナ分析により、30-40代プラスサイズメンズの心理的ニーズを満たす20柄を体系的に開発し、競合との明確な差別化を実現します。
+            </p>
+        </div>
+
+        <h2><span class="emoji">🔍</span>市場機会の発見</h2>
+        
+        <div class="strategy-grid">
+            <div class="strategy-section">
+                <h3>🏆 競合との差別化ポイント</h3>
+                <ul>
+                    <li><strong>フォーエル</strong>：ベーシック中心 → デザイン性で優位</li>
+                    <li><strong>ミッド</strong>：ブランド志向高価格 → 手の届く洗練感</li>
+                    <li><strong>サカゼン独自価値</strong>：トレンド × 体型配慮 × 適正価格</li>
+                </ul>
+            </div>
+            
+            <div class="strategy-section">
+                <h3>📊 ターゲット心理の解明</h3>
+                <ul>
+                    <li><span class="strong-point">安心感重視</span>：落ち着いた色調への強い反応</li>
+                    <li><span class="strong-point">着痩せ期待</span>：視覚的効果への具体的ニーズ</li>
+                    <li><span class="strong-point">上品志向</span>：年齢相応の洗練されたデザイン</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2><span class="emoji">🎨</span>戦略的テーマ設計</h2>
+
+        <div class="key-points">
+            <div class="point-card">
+                <h4>🌿 オーガニック・リーフ（6柄）</h4>
+                <p><strong>自然回帰 × 着痩せ効果</strong></p>
+                <p>縦方向のリーフラインで視覚的引き締め効果を実現。自然への回帰トレンドと心理的安心感を両立。</p>
+            </div>
+            
+            <div class="point-card">
+                <h4>📐 モダン・ジオメトリック（6柄）</h4>
+                <p><strong>知的洗練 × 視覚的引き締め</strong></p>
+                <p>幾何学パターンで都会的な印象を演出。ビジネスシーンでも活用できる汎用性を確保。</p>
+            </div>
+            
+            <div class="point-card">
+                <h4>🎯 リファインド・クラシック（4柄）</h4>
+                <p><strong>2025年売れ筋の進化版</strong></p>
+                <p>既存の成功パターンを洗練化。ペイズリー・マリン・小花柄の現代的解釈。</p>
+            </div>
+            
+            <div class="point-card">
+                <h4>🚀 アドバンス・パターン（4柄）</h4>
+                <p><strong>差別化要素</strong></p>
+                <p>アーバンカモフラ・スプラッシュアートなど、競合にない独自性のある柄展開。</p>
+            </div>
+        </div>
+
+        <h2><span class="emoji">🎨</span>2026SSカラー戦略</h2>
+
+        <div class="highlight-box">
+            <h4>🏅 メインカラー（トレンド予測ベース）</h4>
+            <p><strong>トランスフォーマティブ・ティール (#2C5A63)</strong>：収縮効果と安心感を両立する2026年注目色</p>
+            <p><strong>ワックス・ペーパー (#F4F0E7)</strong>：上品で清潔感のあるベース色として最適</p>
+        </div>
+
+        <table class="competitive-table">
+            <thead>
+                <tr>
+                    <th>カラー戦略</th>
+                    <th>心理効果</th>
+                    <th>着痩せ効果</th>
+                    <th>使用柄数</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>トランスフォーマティブ・ティール</strong></td>
+                    <td>安心感・信頼感</td>
+                    <td>高い収縮効果</td>
+                    <td>5柄</td>
+                </tr>
+                <tr>
+                    <td><strong>ネイビー</strong></td>
+                    <td>定番安心感</td>
+                    <td>定評ある着痩せ</td>
+                    <td>4柄</td>
+                </tr>
+                <tr>
+                    <td><strong>アンバー・ヘイズ</strong></td>
+                    <td>温かみ・活力</td>
+                    <td>顔色効果</td>
+                    <td>4柄</td>
+                </tr>
+                <tr>
+                    <td><strong>オーシャン・ブルー</strong></td>
+                    <td>爽やか・夏らしさ</td>
+                    <td>清涼感効果</td>
+                    <td>3柄</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2><span class="emoji">💡</span>1-2色版制約の価値化</h2>
+
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <strong>「引き算のデザイン」</strong><br>
+                多色使いより洗練された印象を演出
+            </div>
+            <div class="benefit-item">
+                <strong>コスト効率化</strong><br>
+                同一デザインで複数カラー展開が容易
+            </div>
+            <div class="benefit-item">
+                <strong>着回し力向上</strong><br>
+                無地アイテムとの組み合わせが簡単
+            </div>
+            <div class="benefit-item">
+                <strong>ブランド統一感</strong><br>
+                B&T CLUBの洗練されたイメージ構築
+            </div>
+        </div>
+
+        <h2><span class="emoji">📅</span>実行スケジュール</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">7/30朝</div>
+                <div>クライアント様 企画確認・承認</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">7/30中</div>
+                <div>AI生成システムで20柄パターン制作完了</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">7/30夕</div>
+                <div>優秀5柄選定・着用画像生成</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">7/31朝</div>
+                <div>最終資料完成・バイヤー様プレゼン準備完了</div>
+            </div>
+        </div>
+
+        <h2><span class="emoji">🎯</span>期待される成果</h2>
+
+        <div class="success-metrics">
+            <div class="metric-card">
+                <div class="metric-number">20</div>
+                <div class="metric-label">柄パターン<br>完全提案</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">5</div>
+                <div class="metric-label">優秀柄<br>着用画像</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">100%</div>
+                <div class="metric-label">製造適合率<br>(1-2色版対応)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">+20%</div>
+                <div class="metric-label">コスト効率<br>改善予測</div>
+            </div>
+        </div>
+
+        <h2><span class="emoji">🏆</span>競合優位性の確立</h2>
+
+        <div class="key-points">
+            <div class="point-card">
+                <h4>🎨 デザイン革新</h4>
+                <p>AI技術活用による最新トレンドの的確な反映と、プラスサイズ特化の柄設計</p>
+            </div>
+            
+            <div class="point-card">
+                <h4>🧠 科学的アプローチ</h4>
+                <p>ペルソナ分析に基づく心理的ニーズの把握と、着痩せ効果の視覚的設計</p>
+            </div>
+            
+            <div class="point-card">
+                <h4>💼 市場ポジショニング</h4>
+                <p>「手の届く価格でトレンド感と品格を両立」する独自ポジションの確立</p>
+            </div>
+            
+            <div class="point-card">
+                <h4>🔄 継続性戦略</h4>
+                <p>2025年成功パターンの進化版により、既存顧客の継続購買を促進</p>
+            </div>
+        </div>
+
+        <div class="action-box">
+            <h3><span class="emoji">🚀</span>次のアクション</h3>
+            <p><strong>本戦略への承認をいただけましたら、即座に以下を実行いたします：</strong></p>
+            <ul>
+                <li><strong>AI生成システムの稼働</strong>：20柄の詳細パターン制作</li>
+                <li><strong>着用画像の制作</strong>：サカゼンモデル様での5柄着用シミュレーション</li>
+                <li><strong>カラーバリエーション展開</strong>：各柄2-3色での提案完成</li>
+                <li><strong>最終プレゼン資料</strong>：バイヤー様向け完全版の準備</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <p style="font-size: 1.1em; color: #2C5A63; font-weight: 600; margin: 0;">
+                2026年夏、サカゼンの新たな成功を共に創造いたします
+            </p>
+        </div>
+    </div>
+</body>
+</html>
