@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07. モダン・ジオメトリック - サカゼン 2026年夏ポロシャツ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 40px rgba(0,0,0,0.1);
+            border-radius: 0;
+            overflow: hidden;
+        }
+        
+        /* ヘッダーセクション */
+        .header {
+            background: linear-gradient(135deg, #36454F 0%, #2C5A63 100%);
+            color: white;
+            padding: 60px 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -5%;
+            width: 150px;
+            height: 150px;
+            background: rgba(255,255,255,0.1);
+            transform: rotate(45deg);
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -5%;
+            width: 100px;
+            height: 100px;
+            background: rgba(255,255,255,0.05);
+            transform: rotate(45deg);
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        .theme-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-align: center;
+            display: block;
+        }
+        .theme-title {
+            font-size: 3.5em;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+        .theme-subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .concept-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 30px;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 1.2em;
+            font-weight: 500;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            max-width: 400px;
+        }
+        
+        /* カラー仕様セクション */
+        .color-section {
+            background: white;
+            padding: 40px 50px;
+            border-bottom: 3px solid #f8f9fa;
+        }
+        .color-title {
+            font-size: 1.8em;
+            color: #36454F;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+        }
+        .color-item {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            min-width: 200px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .color-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            border: 3px solid white;
+        }
+        .color-name {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #36454F;
+        }
+        .color-code {
+            font-family: 'Courier New', monospace;
+            background: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            color: #495057;
+        }
+        
+        /* メインコンテンツ */
+        .main-content {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            min-height: 600px;
+        }
+        
+        /* モデルセクション */
+        .model-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .model-container {
+            position: relative;
+            max-width: 400px;
+            width: 100%;
+        }
+        .model-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(54, 69, 79, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .model-image:hover {
+            transform: scale(1.02);
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .video-overlay:hover {
+            opacity: 1;
+        }
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: rgba(54, 69, 79, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-left: 20px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            margin-left: 5px;
+        }
+        .video-indicator {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(54, 69, 79, 0.9);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .video-duration {
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+        }
+        
+        /* パターンセクション */
+        .patterns-section {
+            background: white;
+            padding: 50px;
+        }
+        .patterns-title {
+            font-size: 2em;
+            color: #36454F;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .patterns-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .pattern-card {
+            aspect-ratio: 1;
+            border-radius: 15px;
+            background: #36454F;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            border-color: #36454F;
+            box-shadow: 0 15px 35px rgba(54, 69, 79, 0.2);
+        }
+        .pattern-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .pattern-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 20px 15px 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .pattern-card:hover .pattern-overlay {
+            transform: translateY(0);
+        }
+        .pattern-number {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(54, 69, 79, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        .pattern-name {
+            font-weight: 600;
+            font-size: 0.95em;
+            margin-bottom: 5px;
+        }
+        .pattern-desc {
+            font-size: 0.8em;
+            opacity: 0.9;
+            line-height: 1.3;
+        }
+        
+        /* 特徴セクション */
+        .features-section {
+            background: #f8f9fa;
+            padding: 50px;
+        }
+        .features-title {
+            font-size: 2em;
+            color: #36454F;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid #36454F;
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #36454F;
+        }
+        .feature-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #36454F;
+            margin-bottom: 10px;
+        }
+        .feature-desc {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        /* レスポンシブ対応 */
+        @media (max-width: 1200px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .model-section {
+                padding: 40px;
+            }
+            .patterns-section {
+                padding: 40px;
+            }
+        }
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 30px;
+            }
+            .theme-title {
+                font-size: 2.5em;
+            }
+            .color-palette {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .patterns-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .color-section,
+            .model-section,
+            .patterns-section,
+            .features-section {
+                padding: 30px 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .patterns-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダーセクション -->
+        <div class="header">
+            <div class="header-content">
+                <div class="theme-icon">📐</div>
+                <h1 class="theme-title">モダン・ジオメトリック</h1>
+                <p class="theme-subtitle">六角形の縦方向連続パターン</p>
+                <div class="concept-badge">知的洗練 × 視覚的引き締め</div>
+            </div>
+        </div>
+        
+        <!-- カラー仕様セクション -->
+        <div class="color-section">
+            <h2 class="color-title">07. ヘキサゴン・フロー カラー仕様</h2>
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="color-circle" style="background: #36454F;"></div>
+                    <div class="color-name">ベースカラー</div>
+                    <div class="color-code">#36454F</div>
+                </div>
+                <div style="font-size: 2em; color: #ddd;">×</div>
+                <div class="color-item">
+                    <div class="color-circle" style="background: #F4F0E7; border: 2px solid #ddd;"></div>
+                    <div class="color-name">プリントカラー</div>
+                    <div class="color-code">#F4F0E7</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- メインコンテンツ -->
+        <div class="main-content">
+            <!-- モデル着用セクション -->
+            <div class="model-section">
+                <div class="model-container">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'><rect width='400' height='500' fill='%23f8f9fa'/><text x='200' y='250' text-anchor='middle' fill='%23666' font-family='Arial' font-size='16'>モデル着用画像</text><text x='200' y='270' text-anchor='middle' fill='%23666' font-family='Arial' font-size='12'>400×500px</text></svg>" alt="モダン・ジオメトリック モデル着用" class="model-image">
+                    
+                    <div class="video-overlay" onclick="playVideo()">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-indicator">
+                        <div style="width: 8px; height: 8px; background: #ff4444; border-radius: 50%; animation: pulse 2s infinite;"></div>
+                        <span>動画</span>
+                        <div class="video-duration">5秒</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- パターン一覧セクション -->
+            <div class="patterns-section">
+                <h2 class="patterns-title">ジオメトリック バリエーション</h2>
+                <div class="patterns-grid">
+                    <div class="pattern-card" onclick="selectPattern(7)">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='1.5'><polygon points='50,20 70,30 70,50 50,60 30,50 30,30' /><polygon points='100,20 120,30 120,50 100,60 80,50 80,30' /><polygon points='50,70 70,80 70,100 50,110 30,100 30,80' /><polygon points='100,70 120,80 120,100 100,110 80,100 80,80' /><polygon points='150,70 170,80 170,100 150,110 130,100 130,80' /></g></svg>" alt="Pattern 07" class="pattern-image">
+                        <div class="pattern-number">07</div>
+                        <div class="pattern-overlay">
+                            <div class="pattern-name">ヘキサゴン・フロー</div>
+                            <div class="pattern-desc">六角形の縦方向連続パターン</div>
+                        </div>
+                    </div>
+                    
+                    <div class="pattern-card" onclick="selectPattern(8)">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='1'><line x1='20' y1='20' x2='80' y2='80' /><line x1='80' y1='20' x2='20' y2='80' /><line x1='120' y1='20' x2='180' y2='80' /><line x1='180' y1='20' x2='120' y2='80' /><line x1='20' y1='120' x2='80' y2='180' /><line x1='80' y1='120' x2='20' y2='180' /></g></svg>" alt="Pattern 08" class="pattern-image">
+                        <div class="pattern-number">08</div>
+                        <div class="pattern-overlay">
+                            <div class="pattern-name">ライン・インターセクト</div>
+                            <div class="pattern-desc">交差する細線の幾何学</div>
+                        </div>
+                    </div>
+                    
+                    <div class="pattern-card" onclick="selectPattern(9)">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='%23F4F0E7'><circle cx='30' cy='30' r='3' /><circle cx='60' cy='30' r='3' /><circle cx='90' cy='30' r='3' /><circle cx='120' cy='30' r='3' /><circle cx='30' cy='60' r='3' /><circle cx='60' cy='60' r='3' /><circle cx='90' cy='60' r='3' /><circle cx='120' cy='60' r='3' /><circle cx='30' cy='90' r='3' /><circle cx='60' cy='90' r='3' /></g></svg>" alt="Pattern 09" class="pattern-image">
+                        <div class="pattern-number">09</div>
+                        <div class="pattern-overlay">
+                            <div class="pattern-name">ミニマル・ドット</div>
+                            <div class="pattern-desc">規則的な小さなドット配列</div>
+                        </div>
+                    </div>
+                    
+                    <div class="pattern-card" onclick="selectPattern(10)">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='1.5'><path d='M20 40 L40 20 L60 40 L40 60 Z' /><path d='M80 40 L100 20 L120 40 L100 60 Z' /><path d='M140 40 L160 20 L180 40 L160 60 Z' /><path d='M50 90 L70 70 L90 90 L70 110 Z' /><path d='M110 90 L130 70 L150 90 L130 110 Z' /></g></svg>" alt="Pattern 10" class="pattern-image">
+                        <div class="pattern-number">10</div>
+                        <div class="pattern-overlay">
+                            <div class="pattern-name">アングル・リズム</div>
+                            <div class="pattern-desc">角度の異なる線の組み合わせ</div>
+                        </div>
+                    </div>
+                    
+                    <div class="pattern-card" onclick="selectPattern(11)">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='1'><rect x='20' y='20' width='40' height='20' /><rect x='80' y='20' width='30' height='30' /><rect x='130' y='20' width='50' height='15' /><rect x='20' y='60' width='35' height='25' /><rect x='75' y='60' width='45' height='20' /><rect x='140' y='60' width='40' height='30' /></g></svg>" alt="Pattern 11" class="pattern-image">
+                        <div class="pattern-number">11</div>
+                        <div class="pattern-overlay">
+                            <div class="pattern-name">グリッド・モダン</div>
+                            <div class="pattern-desc">不規則な格子パターン</div>
+                        </div>
+                    </div>
+                    
+                    <div class="pattern-card" onclick="selectPattern(12)">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='2'><path d='M20 100 Q50 80, 80 100 T140 100' /><path d='M20 130 Q50 110, 80 130 T140 130' /><path d='M20 160 Q50 140, 80 160 T140 160' /></g></svg>" alt="Pattern 12" class="pattern-image">
+                        <div class="pattern-number">12</div>
+                        <div class="pattern-overlay">
+                            <div class="pattern-name">ジオメトリック・ウェーブ</div>
+                            <div class="pattern-desc">幾何学的な波の表現</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 特徴セクション -->
+        <div class="features-section">
+            <h2 class="features-title">モダン・ジオメトリックの特徴</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <div class="feature-title">ビジネス対応</div>
+                    <div class="feature-desc">知的で洗練された印象により、ビジネスカジュアルシーンで活躍。プロフェッショナルな装いを演出。</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📏</div>
+                    <div class="feature-title">視覚的引き締め</div>
+                    <div class="feature-desc">構造的な幾何学パターンにより、体型を視覚的にスマートに見せる効果。縦長構成で着痩せを実現。</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <div class="feature-title">モダン感</div>
+                    <div class="feature-desc">現代的でミニマルなデザイン。時代性を感じさせる洗練された美しさで差別化を図る。</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <div class="feature-title">汎用性</div>
+                    <div class="feature-desc">シンプルながら印象的なデザインで、様々なシーンに対応。長期間愛用できる普遍的な美しさ。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function playVideo() {
+            alert('5秒動画を再生します\n（実際の実装では動画ファイルを再生）');
+        }
+        
+        function selectPattern(patternNumber) {
+            console.log(`Pattern ${patternNumber} selected`);
+        }
+    </script>
+</body>
+</html>

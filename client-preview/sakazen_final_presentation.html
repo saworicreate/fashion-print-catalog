@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サカゼン 2026年夏ポロシャツ 戦略的柄提案</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            background: linear-gradient(135deg, #2C5A63 0%, #1a1a1a 100%);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 0;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .main-title {
+            font-size: 3.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #E6A757, #F4F0E7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.4em;
+            color: #F4F0E7;
+            margin-bottom: 10px;
+        }
+        
+        .date-info {
+            font-size: 1.1em;
+            color: #E6A757;
+            font-weight: 500;
+        }
+        
+        .strategy-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .strategy-card {
+            background: rgba(255,255,255,0.12);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(230,167,87,0.3);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(230,167,87,0.2);
+        }
+        
+        .strategy-card h3 {
+            font-size: 1.5em;
+            color: #E6A757;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        .pattern-showcase {
+            margin: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #F4F0E7;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 200px;
+            height: 3px;
+            background: linear-gradient(45deg, #E6A757, #2C5A63);
+            margin: 20px auto;
+        }
+        
+        .theme-section {
+            margin-bottom: 80px;
+        }
+        
+        .theme-header {
+            background: rgba(230,167,87,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 6px solid #E6A757;
+        }
+        
+        .theme-title {
+            font-size: 1.8em;
+            color: #E6A757;
+            margin-bottom: 10px;
+        }
+        
+        .theme-concept {
+            font-size: 1.1em;
+            color: #F4F0E7;
+            font-weight: 500;
+        }
+        
+        .patterns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .pattern-card {
+            background: rgba(255,255,255,0.08);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(244,240,231,0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pattern-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(230,167,87,0.5);
+            box-shadow: 0 8px 25px rgba(230,167,87,0.15);
+        }
+        
+        .pattern-card.featured {
+            border: 2px solid #E6A757;
+            background: rgba(230,167,87,0.1);
+        }
+        
+        .pattern-card.featured::before {
+            content: '⭐ 優秀選定';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #E6A757;
+            color: #1a1a1a;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        
+        .pattern-preview {
+            width: 100%;
+            height: 120px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            color: #666;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pattern-preview.organic {
+            background: linear-gradient(135deg, #2C5A63 0%, #F4F0E7 100%);
+        }
+        
+        .pattern-preview.geometric {
+            background: linear-gradient(135deg, #36454F 0%, #F4F0E7 100%);
+        }
+        
+        .pattern-preview.classic {
+            background: linear-gradient(135deg, #1E3A5F 0%, #F5F0E8 100%);
+        }
+        
+        .pattern-preview.advance {
+            background: linear-gradient(135deg, #E6A757 0%, #FFFFFF 100%);
+        }
+        
+        .pattern-name {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #F4F0E7;
+            margin-bottom: 8px;
+        }
+        
+        .pattern-colors {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .color-chip {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .pattern-description {
+            font-size: 0.9em;
+            color: #D3D3D3;
+            line-height: 1.4;
+        }
+        
+        .featured-selection {
+            background: rgba(230,167,87,0.15);
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 80px 0;
+            border: 2px solid rgba(230,167,87,0.4);
+        }
+        
+        .featured-title {
+            font-size: 2.2em;
+            text-align: center;
+            color: #E6A757;
+            margin-bottom: 40px;
+        }
+        
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .featured-card {
+            background: rgba(255,255,255,0.12);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid rgba(230,167,87,0.3);
+        }
+        
+        .featured-card h4 {
+            font-size: 1.3em;
+            color: #E6A757;
+            margin-bottom: 10px;
+        }
+        
+        .featured-card .category {
+            font-size: 0.9em;
+            color: #F4F0E7;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+        
+        .model-preview {
+            width: 100%;
+            height: 150px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 80px 0;
+        }
+        
+        .stat-card {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #E6A757;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            color: #F4F0E7;
+            line-height: 1.3;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #E6A757 0%, #2C5A63 100%);
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 80px;
+            box-shadow: 0 15px 40px rgba(230,167,87,0.2);
+        }
+        
+        .cta-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .cta-subtitle {
+            font-size: 1.3em;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+        
+        .cta-note {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.8);
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.2em;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .strategy-overview {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .patterns-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">サカゼン 2026年夏ポロシャツ</h1>
+            <p class="subtitle">戦略的柄提案プロジェクト</p>
+            <p class="date-info">2025年7月31日 バイヤー向けプレゼンテーション</p>
+        </header>
+
+        <section class="strategy-overview">
+            <div class="strategy-card">
+                <h3><span class="emoji">🎯</span>ターゲット戦略</h3>
+                <p><strong>30-40代プラスサイズメンズ</strong><br>
+                体型コンプレックスを解消し、自信を持てるデザイン設計</p>
+            </div>
+            
+            <div class="strategy-card">
+                <h3><span class="emoji">🎨</span>2026SSトレンド対応</h3>
+                <p><strong>クワイエット・ラグジュアリー</strong><br>
+                トランスフォーマティブ・ティール等、最新カラー完全採用</p>
+            </div>
+            
+            <div class="strategy-card">
+                <h3><span class="emoji">💡</span>着痩せ効果重視</h3>
+                <p><strong>縦方向構成デザイン</strong><br>
+                視覚的引き締め効果を科学的に設計</p>
+            </div>
+            
+            <div class="strategy-card">
+                <h3><span class="emoji">🏭</span>製造適合性</h3>
+                <p><strong>1-2色版シルクスクリーン</strong><br>
+                コスト効率と品質を両立する制約活用</p>
+            </div>
+        </section>
+
+        <section class="pattern-showcase">
+            <h2 class="section-title">戦略的20柄構成</h2>
+            
+            <!-- A. オーガニック・リーフ -->
+            <div class="theme-section">
+                <div class="theme-header">
+                    <h3 class="theme-title"><span class="emoji">🌿</span>A. オーガニック・リーフ（6柄）</h3>
+                    <p class="theme-concept">自然回帰 × 着痩せ効果</p>
+                </div>
+                
+                <div class="patterns-grid">
+                    <div class="pattern-card featured">
+                        <div class="pattern-preview organic"></div>
+                        <h4 class="pattern-name">01. リーフ・フロー</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #2C5A63;"></div>
+                            <div class="color-chip" style="background: #F4F0E7;"></div>
+                        </div>
+                        <p class="pattern-description">縦方向に流れるリーフライン</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview organic"></div>
+                        <h4 class="pattern-name">02. ミニマル・パーム</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #E6A757;"></div>
+                            <div class="color-chip" style="background: #FFFFFF;"></div>
+                        </div>
+                        <p class="pattern-description">簡略化されたヤシの葉</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview organic"></div>
+                        <h4 class="pattern-name">03. リーフ・シャドウ</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #4F86F7;"></div>
+                            <div class="color-chip" style="background: #D3D3D3;"></div>
+                        </div>
+                        <p class="pattern-description">葉の影を活用した深度表現</p>
+                    </div>
+                    
+                    <div class="pattern-card featured">
+                        <div class="pattern-preview organic"></div>
+                        <h4 class="pattern-name">04. オーガニック・ライン</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #36454F;"></div>
+                            <div class="color-chip" style="background: #F4F0E7;"></div>
+                        </div>
+                        <p class="pattern-description">葉脈をグラフィック化</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview organic"></div>
+                        <h4 class="pattern-name">05. トロピカル・グリッド</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #2C5A63;"></div>
+                            <div class="color-chip" style="background: #FFFFFF;"></div>
+                        </div>
+                        <p class="pattern-description">リーフを格子状に配置</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview organic"></div>
+                        <h4 class="pattern-name">06. ネイチャー・ストライプ</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #1E3A5F;"></div>
+                            <div class="color-chip" style="background: #F5F0E8;"></div>
+                        </div>
+                        <p class="pattern-description">葉の形状を縦ストライプ化</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B. モダン・ジオメトリック -->
+            <div class="theme-section">
+                <div class="theme-header">
+                    <h3 class="theme-title"><span class="emoji">📐</span>B. モダン・ジオメトリック（6柄）</h3>
+                    <p class="theme-concept">知的洗練 × 視覚的引き締め</p>
+                </div>
+                
+                <div class="patterns-grid">
+                    <div class="pattern-card featured">
+                        <div class="pattern-preview geometric"></div>
+                        <h4 class="pattern-name">07. ヘキサゴン・フロー</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #36454F;"></div>
+                            <div class="color-chip" style="background: #F4F0E7;"></div>
+                        </div>
+                        <p class="pattern-description">六角形の縦方向連続パターン</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview geometric"></div>
+                        <h4 class="pattern-name">08. ライン・インターセクト</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #2C5A63;"></div>
+                            <div class="color-chip" style="background: #FFFFFF;"></div>
+                        </div>
+                        <p class="pattern-description">交差する細線の幾何学</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview geometric"></div>
+                        <h4 class="pattern-name">09. ミニマル・ドット</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #1E3A5F;"></div>
+                            <div class="color-chip" style="background: #D3D3D3;"></div>
+                        </div>
+                        <p class="pattern-description">規則的な小さなドット配列</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview geometric"></div>
+                        <h4 class="pattern-name">10. アングル・リズム</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #E6A757;"></div>
+                            <div class="color-chip" style="background: #FFFFFF;"></div>
+                        </div>
+                        <p class="pattern-description">角度の異なる線の組み合わせ</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview geometric"></div>
+                        <h4 class="pattern-name">11. グリッド・モダン</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #000000;"></div>
+                            <div class="color-chip" style="background: #F4F0E7;"></div>
+                        </div>
+                        <p class="pattern-description">不規則な格子パターン</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview geometric"></div>
+                        <h4 class="pattern-name">12. ジオメトリック・ウェーブ</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #4F86F7;"></div>
+                            <div class="color-chip" style="background: #FFFFFF;"></div>
+                        </div>
+                        <p class="pattern-description">幾何学的な波の表現</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C. リファインド・クラシック -->
+            <div class="theme-section">
+                <div class="theme-header">
+                    <h3 class="theme-title"><span class="emoji">🎯</span>C. リファインド・クラシック（4柄）</h3>
+                    <p class="theme-concept">2025年売れ筋の進化版</p>
+                </div>
+                
+                <div class="patterns-grid">
+                    <div class="pattern-card featured">
+                        <div class="pattern-preview classic"></div>
+                        <h4 class="pattern-name">13. モダン・ペイズリー</h4>
+                        <div class="pattern-colors">
+                            <div class="color-chip" style="background: #1E3A5F;"></div>
+                            <div class="color-chip" style="background: #F5F0E8;"></div>
+                        </div>
+                        <p class="pattern-description">抽象化されたペイズリー</p>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <div class="pattern-preview classic"></div>
+                        <h4 
