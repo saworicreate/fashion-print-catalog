@@ -159,6 +159,7 @@
             position: relative;
             max-width: 400px;
             width: 100%;
+            height: 500px;  /* 追加 */
         }
         .model-image {
             width: 100%;
@@ -424,7 +425,7 @@
             <!-- モデル着用セクション -->
             <div class="model-section">
                 <div class="model-container">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'><rect width='400' height='500' fill='%23f8f9fa'/><text x='200' y='250' text-anchor='middle' fill='%23666' font-family='Arial' font-size='16'>モデル着用画像</text><text x='200' y='270' text-anchor='middle' fill='%23666' font-family='Arial' font-size='12'>400×500px</text></svg>" alt="モダン・ジオメトリック モデル着用" class="model-image">
+                    <img src="sakazen_07_geometric_theme/07_model.png" style="width: 100%; height: 500px; object-fit: contain; border-radius: 10px;">
                     
                     <div class="video-overlay" onclick="playVideo()">
                         <div class="play-button">
@@ -437,6 +438,9 @@
                         <span>動画</span>
                         <div class="video-duration">5秒</div>
                     </div>
+                    <button onclick="playVideo()" style="margin-top: 10px; padding: 8px 16px; background: #2c5aa0; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                        ▶ 動画再生
+                    </button>
                 </div>
             </div>
             
@@ -445,16 +449,16 @@
                 <h2 class="patterns-title">ジオメトリック バリエーション</h2>
                 <div class="patterns-grid">
                     <div class="pattern-card" onclick="selectPattern(7)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='1.5'><polygon points='50,20 70,30 70,50 50,60 30,50 30,30' /><polygon points='100,20 120,30 120,50 100,60 80,50 80,30' /><polygon points='50,70 70,80 70,100 50,110 30,100 30,80' /><polygon points='100,70 120,80 120,100 100,110 80,100 80,80' /><polygon points='150,70 170,80 170,100 150,110 130,100 130,80' /></g></svg>" alt="Pattern 07" class="pattern-image">
+                        <img src="sakazen_07_geometric_theme/1-07_3.png" alt="Pattern 07" class="pattern-image">
                         <div class="pattern-number">07</div>
                         <div class="pattern-overlay">
                             <div class="pattern-name">ヘキサゴン・フロー</div>
-                            <div class="pattern-desc">六角形の縦方向連続パターン</div>
+                            <div class="pattern-desc">変形幾何学の連続パターン</div>
                         </div>
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(8)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='1'><line x1='20' y1='20' x2='80' y2='80' /><line x1='80' y1='20' x2='20' y2='80' /><line x1='120' y1='20' x2='180' y2='80' /><line x1='180' y1='20' x2='120' y2='80' /><line x1='20' y1='120' x2='80' y2='180' /><line x1='80' y1='120' x2='20' y2='180' /></g></svg>" alt="Pattern 08" class="pattern-image">
+                        <img src="sakazen_07_geometric_theme/1-13.png" alt="Pattern 08" class="pattern-image">
                         <div class="pattern-number">08</div>
                         <div class="pattern-overlay">
                             <div class="pattern-name">ライン・インターセクト</div>
@@ -463,16 +467,16 @@
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(9)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='%23F4F0E7'><circle cx='30' cy='30' r='3' /><circle cx='60' cy='30' r='3' /><circle cx='90' cy='30' r='3' /><circle cx='120' cy='30' r='3' /><circle cx='30' cy='60' r='3' /><circle cx='60' cy='60' r='3' /><circle cx='90' cy='60' r='3' /><circle cx='120' cy='60' r='3' /><circle cx='30' cy='90' r='3' /><circle cx='60' cy='90' r='3' /></g></svg>" alt="Pattern 09" class="pattern-image">
+                        <img src="sakazen_07_geometric_theme/1-23.png" alt="Pattern 09" class="pattern-image">
                         <div class="pattern-number">09</div>
                         <div class="pattern-overlay">
-                            <div class="pattern-name">ミニマル・ドット</div>
-                            <div class="pattern-desc">規則的な小さなドット配列</div>
+                            <div class="pattern-name">ミニマル・ドットライン</div>
+                            <div class="pattern-desc">規則的な小さな図形の縦方向配列</div>
                         </div>
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(10)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='1.5'><path d='M20 40 L40 20 L60 40 L40 60 Z' /><path d='M80 40 L100 20 L120 40 L100 60 Z' /><path d='M140 40 L160 20 L180 40 L160 60 Z' /><path d='M50 90 L70 70 L90 90 L70 110 Z' /><path d='M110 90 L130 70 L150 90 L130 110 Z' /></g></svg>" alt="Pattern 10" class="pattern-image">
+                        <img src="sakazen_07_geometric_theme/1-25.png" alt="Pattern 10" class="pattern-image">
                         <div class="pattern-number">10</div>
                         <div class="pattern-overlay">
                             <div class="pattern-name">アングル・リズム</div>
@@ -481,20 +485,20 @@
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(11)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='1'><rect x='20' y='20' width='40' height='20' /><rect x='80' y='20' width='30' height='30' /><rect x='130' y='20' width='50' height='15' /><rect x='20' y='60' width='35' height='25' /><rect x='75' y='60' width='45' height='20' /><rect x='140' y='60' width='40' height='30' /></g></svg>" alt="Pattern 11" class="pattern-image">
+                        <img src="sakazen_07_geometric_theme/1-29.png" alt="Pattern 11" class="pattern-image">
                         <div class="pattern-number">11</div>
                         <div class="pattern-overlay">
-                            <div class="pattern-name">グリッド・モダン</div>
-                            <div class="pattern-desc">不規則な格子パターン</div>
+                            <div class="pattern-name">モダン・ストライプ</div>
+                            <div class="pattern-desc">不規則なストライプパターン</div>
                         </div>
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(12)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2336454F'/><g fill='none' stroke='%23F4F0E7' stroke-width='2'><path d='M20 100 Q50 80, 80 100 T140 100' /><path d='M20 130 Q50 110, 80 130 T140 130' /><path d='M20 160 Q50 140, 80 160 T140 160' /></g></svg>" alt="Pattern 12" class="pattern-image">
+                        <img src="sakazen_07_geometric_theme/1-32.png" alt="Pattern 12" class="pattern-image">
                         <div class="pattern-number">12</div>
                         <div class="pattern-overlay">
-                            <div class="pattern-name">ジオメトリック・ウェーブ</div>
-                            <div class="pattern-desc">幾何学的な波の表現</div>
+                            <div class="pattern-name">ジオメトリック・ビルド</div>
+                            <div class="pattern-desc">幾何学的が立ち上がる表現</div>
                         </div>
                     </div>
                 </div>
@@ -530,13 +534,20 @@
     </div>
     
     <script>
-        function playVideo() {
-            alert('5秒動画を再生します\n（実際の実装では動画ファイルを再生）');
-        }
-        
-        function selectPattern(patternNumber) {
-            console.log(`Pattern ${patternNumber} selected`);
-        }
+function selectPattern(patternNumber) {
+    console.log(`Pattern ${patternNumber} selected`);
+}
+
+function playVideo() {
+    const videoContainer = document.querySelector('.model-container');
+    const video = document.createElement('video');
+    video.src = 'sakazen_07_geometric_theme/07_modelanimation.mp4';
+    video.controls = true;
+    video.autoplay = true;
+    video.style.cssText = 'width: 100%; height: auto; border-radius: 10px;';
+    videoContainer.innerHTML = '';
+    videoContainer.appendChild(video);
+}
     </script>
 </body>
 </html>

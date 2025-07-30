@@ -148,6 +148,10 @@
             position: relative;
             max-width: 400px;
             width: 100%;
+            height: 500px;
+            background: #f8f9fa;  /* 背景色を追加 */
+            border-radius: 10px;  /* 角丸追加 */
+            overflow: hidden;     /* はみ出し防止 */
         }
         .model-image {
             width: 100%;
@@ -413,7 +417,7 @@
             <!-- モデル着用セクション -->
             <div class="model-section">
                 <div class="model-container">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'><rect width='400' height='500' fill='%23f8f9fa'/><text x='200' y='250' text-anchor='middle' fill='%23666' font-family='Arial' font-size='16'>モデル着用画像</text><text x='200' y='270' text-anchor='middle' fill='%23666' font-family='Arial' font-size='12'>400×500px</text></svg>" alt="リファインド・クラシック モデル着用" class="model-image">
+                    <img src="sakazen_13_classic_theme/13_model.png" alt="リファインド・クラシック モデル着用" class="model-image" style="width: 100%; height: 500px; object-fit: contain;">
                     
                     <div class="video-overlay" onclick="playVideo()">
                         <div class="play-button">
@@ -434,7 +438,7 @@
                 <h2 class="patterns-title">クラシック バリエーション</h2>
                 <div class="patterns-grid">
                     <div class="pattern-card" onclick="selectPattern(13)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%231E3A5F'/><g fill='none' stroke='%23F5F0E8' stroke-width='2'><path d='M30 50 Q40 30, 60 40 Q70 60, 50 70 Q30 60, 30 50' /><path d='M100 50 Q110 30, 130 40 Q140 60, 120 70 Q100 60, 100 50' /><path d='M30 120 Q40 100, 60 110 Q70 130, 50 140 Q30 130, 30 120' /><path d='M100 120 Q110 100, 130 110 Q140 130, 120 140 Q100 130, 100 120' /></g></svg>" alt="Pattern 13" class="pattern-image">
+                        <img src="sakazen_13_classic_theme/13_pattern_01.png" alt="Pattern 13" class="pattern-image">
                         <div class="pattern-number">13</div>
                         <div class="pattern-overlay">
                             <div class="pattern-name">モダン・ペイズリー</div>
@@ -443,47 +447,47 @@
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(14)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%231E3A5F'/><g fill='none' stroke='%23F5F0E8' stroke-width='1.5'><path d='M20 100 Q50 80, 80 100 T140 100' stroke-dasharray='5,5' /><circle cx='40' cy='100' r='8' fill='none' /><circle cx='100' cy='100' r='8' fill='none' /><circle cx='160' cy='100' r='8' fill='none' /></g></svg>" alt="Pattern 14" class="pattern-image">
+                        <img src="sakazen_13_classic_theme/13_pattern_02.png" alt="Pattern 14" class="pattern-image">
                         <div class="pattern-number">14</div>
                         <div class="pattern-overlay">
-                            <div class="pattern-name">ミニマル・マリン</div>
-                            <div class="pattern-desc">洗練されたマリンライン</div>
+                            <div class="pattern-name">プレイフル・ペイズリー</div>
+                            <div class="pattern-desc">ポップなペイズリー</div>
                         </div>
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(15)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%231E3A5F'/><g fill='%23F5F0E8' opacity='0.8'><circle cx='40' cy='40' r='6' /><circle cx='80' cy='35' r='4' /><circle cx='120' cy='40' r='5' /><circle cx='160' cy='38' r='3' /><circle cx='30' cy='80' r='5' /><circle cx='70' cy='75' r='6' /><circle cx='110' cy='80' r='4' /><circle cx='150' cy='78' r='5' /></g></svg>" alt="Pattern 15" class="pattern-image">
+                        <img src="sakazen_13_classic_theme/13_pattern_03.png" alt="Pattern 15" class="pattern-image">
                         <div class="pattern-number">15</div>
                         <div class="pattern-overlay">
-                            <div class="pattern-name">フローラル・アブストラクト</div>
-                            <div class="pattern-desc">抽象化された小花柄</div>
+                            <div class="pattern-name">ミニマル・ペイズリー</div>
+                            <div class="pattern-desc">簡略化されたペイズリー</div>
                         </div>
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(16)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%231E3A5F'/><g fill='none' stroke='%23F5F0E8' stroke-width='1.5'><polygon points='50,30 70,40 70,60 50,70 30,60 30,40' /><path d='M50 35 Q60 30, 70 35' /><polygon points='120,30 140,40 140,60 120,70 100,60 100,40' /><path d='M120 35 Q130 30, 140 35' /></g></svg>" alt="Pattern 16" class="pattern-image">
+                        <img src="sakazen_13_classic_theme/13_pattern_04.png" alt="Pattern 16" class="pattern-image">
                         <div class="pattern-number">16</div>
                         <div class="pattern-overlay">
-                            <div class="pattern-name">ナウティカル・ジオメトリック</div>
-                            <div class="pattern-desc">幾何学化されたマリン要素</div>
+                            <div class="pattern-name">シンプル・ペイズリー</div>
+                            <div class="pattern-desc">パターン化を意識したペイズリー</div>
                         </div>
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(17)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%231E3A5F'/><g fill='none' stroke='%23F5F0E8' stroke-width='2'><path d='M30 50 Q50 30, 70 50 Q50 70, 30 50' opacity='0.6'/><path d='M100 50 Q120 30, 140 50 Q120 70, 100 50' opacity='0.8'/><path d='M30 120 Q50 100, 70 120 Q50 140, 30 120' opacity='0.7'/><path d='M100 120 Q120 100, 140 120 Q120 140, 100 120' opacity='0.9'/></g></svg>" alt="Pattern 17" class="pattern-image">
+                        <img src="sakazen_13_classic_theme/13_pattern_05.png" alt="Pattern 17" class="pattern-image">
                         <div class="pattern-number">17</div>
                         <div class="pattern-overlay">
-                            <div class="pattern-name">クラシック・リニューアル</div>
-                            <div class="pattern-desc">伝統柄の現代的解釈</div>
+                            <div class="pattern-name">ドット・ライク</div>
+                            <div class="pattern-desc">無地ライクな解釈</div>
                         </div>
                     </div>
                     
                     <div class="pattern-card" onclick="selectPattern(18)">
-                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%231E3A5F'/><g fill='none' stroke='%23F5F0E8' stroke-width='1'><rect x='20' y='30' width='30' height='15' rx='7' /><rect x='70' y='30' width='30' height='15' rx='7' /><rect x='120' y='30' width='30' height='15' rx='7' /><rect x='35' y='60' width='30' height='15' rx='7' /><rect x='85' y='60' width='30' height='15' rx='7' /><rect x='135' y='60' width='30' height='15' rx='7' /></g></svg>" alt="Pattern 18" class="pattern-image">
+                        <img src="sakazen_13_classic_theme/13_pattern_06.png" alt="Pattern 18" class="pattern-image">
                         <div class="pattern-number">18</div>
                         <div class="pattern-overlay">
-                            <div class="pattern-name">ヘリテージ・モダン</div>
-                            <div class="pattern-desc">伝統美と現代性の融合</div>
+                            <div class="pattern-name">チル・ニュアンス</div>
+                            <div class="pattern-desc">リラックスな印象</div>
                         </div>
                     </div>
                 </div>
@@ -519,13 +523,20 @@
     </div>
     
     <script>
-        function playVideo() {
-            alert('5秒動画を再生します\n（実際の実装では動画ファイルを再生）');
-        }
-        
-        function selectPattern(patternNumber) {
-            console.log(`Pattern ${patternNumber} selected`);
-        }
+function selectPattern(patternNumber) {
+    console.log(`Pattern ${patternNumber} selected`);
+}
+
+function playVideo() {
+    const videoContainer = document.querySelector('.model-container');
+    const video = document.createElement('video');
+    video.src = 'sakazen_13_classic_theme/13_modelanimation.mp4';
+    video.controls = true;
+    video.autoplay = true;
+    video.style.cssText = 'width: 100%; height: auto; border-radius: 10px;';
+    videoContainer.innerHTML = '';
+    videoContainer.appendChild(video);
+}
     </script>
 </body>
 </html>
