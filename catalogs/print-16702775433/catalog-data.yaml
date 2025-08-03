@@ -1,0 +1,183 @@
+---
+collection:
+  id: "print-16702775433"
+  year: 2026
+  season: "spring_summer"
+  theme: "cyberbotanical"
+  title: "Cyberbotanical Collection"
+  subtitle: "2026年春夏コレクション・プロフェッショナルファッションカタログ"
+
+patterns:
+  - id: 1
+    name: "Digital Circuit Botanica"
+    name_jp: "デジタル回路ボタニカ"
+    description: "seamless repeating textile pattern, tileable fabric design, large tropical leaves with electric circuit board veins in neon cyan and magenta"
+    image: "./patterns/pattern_1.png"
+    color_chip: "./colors/pattern-1-digital-circuit-botanica.svg"
+    specifications:
+      repeat_type: "Half Drop"
+      scale: "Large"
+      use_case: "ステートメントピース"
+      application: "Statement pieces, oversized scale garments"
+    colors:
+      primary: "#00FFFF"
+      secondary:
+        - "#FF1493"  # Hot Pink
+        - "#32CD32"  # Lime Green
+        - "#1E1E1E"  # Dark Gray
+        - "#C0C0C0"  # Silver
+    technical_notes: "大型スケールのステートメントピース用デザイン。グローイング・ヴェイン効果を特徴とし、電子回路をモチーフにした熱帯植物のパターン。"
+    special_features:
+      - "Glowing vein effects"
+      - "High-contrast electric theme"
+      - "Oversized scale for statement pieces"
+
+  - id: 2
+    name: "Holographic Fern Matrix"
+    name_jp: "ホログラフィック・ファーン・マトリックス"
+    description: "seamless repeating textile pattern, tileable fabric design, delicate fern fronds with holographic data stream overlays, pixelated edges with glitch effects"
+    image: "./patterns/pattern_2.png"
+    color_chip: "./colors/pattern-2-holographic-fern-matrix.svg"
+    specifications:
+      repeat_type: "Straight"
+      scale: "Medium"
+      use_case: "汎用衣類アプリケーション"
+      application: "Versatile garment applications"
+    colors:
+      primary: "#9370DB"
+      secondary:
+        - "#00CED1"  # Dark Turquoise
+        - "#FFB6C1"  # Light Pink
+        - "#E6E6FA"  # Lavender
+        - "#483D8B"  # Dark Slate Blue
+    technical_notes: "中型スケールの汎用衣類向けデザイン。ホログラフィック印刷技術が必要で、グリッチエフェクトとイリデセント色変化を特徴とする。"
+    special_features:
+      - "Holographic printing required"
+      - "Pixelated edges with glitch effects"
+      - "Iridescent color shifts"
+
+  - id: 3
+    name: "Bioluminescent Moss Network"
+    name_jp: "バイオルミネセント・モス・ネットワーク"
+    description: "seamless repeating textile pattern, tileable fabric design, organic moss texture with embedded LED-like dots, network connection lines between bio-nodes"
+    image: "./patterns/pattern_3.png"
+    color_chip: "./colors/pattern-3-bioluminescent-moss-network.svg"
+    specifications:
+      repeat_type: "Brick"
+      scale: "Small"
+      use_case: "テックウェア"
+      application: "Tech-wear, performance garments"
+    colors:
+      primary: "#32CD32"
+      secondary:
+        - "#00FFFF"  # Cyan
+        - "#228B22"  # Forest Green
+        - "#2F4F4F"  # Dark Slate Gray
+        - "#F0FFFF"  # Azure
+    technical_notes: "小型スケールの精密パターン。テックウェア用途に最適化され、生物発光効果とネットワーク接続線を特徴とする。"
+    special_features:
+      - "Bioluminescent effects"
+      - "Network connection patterns"
+      - "Small scale intricate design"
+
+  - id: 4
+    name: "Cyber Bloom Transformation"
+    name_jp: "サイバー・ブルーム・トランスフォーメーション"
+    description: "seamless repeating textile pattern, tileable fabric design, flowering plants morphing into geometric digital forms, gradient transformation from organic to pixelated"
+    image: "./patterns/pattern_4.png"
+    color_chip: "./colors/pattern-4-cyber-bloom-transformation.svg"
+    specifications:
+      repeat_type: "Half Drop"
+      scale: "Large"
+      use_case: "エボリューションテーマ"
+      application: "Evolution-themed collections"
+    colors:
+      primary: "#008B8B"
+      secondary:
+        - "#FF1493"  # Deep Pink
+        - "#FF69B4"  # Hot Pink
+        - "#4682B4"  # Steel Blue
+        - "#F5F5DC"  # Beige
+    technical_notes: "大型スケールのモーフィングデザイン。自然からテクノロジーへの進化テーマを表現し、グラデーション変換効果を特徴とする。"
+    special_features:
+      - "Gradient transformation effects"
+      - "Nature-tech evolution theme"
+      - "Morphing design elements"
+
+  - id: 5
+    name: "Quantum Leaf Circuitry"
+    name_jp: "クォンタム・リーフ・サーキュイトリー"
+    description: "seamless repeating textile pattern, tileable fabric design, translucent botanical leaves with visible internal microchip patterns, quantum particle effects around edges"
+    image: "./patterns/pattern_5.png"
+    color_chip: "./colors/pattern-5-quantum-leaf-circuitry.svg"
+    specifications:
+      repeat_type: "Straight"
+      scale: "Medium"
+      use_case: "透明効果イリュージョン"
+      application: "Premium transparent effect garments"
+    colors:
+      primary: "#4169E1"
+      secondary:
+        - "#FFC000"  # Gold
+        - "#E0FFFF"  # Light Cyan
+        - "#191970"  # Midnight Blue
+        - "#FFFAF0"  # Floral White
+    technical_notes: "中型スケールの透明効果付きデザイン。透明イリュージョン実现に高度な印刷技術が必要で、クォンタム・パーティクル効果を特徴とする。"
+    special_features:
+      - "Translucent effects"
+      - "Quantum particle effects"
+      - "Advanced printing required"
+
+color_trends:
+  primary_trend: "Transformative Teal (2026 Color of the Year)"
+  supporting_palette:
+    - "Electric Fuchsia"
+    - "Blue Aura"
+    - "Amber Haze"
+    - "Jelly Mint"
+  technical_colors:
+    - name: "Neon Cyan"
+      purpose: "デジタル要素用"
+      hex: "#00FFFF"
+    - name: "Metallic Silver"
+      purpose: "テック要素用"
+      hex: "#C0C0C0"
+    - name: "Deep Purple"
+      purpose: "生物発光用"
+      hex: "#9370DB"
+    - name: "Earthy Neutrals"
+      purpose: "植物背景用"
+      hex: "#2F4F4F"
+
+target_personas:
+  primary:
+    demographic: "Gen Z (18-27)"
+    characteristics: "Tech-savvy, sustainability-focused"
+  secondary:
+    demographic: "Millennials (28-43)"
+    characteristics: "Environmental leaders, premium eco-conscious"
+  tertiary:
+    demographic: "Urban professionals"
+    characteristics: "Seeking conversation-starter pieces"
+
+production_specs:
+  resolution: "6000x6000 pixels minimum"
+  format: "Vector-based with layered PSD"
+  dpi: "2400 DPI for commercial licensing"
+  repeat_accuracy: "Perfect mathematical tiling required"
+  special_effects:
+    - "Holographic printing capability"
+    - "Bioluminescent material integration"
+    - "UV-reactive color changing elements"
+    - "Moisture-responsive technology compatibility"
+
+catalog_files:
+  html: "catalog.html"
+  markdown: "catalog.md"
+  data: "catalog-data.yaml"
+  
+metadata:
+  created: "2025-08-03"
+  version: "1.0"
+  author: "AI Assistant"
+  purpose: "Professional fashion catalog for cyberbotanical collection"

@@ -1,0 +1,29 @@
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Cyber Bloom Transformation - Color Palette</text>
+  
+  <!-- Primary Color -->
+  <rect x="50" y="50" width="80" height="80" fill="#008B8B" stroke="#000" stroke-width="2"/>
+  <text x="90" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFF">#008B8B</text>
+  <text x="90" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Primary</text>
+  
+  <!-- Secondary Colors -->
+  <rect x="150" y="50" width="80" height="80" fill="#FF1493" stroke="#000" stroke-width="2"/>
+  <text x="190" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">#FF1493</text>
+  <text x="190" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Deep Pink</text>
+  
+  <rect x="250" y="50" width="80" height="80" fill="#FF69B4" stroke="#000" stroke-width="2"/>
+  <text x="290" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">#FF69B4</text>
+  <text x="290" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Hot Pink</text>
+  
+  <rect x="350" y="50" width="80" height="80" fill="#4682B4" stroke="#000" stroke-width="2"/>
+  <text x="390" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFF">#4682B4</text>
+  <text x="390" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Steel Blue</text>
+  
+  <rect x="450" y="50" width="80" height="80" fill="#F5F5DC" stroke="#000" stroke-width="2"/>
+  <text x="490" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">#F5F5DC</text>
+  <text x="490" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Beige</text>
+  
+  <!-- Theme description -->
+  <text x="300" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Nature-to-digital metamorphosis theme</text>
+</svg>

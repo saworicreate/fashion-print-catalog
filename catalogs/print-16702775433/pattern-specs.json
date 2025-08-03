@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "year": 2026,
+    "season": "spring_summer",
+    "theme": "cyberbotanical",
+    "collection_id": "print-16702775433"
+  },
+  "patterns": [
+    {
+      "id": 1,
+      "name": "Digital Circuit Botanica",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, large tropical leaves with electric circuit board veins in neon cyan and magenta, continuous motif, no borders, perfect repeat, bioluminescent glow effects, futuristic botanical forms",
+      "repeat_type": "half_drop",
+      "colors": {
+        "primary": "#00FFFF",
+        "secondary": ["#FF1493", "#32CD32", "#1E1E1E", "#C0C0C0"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "cyberbotanical", "tech-nature-fusion"],
+      "technical_notes": "Oversized scale for statement pieces, glowing vein effects"
+    },
+    {
+      "id": 2,
+      "name": "Holographic Fern Matrix",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, delicate fern fronds with holographic data stream overlays, pixelated edges with glitch effects, continuous motif, no borders, perfect repeat, iridescent color shifts, digital botanical texture",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#9370DB",
+        "secondary": ["#00CED1", "#FFB6C1", "#E6E6FA", "#483D8B"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "holographic", "glitch-effect"],
+      "technical_notes": "Medium scale for versatile garment applications, requires holographic printing techniques"
+    },
+    {
+      "id": 3,
+      "name": "Bioluminescent Moss Network",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, organic moss texture with embedded LED-like dots, network connection lines between bio-nodes, continuous motif, no borders, perfect repeat, glowing cyan and electric green points",
+      "repeat_type": "brick",
+      "colors": {
+        "primary": "#32CD32",
+        "secondary": ["#00FFFF", "#228B22", "#2F4F4F", "#F0FFFF"]
+      },
+      "scale": "small",
+      "style": ["textile", "seamless", "repeating", "bioluminescent", "network-pattern"],
+      "technical_notes": "Small scale intricate pattern, optimal for tech-wear applications"
+    },
+    {
+      "id": 4,
+      "name": "Cyber Bloom Transformation",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, flowering plants morphing into geometric digital forms, gradient transformation from organic to pixelated, continuous motif, no borders, perfect repeat, transformative teal and electric fuchsia color palette",
+      "repeat_type": "half_drop",
+      "colors": {
+        "primary": "#008B8B",
+        "secondary": ["#FF1493", "#FF69B4", "#4682B4", "#F5F5DC"]
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "transformation", "gradient-effect"],
+      "technical_notes": "Large scale morphing design, represents nature-tech evolution theme"
+    },
+    {
+      "id": 5,
+      "name": "Quantum Leaf Circuitry",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, translucent botanical leaves with visible internal microchip patterns, quantum particle effects around edges, continuous motif, no borders, perfect repeat, ethereal blue aura with amber highlights",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#4169E1",
+        "secondary": ["#FFC000", "#E0FFFF", "#191970", "#FFFAF0"]
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "translucent", "quantum-tech"],
+      "technical_notes": "Medium scale with translucent effects, requires advanced printing for transparency illusion"
+    }
+  ],
+  "color_trend_analysis": {
+    "primary_trend": "Transformative Teal (2026 Color of the Year)",
+    "supporting_palette": [
+      "Electric Fuchsia",
+      "Blue Aura", 
+      "Amber Haze",
+      "Jelly Mint"
+    ],
+    "technical_colors": [
+      "Neon cyan for digital elements",
+      "Metallic silver for tech components",
+      "Deep purple for bioluminescence",
+      "Earthy neutrals for botanical backgrounds"
+    ]
+  },
+  "target_personas": {
+    "primary": "Gen Z (18-27) - Tech-savvy, sustainability-focused",
+    "secondary": "Millennials (28-43) - Environmental leaders, premium eco-conscious",
+    "tertiary": "Urban professionals seeking conversation-starter pieces"
+  },
+  "production_specifications": {
+    "resolution": "6000x6000 pixels minimum",
+    "format": "Vector-based with layered PSD",
+    "dpi": "2400 DPI for commercial licensing",
+    "repeat_accuracy": "Perfect mathematical tiling required",
+    "special_effects": [
+      "Holographic printing capability",
+      "Bioluminescent material integration",
+      "UV-reactive color changing elements",
+      "Moisture-responsive technology compatibility"
+    ]
+  }
+}

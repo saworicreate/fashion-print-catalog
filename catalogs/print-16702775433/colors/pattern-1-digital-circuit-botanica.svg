@@ -1,0 +1,29 @@
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Digital Circuit Botanica - Color Palette</text>
+  
+  <!-- Primary Color -->
+  <rect x="50" y="50" width="80" height="80" fill="#00FFFF" stroke="#000" stroke-width="2"/>
+  <text x="90" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">#00FFFF</text>
+  <text x="90" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Primary</text>
+  
+  <!-- Secondary Colors -->
+  <rect x="150" y="50" width="80" height="80" fill="#FF1493" stroke="#000" stroke-width="2"/>
+  <text x="190" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">#FF1493</text>
+  <text x="190" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Hot Pink</text>
+  
+  <rect x="250" y="50" width="80" height="80" fill="#32CD32" stroke="#000" stroke-width="2"/>
+  <text x="290" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">#32CD32</text>
+  <text x="290" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Lime Green</text>
+  
+  <rect x="350" y="50" width="80" height="80" fill="#1E1E1E" stroke="#000" stroke-width="2"/>
+  <text x="390" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFF">#1E1E1E</text>
+  <text x="390" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Dark Gray</text>
+  
+  <rect x="450" y="50" width="80" height="80" fill="#C0C0C0" stroke="#000" stroke-width="2"/>
+  <text x="490" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">#C0C0C0</text>
+  <text x="490" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Silver</text>
+  
+  <!-- Theme description -->
+  <text x="300" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">High-contrast electric botanical theme</text>
+</svg>

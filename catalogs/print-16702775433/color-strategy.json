@@ -1,0 +1,128 @@
+{
+  "collection_info": {
+    "collection_id": "print-16702775433",
+    "theme": "cyberbotanical",
+    "season": "spring_summer_2026",
+    "color_trend": "Transformative Teal 2026"
+  },
+  "color_palettes": {
+    "pattern_1": {
+      "name": "Digital Circuit Botanica",
+      "theme": "High-contrast electric botanical",
+      "palette": {
+        "primary": "#00FFFF",
+        "secondary": ["#FF1493", "#32CD32", "#1E1E1E", "#C0C0C0"],
+        "accent_colors": ["#00E5E5", "#E6007A", "#2EB82E"],
+        "background": "#0A0A0A",
+        "highlight": "#FFFFFF"
+      },
+      "color_strategy": "Electric cyan primary creates maximum impact against deep black backgrounds. Hot pink secondary adds energy while lime green reinforces the botanical connection. Metallic silver provides tech sophistication.",
+      "psychology": "Energizing, futuristic, attention-grabbing",
+      "target_applications": ["Statement pieces", "Athletic wear", "Festival fashion"]
+    },
+    "pattern_2": {
+      "name": "Holographic Fern Matrix",
+      "theme": "Iridescent digital nature",
+      "palette": {
+        "primary": "#9370DB",
+        "secondary": ["#00CED1", "#FFB6C1", "#E6E6FA", "#483D8B"],
+        "accent_colors": ["#8A2BE2", "#20B2AA", "#F0B6C1"],
+        "background": "#F8F8FF",
+        "highlight": "#FFFFFF"
+      },
+      "color_strategy": "Medium violet primary creates mystical depth. Turquoise secondary adds holographic shimmer effect. Light pink provides organic softness while maintaining futuristic appeal.",
+      "psychology": "Mystical, ethereal, sophisticated",
+      "target_applications": ["Evening wear", "Premium casual", "Tech accessories"]
+    },
+    "pattern_3": {
+      "name": "Bioluminescent Moss Network",
+      "theme": "Organic tech networking",
+      "palette": {
+        "primary": "#32CD32",
+        "secondary": ["#00FFFF", "#228B22", "#2F4F4F", "#F0FFFF"],
+        "accent_colors": ["#00FF00", "#00E5E5", "#1E6E1E"],
+        "background": "#1C3A1C",
+        "highlight": "#E0FFE0"
+      },
+      "color_strategy": "Lime green primary mimics bioluminescence. Cyan creates network connection feel. Forest green provides natural grounding while slate gray adds tech sophistication.",
+      "psychology": "Natural, connected, innovative",
+      "target_applications": ["Outdoor tech wear", "Sustainable fashion", "Urban exploration"]
+    },
+    "pattern_4": {
+      "name": "Cyber Bloom Transformation",
+      "theme": "Nature-to-digital metamorphosis",
+      "palette": {
+        "primary": "#008B8B",
+        "secondary": ["#FF1493", "#FF69B4", "#4682B4", "#F5F5DC"],
+        "accent_colors": ["#006A6A", "#E6007A", "#FF5DA2"],
+        "background": "#F0F8F0",
+        "highlight": "#FFFFFF"
+      },
+      "color_strategy": "Dark cyan primary represents transformation midpoint. Hot pink adds energy and femininity. Steel blue provides stability while beige offers organic warmth.",
+      "psychology": "Transformative, balanced, evolutionary",
+      "target_applications": ["Transitional pieces", "Office-to-evening wear", "Creative professional"]
+    },
+    "pattern_5": {
+      "name": "Quantum Leaf Circuitry",
+      "theme": "Ethereal technology integration",
+      "palette": {
+        "primary": "#4169E1",
+        "secondary": ["#FFC000", "#E0FFFF", "#191970", "#FFFAF0"],
+        "accent_colors": ["#3158D4", "#E6AD00", "#D1F5F5"],
+        "background": "#F8F8FF",
+        "highlight": "#FFFFFF"
+      },
+      "color_strategy": "Royal blue primary creates quantum depth. Amber secondary adds warmth and energy highlights. Light cyan provides ethereal translucency while midnight blue grounds the design.",
+      "psychology": "Intelligent, premium, contemplative",
+      "target_applications": ["Luxury pieces", "Professional wear", "Innovation sector fashion"]
+    }
+  },
+  "cross_collection_harmony": {
+    "unifying_colors": ["#008B8B", "#00FFFF", "#FF1493"],
+    "brand_signature": "Transformative Teal (#008B8B) as collection anchor",
+    "color_relationships": {
+      "complementary_pairs": [
+        ["#00FFFF", "#FF1493"],
+        ["#32CD32", "#9370DB"],
+        ["#4169E1", "#FFC000"]
+      ],
+      "triadic_schemes": [
+        ["#008B8B", "#FF1493", "#32CD32"],
+        ["#9370DB", "#00CED1", "#FFB6C1"]
+      ]
+    }
+  },
+  "technical_specifications": {
+    "color_space": "sRGB",
+    "bit_depth": "8-bit per channel",
+    "gamma": "2.2",
+    "printing_considerations": {
+      "cmyk_conversion_notes": "Neon colors require spot color printing for maximum vibrancy",
+      "substrate_compatibility": "Optimized for synthetic fiber dyes and digital textile printing",
+      "color_fastness": "Target minimum 4/5 rating for wash and light fastness"
+    },
+    "special_effects_integration": {
+      "holographic_elements": "Compatible with holographic foil application",
+      "uv_reactive": "UV-reactive pigments recommended for accent colors",
+      "moisture_responsive": "Thermochromic elements can be integrated with temperature-sensitive dyes"
+    }
+  },
+  "market_positioning": {
+    "premium_tier": ["Pattern 2: Holographic Fern Matrix", "Pattern 5: Quantum Leaf Circuitry"],
+    "mass_market": ["Pattern 1: Digital Circuit Botanica", "Pattern 3: Bioluminescent Moss Network"],
+    "specialty_tech": ["Pattern 4: Cyber Bloom Transformation"],
+    "price_point_correlation": {
+      "luxury": "Complex holographic and quantum themes",
+      "mid_tier": "Transformation and bioluminescent themes", 
+      "accessible": "High-contrast electric themes"
+    }
+  },
+  "sustainability_notes": {
+    "eco_friendly_alternatives": {
+      "natural_dyes": "Plant-based alternatives for green tones",
+      "low_impact_processing": "Digital printing reduces water usage by 95%",
+      "recycled_substrates": "Compatible with recycled polyester and organic cotton blends"
+    },
+    "lifecycle_considerations": "Colors selected for maximum longevity and reduced environmental impact"
+  }
+}

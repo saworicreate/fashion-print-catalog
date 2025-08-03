@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberbotanical Fashion Catalog 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .header .collection-info {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .pattern-grid {
+            display: grid;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .pattern-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            min-height: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .pattern-image {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .pattern-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .pattern-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .pattern-details {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pattern-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .pattern-name-jp {
+            font-size: 1.1rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .pattern-specs {
+            margin-bottom: 25px;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .spec-label {
+            font-weight: 500;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .spec-value {
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .color-palette {
+            margin: 25px 0;
+        }
+
+        .color-palette-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .color-chips {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .color-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .color-swatch {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .color-code {
+            font-family: 'Inter', monospace;
+            font-size: 0.8rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .technical-notes {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .technical-notes h4 {
+            font-size: 0.9rem;
+            color: #667eea;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .technical-notes p {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .trend-analysis {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .trend-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .trend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .trend-section h4 {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .trend-section ul {
+            list-style: none;
+        }
+
+        .trend-section li {
+            padding: 5px 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .pattern-card {
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+            
+            .pattern-details {
+                padding: 25px;
+            }
+            
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .color-chips {
+                gap: 8px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .pattern-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            
+            .pattern-card:hover {
+                transform: none;
+            }
+        }
+
+        .zoom-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .zoom-overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .zoom-overlay.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Cyberbotanical Collection</h1>
+            <p class="subtitle">2026年春夏コレクション・プロフェッショナルファッションカタログ</p>
+            <p class="collection-info">Collection ID: PRINT-16702775433</p>
+        </header>
+
+        <div class="pattern-grid">
+            <!-- Pattern 1: Digital Circuit Botanica -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="zoomImage('./patterns/pattern_1.png')">
+                    <img src="./patterns/pattern_1.png" alt="Digital Circuit Botanica">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">Digital Circuit Botanica</h3>
+                        <p class="pattern-name-jp">デジタル回路ボタニカ</p>
+                        
+                        <div class="pattern-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ</span>
+                                <span class="spec-value">Half Drop</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール</span>
+                                <span class="spec-value">Large</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途</span>
+                                <span class="spec-value">ステートメントピース</span>
+                            </div>
+                        </div>
+
+                        <div class="color-palette">
+                            <h4 class="color-palette-title">カラーパレット</h4>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #00FFFF; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#00FFFF</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #FF1493; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#FF1493</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #32CD32; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#32CD32</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #1E1E1E; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#1E1E1E</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #C0C0C0; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#C0C0C0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical-notes">
+                        <h4>技術仕様</h4>
+                        <p>大型スケールのステートメントピース用デザイン。グローイング・ヴェイン効果を特徴とし、電子回路をモチーフにした熱帯植物のパターン。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 2: Holographic Fern Matrix -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="zoomImage('./patterns/pattern_2.png')">
+                    <img src="./patterns/pattern_2.png" alt="Holographic Fern Matrix">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">Holographic Fern Matrix</h3>
+                        <p class="pattern-name-jp">ホログラフィック・ファーン・マトリックス</p>
+                        
+                        <div class="pattern-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ</span>
+                                <span class="spec-value">Straight</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール</span>
+                                <span class="spec-value">Medium</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途</span>
+                                <span class="spec-value">汎用衣類アプリケーション</span>
+                            </div>
+                        </div>
+
+                        <div class="color-palette">
+                            <h4 class="color-palette-title">カラーパレット</h4>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #9370DB; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#9370DB</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #00CED1; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#00CED1</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #FFB6C1; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#FFB6C1</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #E6E6FA; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#E6E6FA</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #483D8B; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#483D8B</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical-notes">
+                        <h4>技術仕様</h4>
+                        <p>中型スケールの汎用衣類向けデザイン。ホログラフィック印刷技術が必要で、グリッチエフェクトとイリデセント色変化を特徴とする。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 3: Bioluminescent Moss Network -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="zoomImage('./patterns/pattern_3.png')">
+                    <img src="./patterns/pattern_3.png" alt="Bioluminescent Moss Network">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">Bioluminescent Moss Network</h3>
+                        <p class="pattern-name-jp">バイオルミネセント・モス・ネットワーク</p>
+                        
+                        <div class="pattern-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ</span>
+                                <span class="spec-value">Brick</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール</span>
+                                <span class="spec-value">Small</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途</span>
+                                <span class="spec-value">テックウェア</span>
+                            </div>
+                        </div>
+
+                        <div class="color-palette">
+                            <h4 class="color-palette-title">カラーパレット</h4>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #32CD32; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#32CD32</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #00FFFF; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#00FFFF</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #228B22; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#228B22</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #2F4F4F; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#2F4F4F</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #F0FFFF; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#F0FFFF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical-notes">
+                        <h4>技術仕様</h4>
+                        <p>小型スケールの精密パターン。テックウェア用途に最適化され、生物発光効果とネットワーク接続線を特徴とする。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 4: Cyber Bloom Transformation -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="zoomImage('./patterns/pattern_4.png')">
+                    <img src="./patterns/pattern_4.png" alt="Cyber Bloom Transformation">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">Cyber Bloom Transformation</h3>
+                        <p class="pattern-name-jp">サイバー・ブルーム・トランスフォーメーション</p>
+                        
+                        <div class="pattern-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ</span>
+                                <span class="spec-value">Half Drop</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール</span>
+                                <span class="spec-value">Large</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途</span>
+                                <span class="spec-value">エボリューションテーマ</span>
+                            </div>
+                        </div>
+
+                        <div class="color-palette">
+                            <h4 class="color-palette-title">カラーパレット</h4>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #008B8B; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#008B8B</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #FF1493; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#FF1493</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #FF69B4; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#FF69B4</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #4682B4; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#4682B4</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #F5F5DC; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#F5F5DC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical-notes">
+                        <h4>技術仕様</h4>
+                        <p>大型スケールのモーフィングデザイン。自然からテクノロジーへの進化テーマを表現し、グラデーション変換効果を特徴とする。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern 5: Quantum Leaf Circuitry -->
+            <div class="pattern-card">
+                <div class="pattern-image" onclick="zoomImage('./patterns/pattern_5.png')">
+                    <img src="./patterns/pattern_5.png" alt="Quantum Leaf Circuitry">
+                </div>
+                <div class="pattern-details">
+                    <div>
+                        <h3 class="pattern-name">Quantum Leaf Circuitry</h3>
+                        <p class="pattern-name-jp">クォンタム・リーフ・サーキュイトリー</p>
+                        
+                        <div class="pattern-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">リピートタイプ</span>
+                                <span class="spec-value">Straight</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">スケール</span>
+                                <span class="spec-value">Medium</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途</span>
+                                <span class="spec-value">透明効果イリュージョン</span>
+                            </div>
+                        </div>
+
+                        <div class="color-palette">
+                            <h4 class="color-palette-title">カラーパレット</h4>
+                            <div class="color-chips">
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #4169E1; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#4169E1</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #FFC000; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#FFC000</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #E0FFFF; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#E0FFFF</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #191970; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#191970</span>
+                                </div>
+                                <div class="color-chip">
+                                    <span class="color-swatch" style="background-color: #FFFAF0; border: 1px solid #ccc;"></span>
+                                    <span class="color-code">#FFFAF0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="technical-notes">
+                        <h4>技術仕様</h4>
+                        <p>中型スケールの透明効果付きデザイン。透明イリュージョン実现に高度な印刷技術が必要で、クォンタム・パーティクル効果を特徴とする。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trend-analysis">
+            <h2 class="trend-title">2026年カラートレンド分析</h2>
+            <div class="trend-grid">
+                <div class="trend-section">
+                    <h4>プライマリートレンド</h4>
+                    <ul>
+                        <li>• Transformative Teal (2026年カラー・オブ・ザ・イヤー)</li>
+                    </ul>
+                </div>
+                <div class="trend-section">
+                    <h4>サポートパレット</h4>
+                    <ul>
+                        <li>• Electric Fuchsia</li>
+                        <li>• Blue Aura</li>
+                        <li>• Amber Haze</li>
+                        <li>• Jelly Mint</li>
+                    </ul>
+                </div>
+                <div class="trend-section">
+                    <h4>テクニカルカラー</h4>
+                    <ul>
+                        <li>• ネオンシアン（デジタル要素用）</li>
+                        <li>• メタリックシルバー（テック要素用）</li>
+                        <li>• ディープパープル（生物発光用）</li>
+                        <li>• アーシーニュートラル（植物背景用）</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="zoom-overlay" id="zoomOverlay" onclick="closeZoom()">
+        <img id="zoomImage" src="" alt="Zoomed Pattern">
+    </div>
+
+    <script>
+        function zoomImage(src) {
+            const overlay = document.getElementById('zoomOverlay');
+            const zoomImg = document.getElementById('zoomImage');
+            zoomImg.src = src;
+            overlay.classList.add('active');
+        }
+
+        function closeZoom() {
+            const overlay = document.getElementById('zoomOverlay');
+            overlay.classList.remove('active');
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeZoom();
+            }
+        });
+    </script>
+</body>
+</html>
