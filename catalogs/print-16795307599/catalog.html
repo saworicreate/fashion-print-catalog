@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフェッショナル ファッションカタログ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .pattern-grid {
+            display: grid;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .pattern-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            min-height: 400px;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .pattern-image {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .pattern-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .pattern-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .pattern-details {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pattern-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .pattern-name-en {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .pattern-category {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .pattern-description {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .spec-item {
+            margin-bottom: 1rem;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .spec-value {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .color-palette {
+            margin-top: 1.5rem;
+        }
+
+        .color-palette-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .color-chips {
+            display: flex;
+            gap: 0.8rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .color-chip {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .color-swatch {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .color-hex {
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.8rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .pattern-id {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255,255,255,0.9);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #667eea;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .pattern-card {
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+
+            .pattern-details {
+                padding: 1.5rem;
+            }
+
+            .pattern-name {
+                font-size: 1.5rem;
+            }
+
+            .color-chips {
+                gap: 0.5rem;
+            }
+
+            .color-swatch {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+
+            .container {
+                max-width: none;
+                padding: 0;
+            }
+
+            .pattern-card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+                margin-bottom: 2rem;
+            }
+
+            .pattern-card:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+            h1 {
+                font-size: 24pt;
+                margin-bottom: 1rem;
+            }
+
+            .subtitle {
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* Interactive Image Zoom */
+        .zoom-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .zoom-image {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>プロフェッショナル ファッションカタログ</h1>
+        <p class="subtitle">最新のパターンデザインとカラーパレットコレクション</p>
+
+        <div class="pattern-grid" id="patternGrid">
+            <!-- Patterns will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <div class="zoom-overlay" id="zoomOverlay">
+        <img src="" alt="" class="zoom-image" id="zoomImage">
+    </div>
+
+    <script>
+        // Pattern data from JSON
+        const patterns = [
+            {
+                "id": "pattern_1",
+                "name": "エレガントローズ",
+                "name_en": "Elegant Rose",
+                "image": "./patterns/pattern_1.png",
+                "category": "フローラル",
+                "use_case": "ドレス、ブラウス、スカーフ",
+                "technique": "デジタルプリント",
+                "material_compatibility": "シルク、コットン、ポリエステル",
+                "colors": ["#ff6b9d", "#f8e71c", "#7bed9f", "#70a1ff"],
+                "description": "優雅なバラのパターンで、フォーマルからカジュアルまで幅広く使用可能"
+            },
+            {
+                "id": "pattern_2",
+                "name": "モダンジオメトリック",
+                "name_en": "Modern Geometric",
+                "image": "./patterns/pattern_2.png",
+                "category": "ジオメトリック",
+                "use_case": "ジャケット、パンツ、アクセサリー",
+                "technique": "スクリーンプリント",
+                "material_compatibility": "コットン、リネン、ウール",
+                "colors": ["#667eea", "#764ba2", "#f093fb", "#f5f7fa"],
+                "description": "現代的な幾何学模様で、ビジネスシーンにも適用可能"
+            },
+            {
+                "id": "pattern_3",
+                "name": "トロピカルリーフ",
+                "name_en": "Tropical Leaf",
+                "image": "./patterns/pattern_3.png",
+                "category": "ナチュラル",
+                "use_case": "サマードレス、シャツ、水着",
+                "technique": "リアクティブプリント",
+                "material_compatibility": "コットン、レーヨン、リネン",
+                "colors": ["#2ed573", "#ffa502", "#ff6348", "#3742fa"],
+                "description": "南国の葉をモチーフにした爽やかなサマーパターン"
+            },
+            {
+                "id": "pattern_4",
+                "name": "ヴィンテージダマスク",
+                "name_en": "Vintage Damask",
+                "image": "./patterns/pattern_4.png",
+                "category": "クラシック",
+                "use_case": "イブニングドレス、ジャケット、インテリア",
+                "technique": "ジャカード織り",
+                "material_compatibility": "シルク、ブロケード、ベルベット",
+                "colors": ["#2f3542", "#a4b0be", "#ff4757", "#ffa502"],
+                "description": "伝統的なダマスク柄をモダンに再解釈したエレガントなパターン"
+            }
+        ];
+
+        function createPatternCard(pattern) {
+            const colorChips = pattern.colors.map(color => 
+                `<div class="color-chip">
+                    <span class="color-swatch" style="background-color: ${color};"></span>
+                    <span class="color-hex">${color}</span>
+                </div>`
+            ).join('');
+
+            return `
+                <div class="pattern-card">
+                    <div class="pattern-image" onclick="zoomImage('${pattern.image}', '${pattern.name}')">
+                        <div class="pattern-id">${pattern.id}</div>
+                        <img src="${pattern.image}" alt="${pattern.name}" onerror="this.style.display='none'; this.parentNode.innerHTML += '<div style=\\'padding:2rem; text-align:center; color:white;\\'>パターン画像<br>${pattern.name}</div>'">
+                    </div>
+                    <div class="pattern-details">
+                        <div>
+                            <h2 class="pattern-name">${pattern.name}</h2>
+                            <div class="pattern-name-en">${pattern.name_en}</div>
+                            <span class="pattern-category">${pattern.category}</span>
+                            <p class="pattern-description">${pattern.description}</p>
+                        </div>
+                        <div>
+                            <div class="spec-item">
+                                <span class="spec-label">用途:</span>
+                                <div class="spec-value">${pattern.use_case}</div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">技術:</span>
+                                <div class="spec-value">${pattern.technique}</div>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">対応素材:</span>
+                                <div class="spec-value">${pattern.material_compatibility}</div>
+                            </div>
+                            <div class="color-palette">
+                                <div class="color-palette-title">カラーパレット (HEX):</div>
+                                <div class="color-chips">
+                                    ${colorChips}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function zoomImage(src, alt) {
+            const overlay = document.getElementById('zoomOverlay');
+            const zoomImg = document.getElementById('zoomImage');
+            zoomImg.src = src;
+            zoomImg.alt = alt;
+            overlay.style.display = 'flex';
+        }
+
+        function closeZoom() {
+            document.getElementById('zoomOverlay').style.display = 'none';
+        }
+
+        // Load patterns
+        document.addEventListener('DOMContentLoaded', function() {
+            const grid = document.getElementById('patternGrid');
+            grid.innerHTML = patterns.map(pattern => createPatternCard(pattern)).join('');
+
+            // Close zoom on click
+            document.getElementById('zoomOverlay').addEventListener('click', closeZoom);
+
+            // Close zoom on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeZoom();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

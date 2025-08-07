@@ -1,0 +1,52 @@
+{
+  "patterns": [
+    {
+      "id": "pattern_1",
+      "name": "エレガントローズ",
+      "name_en": "Elegant Rose",
+      "image": "./patterns/pattern_1.png",
+      "category": "フローラル",
+      "use_case": "ドレス、ブラウス、スカーフ",
+      "technique": "デジタルプリント",
+      "material_compatibility": "シルク、コットン、ポリエステル",
+      "colors": ["#ff6b9d", "#f8e71c", "#7bed9f", "#70a1ff"],
+      "description": "優雅なバラのパターンで、フォーマルからカジュアルまで幅広く使用可能"
+    },
+    {
+      "id": "pattern_2", 
+      "name": "モダンジオメトリック",
+      "name_en": "Modern Geometric",
+      "image": "./patterns/pattern_2.png",
+      "category": "ジオメトリック",
+      "use_case": "ジャケット、パンツ、アクセサリー",
+      "technique": "スクリーンプリント",
+      "material_compatibility": "コットン、リネン、ウール",
+      "colors": ["#667eea", "#764ba2", "#f093fb", "#f5f7fa"],
+      "description": "現代的な幾何学模様で、ビジネスシーンにも適用可能"
+    },
+    {
+      "id": "pattern_3",
+      "name": "トロピカルリーフ", 
+      "name_en": "Tropical Leaf",
+      "image": "./patterns/pattern_3.png",
+      "category": "ナチュラル",
+      "use_case": "サマードレス、シャツ、水着",
+      "technique": "リアクティブプリント",
+      "material_compatibility": "コットン、レーヨン、リネン",
+      "colors": ["#2ed573", "#ffa502", "#ff6348", "#3742fa"],
+      "description": "南国の葉をモチーフにした爽やかなサマーパターン"
+    },
+    {
+      "id": "pattern_4",
+      "name": "ヴィンテージダマスク",
+      "name_en": "Vintage Damask", 
+      "image": "./patterns/pattern_4.png",
+      "category": "クラシック",
+      "use_case": "イブニングドレス、ジャケット、インテリア",
+      "technique": "ジャカード織り",
+      "material_compatibility": "シルク、ブロケード、ベルベット",
+      "colors": ["#2f3542", "#a4b0be", "#ff4757", "#ffa502"],
+      "description": "伝統的なダマスク柄をモダンに再解釈したエレガントなパターン"
+    }
+  ]
+}

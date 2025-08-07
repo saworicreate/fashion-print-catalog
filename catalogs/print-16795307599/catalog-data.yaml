@@ -1,0 +1,213 @@
+# プロフェッショナル ファッションカタログ データファイル
+# このファイルを編集してカタログ情報を更新できます
+
+catalog_info:
+  title: "プロフェッショナル ファッションカタログ"
+  subtitle: "最新のパターンデザインとカラーパレットコレクション"
+  version: "1.0"
+  created_date: "2025-08-07"
+  last_updated: "2025-08-07"
+
+# パターンデータ
+patterns:
+  - id: "pattern_1"
+    name: "エレガントローズ"
+    name_en: "Elegant Rose"
+    image_path: "./patterns/pattern_1.png"
+    category: "フローラル"
+    use_cases:
+      - "ドレス"
+      - "ブラウス" 
+      - "スカーフ"
+    printing_technique: "デジタルプリント"
+    compatible_materials:
+      - "シルク"
+      - "コットン"
+      - "ポリエステル"
+    color_palette:
+      - hex: "#ff6b9d"
+        name: "ローズピンク"
+        description: "優雅で女性らしいピンク"
+      - hex: "#f8e71c"
+        name: "サンイエロー"
+        description: "明るく活気のある黄色"
+      - hex: "#7bed9f"
+        name: "ソフトグリーン"
+        description: "爽やかで自然な緑"
+      - hex: "#70a1ff"
+        name: "スカイブルー"
+        description: "清涼感のある青"
+    description: "優雅なバラのパターンで、フォーマルからカジュアルまで幅広く使用可能"
+    tags:
+      - "クラシック"
+      - "エレガント"
+      - "フェミニン"
+
+  - id: "pattern_2"
+    name: "モダンジオメトリック"
+    name_en: "Modern Geometric"
+    image_path: "./patterns/pattern_2.png"
+    category: "ジオメトリック"
+    use_cases:
+      - "ジャケット"
+      - "パンツ"
+      - "アクセサリー"
+    printing_technique: "スクリーンプリント"
+    compatible_materials:
+      - "コットン"
+      - "リネン"
+      - "ウール"
+    color_palette:
+      - hex: "#667eea"
+        name: "モダンパープル"
+        description: "洗練された紫系"
+      - hex: "#764ba2"
+        name: "ディープバイオレット"
+        description: "深みのある紫"
+      - hex: "#f093fb"
+        name: "ライトマゼンタ"
+        description: "明るいピンク紫"
+      - hex: "#f5f7fa"
+        name: "クラウドホワイト"
+        description: "雲のような白"
+    description: "現代的な幾何学模様で、ビジネスシーンにも適用可能"
+    tags:
+      - "モダン"
+      - "ビジネス"
+      - "幾何学"
+
+  - id: "pattern_3"
+    name: "トロピカルリーフ"
+    name_en: "Tropical Leaf"
+    image_path: "./patterns/pattern_3.png"
+    category: "ナチュラル"
+    use_cases:
+      - "サマードレス"
+      - "シャツ"
+      - "水着"
+    printing_technique: "リアクティブプリント"
+    compatible_materials:
+      - "コットン"
+      - "レーヨン"
+      - "リネン"
+    color_palette:
+      - hex: "#2ed573"
+        name: "トロピカルグリーン"
+        description: "南国の緑"
+      - hex: "#ffa502"
+        name: "サンセットオレンジ"
+        description: "夕日のオレンジ"
+      - hex: "#ff6348"
+        name: "コーラルレッド"
+        description: "珊瑚の赤"
+      - hex: "#3742fa"
+        name: "オーシャンブルー"
+        description: "海の青"
+    description: "南国の葉をモチーフにした爽やかなサマーパターン"
+    tags:
+      - "トロピカル"
+      - "サマー"
+      - "自然"
+
+  - id: "pattern_4"
+    name: "ヴィンテージダマスク"
+    name_en: "Vintage Damask"
+    image_path: "./patterns/pattern_4.png"
+    category: "クラシック"
+    use_cases:
+      - "イブニングドレス"
+      - "ジャケット"
+      - "インテリア"
+    printing_technique: "ジャカード織り"
+    compatible_materials:
+      - "シルク"
+      - "ブロケード"
+      - "ベルベット"
+    color_palette:
+      - hex: "#2f3542"
+        name: "チャコールグレー"
+        description: "深みのあるグレー"
+      - hex: "#a4b0be"
+        name: "シルバーグレー"
+        description: "上品なシルバー"
+      - hex: "#ff4757"
+        name: "クリムゾンレッド"
+        description: "深い赤"
+      - hex: "#ffa502"
+        name: "ゴールドイエロー"
+        description: "豊かな金色"
+    description: "伝統的なダマスク柄をモダンに再解釈したエレガントなパターン"
+    tags:
+      - "ヴィンテージ"
+      - "ラグジュアリー"
+      - "クラシック"
+
+# カテゴリ情報
+categories:
+  - name: "フローラル"
+    icon: "🌸"
+    description: "花をモチーフにした優雅なパターン"
+  - name: "ジオメトリック"
+    icon: "🔷"
+    description: "幾何学的で現代的なデザイン"
+  - name: "ナチュラル"
+    icon: "🌿"
+    description: "自然をモチーフにした爽やかなパターン"
+  - name: "クラシック"
+    icon: "🏛️"
+    description: "伝統的で格調高いデザイン"
+
+# 技術仕様
+printing_techniques:
+  - name: "デジタルプリント"
+    characteristics: "高精細、色彩豊富"
+    suitable_for: "複雑なデザイン、小ロット"
+  - name: "スクリーンプリント"
+    characteristics: "耐久性、大量生産向け"
+    suitable_for: "シンプルなデザイン、大ロット"
+  - name: "リアクティブプリント"
+    characteristics: "発色鮮明、色落ちしにくい"
+    suitable_for: "天然素材、アパレル用途"
+  - name: "ジャカード織り"
+    characteristics: "立体感、高級質感"
+    suitable_for: "フォーマルウェア、インテリア"
+
+# 素材情報
+materials:
+  - name: "シルク"
+    properties: "光沢、ドレープ性、高級感"
+    care: "ドライクリーニング推奨"
+  - name: "コットン"
+    properties: "吸湿性、通気性、耐久性"
+    care: "洗濯機可、アイロン可"
+  - name: "ポリエステル"
+    properties: "速乾性、形態安定性、色落ちしにくい"
+    care: "洗濯機可、低温アイロン"
+  - name: "リネン"
+    properties: "涼しさ、ナチュラル感、抗菌性"
+    care: "洗濯機可、自然乾燥推奨"
+  - name: "ウール"
+    properties: "保温性、弾力性、防臭性"
+    care: "ドライクリーニング又は手洗い"
+  - name: "レーヨン"
+    properties: "シルクのような光沢、ドレープ性"
+    care: "手洗い推奨、形を整えて乾燥"
+  - name: "ブロケード"
+    properties: "立体的な織り、豪華さ、重厚感"
+    care: "ドライクリーニング必須"
+  - name: "ベルベット"
+    properties: "光沢、柔らかさ、高級感"
+    care: "ドライクリーニング、毛流れに注意"
+
+# メタデータ
+metadata:
+  file_format: "YAML 1.2"
+  encoding: "UTF-8"
+  author: "Fashion Catalog Generator"
+  license: "Creative Commons"
+  usage_notes: |
+    このファイルを編集してカタログ情報をカスタマイズできます。
+    - 新しいパターンを追加する際は、patterns配列に新しいエントリを追加
+    - カラーパレットのHEX値は必ず#から始まる6桁の形式で記入
+    - 画像パスは相対パス（./patterns/filename.png）で記述
+    - 変更後はHTMLとMarkdownファイルを再生成することを推奨
