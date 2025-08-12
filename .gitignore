@@ -1,0 +1,13 @@
+# prevent node/react contamination
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+dist/
+build/
+.cache/
+.env
+*.log
+.DS_Store
+.idea/
+.vscode/
