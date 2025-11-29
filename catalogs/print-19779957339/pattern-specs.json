@@ -1,0 +1,110 @@
+{
+  "project_info": {
+    "year": 2100,
+    "season": "Spring/Summer",
+    "theme": "NEO POP MODERNISM",
+    "theme_description": "A fusion of bold pop art aesthetics with modernist sophistication, reimagined for the 22nd century. This collection explores the intersection of digital culture, sustainable futures, and timeless design principles.",
+    "color_philosophy": "Vibrant neon hues balanced with soft pastels and clean neutrals, reflecting both optimistic futurism and organic harmony."
+  },
+  "patterns": [
+    {
+      "id": 1,
+      "name": "Digital Flora Matrix",
+      "concept": "Pixelated botanical elements merge with organic growth patterns, representing the harmony between nature and technology in 2100.",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, pixelated flowers and leaves with glitch art effects, digital botanical motifs, 8-bit style blooms transitioning into organic shapes, continuous motif with geometric grid overlay, no borders, perfect repeat, modern pop art aesthetic, vibrant neon colors on clean background, technology meets nature theme",
+      "repeat_type": "half-drop",
+      "colors": {
+        "primary": "#00FF9F",
+        "secondary": ["#FF10F0", "#00D4FF", "#FFF045", "#FFFFFF"],
+        "background": "#F5F5F5",
+        "accent": "#000000"
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "neo-pop", "digital-organic", "geometric"],
+      "mood": ["futuristic", "playful", "energetic", "optimistic"],
+      "technical_notes": "Half-drop repeat creates dynamic flow. Mix hard-edged pixels with soft organic transitions. Scale: medium allows versatility across garment types."
+    },
+    {
+      "id": 2,
+      "name": "Holographic Geometry",
+      "concept": "Clean modernist shapes with holographic iridescent effects, creating depth through color gradient overlays and optical illusions.",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, modernist geometric shapes with holographic rainbow gradients, overlapping circles squares and triangles, iridescent color shifts, continuous abstract composition, no borders, perfect repeat, bauhaus influence with futuristic twist, pastel gradients and neon accents, optical illusion depth effect",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#C9B3FF",
+        "secondary": ["#FFB3E6", "#B3F0FF", "#FFFAB3", "#B3FFD9"],
+        "background": "#FFFFFF",
+        "accent": "#4A4A4A"
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "geometric", "holographic", "modernist"],
+      "mood": ["sophisticated", "dreamy", "contemporary", "elegant"],
+      "technical_notes": "Straight repeat for clean alignment. Large scale creates bold statement pieces. Gradient transitions should appear seamless across tile edges."
+    },
+    {
+      "id": 3,
+      "name": "Pop Culture Compression",
+      "concept": "Abstract data visualization patterns inspired by compressed digital media, representing information overload in vibrant pop art colors.",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, abstract data streams and compression artifacts, glitch art horizontal lines and color blocks, digital noise patterns, continuous geometric abstraction, no borders, perfect repeat, inspired by jpeg compression and signal interference, bold contrasting colors, rhythmic vertical and horizontal elements",
+      "repeat_type": "brick",
+      "colors": {
+        "primary": "#FF3366",
+        "secondary": ["#3366FF", "#FFCC00", "#00FF99", "#FF6600"],
+        "background": "#FAFAFA",
+        "accent": "#1A1A1A"
+      },
+      "scale": "small",
+      "style": ["textile", "seamless", "repeating", "abstract", "digital-glitch", "pop-art"],
+      "mood": ["dynamic", "urban", "edgy", "contemporary"],
+      "technical_notes": "Brick/offset repeat creates visual rhythm. Small scale ideal for all-over prints and layering. High contrast for visual impact."
+    },
+    {
+      "id": 4,
+      "name": "Biomorphic Circuit",
+      "concept": "Organic cell-like structures interconnected like circuit boards, symbolizing bio-technology integration and sustainable innovation.",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, organic cell structures connected by circuit-like pathways, biomorphic shapes with technological connections, flowing curves and straight lines intersection, continuous biological-digital hybrid motif, no borders, perfect repeat, mid-century modern meets bio-tech, soft pastels with metallic accents, cellular network aesthetic",
+      "repeat_type": "half-drop",
+      "colors": {
+        "primary": "#FFB4E6",
+        "secondary": ["#B4E1FF", "#E1FFB4", "#D4B4FF", "#C0C0C0"],
+        "background": "#F8F8FF",
+        "accent": "#505050"
+      },
+      "scale": "medium",
+      "style": ["textile", "seamless", "repeating", "biomorphic", "organic-tech", "retro-futuristic"],
+      "mood": ["harmonious", "innovative", "soft", "balanced"],
+      "technical_notes": "Half-drop creates organic flow while maintaining structure. Medium scale balances detail visibility with overall pattern. Curved elements should connect seamlessly across boundaries."
+    },
+    {
+      "id": 5,
+      "name": "Neon Minimalism",
+      "concept": "Ultra-simplified forms with maximum color impact, featuring bold neon shapes on clean backgrounds for a striking modernist statement.",
+      "prompt": "seamless repeating textile pattern, tileable fabric design, bold minimalist shapes in neon colors, simple geometric forms like circles dots and lines, clean negative space composition, continuous minimal elements, no borders, perfect repeat, swiss design influence with neon pop colors, high contrast between vibrant shapes and white background, contemporary minimalist aesthetic",
+      "repeat_type": "straight",
+      "colors": {
+        "primary": "#FF0080",
+        "secondary": ["#00FFFF", "#FFFF00", "#00FF00", "#FF8000"],
+        "background": "#FFFFFF",
+        "accent": "#000000"
+      },
+      "scale": "large",
+      "style": ["textile", "seamless", "repeating", "minimalist", "neon", "swiss-design"],
+      "mood": ["bold", "clean", "impactful", "modern"],
+      "technical_notes": "Straight repeat for precise alignment of minimal elements. Large scale with generous negative space. Sharp edges and clean color fills essential for impact."
+    }
+  ],
+  "production_guidelines": {
+    "file_format": "High-resolution seamless tiles, minimum 4096x4096px",
+    "color_mode": "RGB for digital, convertible to CMYK for print production",
+    "repeat_testing": "All patterns must tile perfectly in all directions with no visible seams",
+    "scale_variations": "Each pattern should be tested at multiple scales for different applications",
+    "sustainability_note": "Color palette optimized for eco-friendly reactive dyes and digital printing technologies available in 2100"
+  },
+  "application_recommendations": {
+    "Digital Flora Matrix": ["T-shirts", "lightweight summer dresses", "athletic wear"],
+    "Holographic Geometry": ["Statement jackets", "wide-leg trousers", "flowing skirts"],
+    "Pop Culture Compression": ["Urban streetwear", "accessories", "mixed-media pieces"],
+    "Biomorphic Circuit": ["Structured blouses", "midi dresses", "technical fabrics"],
+    "Neon Minimalism": ["Oversized shirts", "swimwear", "home textiles"]
+  }
+}

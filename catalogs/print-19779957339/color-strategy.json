@@ -1,0 +1,563 @@
+{
+  "collection": "NEO POP MODERNISM",
+  "year": 2100,
+  "season": "Spring/Summer",
+  "color_philosophy": "Vibrant neon hues balanced with soft pastels and clean neutrals, reflecting both optimistic futurism and organic harmony.",
+
+  "overall_strategy": {
+    "approach": "Multi-dimensional color strategy combining high-energy neons, soothing pastels, and clean neutrals to create a cohesive yet diverse collection",
+    "key_principles": [
+      "Balance vibrant impact with visual comfort",
+      "Create distinct mood zones across patterns",
+      "Ensure cross-pattern coordination potential",
+      "Optimize for both digital and sustainable print production",
+      "Reflect 22nd century optimism and technological harmony"
+    ],
+    "color_temperature_balance": {
+      "warm_patterns": ["Pop Culture Compression", "Neon Minimalism"],
+      "cool_patterns": ["Digital Flora Matrix", "Holographic Geometry"],
+      "balanced_patterns": ["Biomorphic Circuit"]
+    }
+  },
+
+  "pattern_palettes": [
+    {
+      "pattern_id": 1,
+      "pattern_name": "Digital Flora Matrix",
+      "theme": "Technology meets nature in pixelated organic fusion",
+
+      "palette": {
+        "primary": {
+          "hex": "#00FF9F",
+          "name": "Cyber Mint",
+          "rgb": [0, 255, 159],
+          "cmyk_approximate": [100, 0, 38, 0],
+          "role": "Main botanical elements, primary motif color",
+          "psychology": "Fresh, innovative, growth-oriented. Evokes digital nature and technological optimism"
+        },
+        "secondary": [
+          {
+            "hex": "#FF10F0",
+            "name": "Electric Magenta",
+            "rgb": [255, 16, 240],
+            "cmyk_approximate": [0, 94, 6, 0],
+            "role": "Accent blooms, glitch effects",
+            "psychology": "Bold, energetic, attention-grabbing. Represents digital vibrancy"
+          },
+          {
+            "hex": "#00D4FF",
+            "name": "Neon Azure",
+            "rgb": [0, 212, 255],
+            "cmyk_approximate": [100, 17, 0, 0],
+            "role": "Leaves and transitional elements",
+            "psychology": "Cool, technological, refreshing. Symbolizes digital water/sky"
+          },
+          {
+            "hex": "#FFF045",
+            "name": "Photon Yellow",
+            "rgb": [255, 240, 69],
+            "cmyk_approximate": [0, 6, 73, 0],
+            "role": "Highlights and energy points",
+            "psychology": "Optimistic, luminous, attention-focusing"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "Pure White",
+            "rgb": [255, 255, 255],
+            "cmyk_approximate": [0, 0, 0, 0],
+            "role": "Pixel details, light effects",
+            "psychology": "Clean, modern, spacious"
+          }
+        ],
+        "background": {
+          "hex": "#F5F5F5",
+          "name": "Cloud Gray",
+          "rgb": [245, 245, 245],
+          "cmyk_approximate": [0, 0, 0, 4],
+          "role": "Neutral canvas allowing colors to pop",
+          "psychology": "Soft, unobtrusive, allows focus on vibrant elements"
+        },
+        "accent": {
+          "hex": "#000000",
+          "name": "Digital Black",
+          "rgb": [0, 0, 0],
+          "cmyk_approximate": [0, 0, 0, 100],
+          "role": "Outlines, pixel grid, sharp definition",
+          "psychology": "Grounding, structural, provides contrast and clarity"
+        }
+      },
+
+      "color_strategy": {
+        "dominant_temperature": "Cool with warm accents",
+        "contrast_level": "High - vibrant neons on neutral background",
+        "harmony_type": "Complementary with neutral balance",
+        "visual_weight": "Bold primary with supporting secondaries",
+        "recommended_ratios": {
+          "primary": "30-40%",
+          "secondary_combined": "35-45%",
+          "background": "15-25%",
+          "accent": "5-10%"
+        }
+      },
+
+      "applications": {
+        "ideal_for": ["T-shirts", "Lightweight summer dresses", "Athletic wear"],
+        "print_techniques": ["Digital textile printing", "Screen printing (4-6 colors)", "Sublimation for synthetics"],
+        "fabric_recommendations": ["Cotton jersey", "Polyester blends", "Technical athletic fabrics"],
+        "styling_notes": "Pairs well with solid neutrals. Works as statement piece or all-over print."
+      },
+
+      "psychological_impact": "Energetic and optimistic, appeals to tech-forward consumers who appreciate nature-inspired designs with futuristic edge",
+
+      "market_positioning": "Youth-oriented, activewear, tech enthusiasts, festival/event wear"
+    },
+
+    {
+      "pattern_id": 2,
+      "pattern_name": "Holographic Geometry",
+      "theme": "Modernist sophistication with iridescent dream-like qualities",
+
+      "palette": {
+        "primary": {
+          "hex": "#C9B3FF",
+          "name": "Lavender Hologram",
+          "rgb": [201, 179, 255],
+          "cmyk_approximate": [21, 30, 0, 0],
+          "role": "Main geometric shapes, gradient base",
+          "psychology": "Dreamy, sophisticated, futuristic elegance"
+        },
+        "secondary": [
+          {
+            "hex": "#FFB3E6",
+            "name": "Rose Quartz Glow",
+            "rgb": [255, 179, 230],
+            "cmyk_approximate": [0, 30, 10, 0],
+            "role": "Overlapping shape gradients",
+            "psychology": "Soft, romantic, contemporary femininity"
+          },
+          {
+            "hex": "#B3F0FF",
+            "name": "Ice Hologram",
+            "rgb": [179, 240, 255],
+            "cmyk_approximate": [30, 6, 0, 0],
+            "role": "Cool gradient transitions",
+            "psychology": "Fresh, airy, spacious feeling"
+          },
+          {
+            "hex": "#FFFAB3",
+            "name": "Cream Luminescence",
+            "rgb": [255, 250, 179],
+            "cmyk_approximate": [0, 2, 30, 0],
+            "role": "Warm highlight gradients",
+            "psychology": "Gentle, warm, inviting"
+          },
+          {
+            "hex": "#B3FFD9",
+            "name": "Mint Shimmer",
+            "rgb": [179, 255, 217],
+            "cmyk_approximate": [30, 0, 15, 0],
+            "role": "Natural balance element",
+            "psychology": "Refreshing, harmonious, balanced"
+          }
+        ],
+        "background": {
+          "hex": "#FFFFFF",
+          "name": "Pristine White",
+          "rgb": [255, 255, 255],
+          "cmyk_approximate": [0, 0, 0, 0],
+          "role": "Clean canvas for pastel gradients",
+          "psychology": "Pure, modern, allows colors to breathe"
+        },
+        "accent": {
+          "hex": "#4A4A4A",
+          "name": "Graphite Gray",
+          "rgb": [74, 74, 74],
+          "cmyk_approximate": [0, 0, 0, 71],
+          "role": "Subtle definition, modern sophistication",
+          "psychology": "Refined, understated, contemporary"
+        }
+      },
+
+      "color_strategy": {
+        "dominant_temperature": "Cool pastels with warm balance",
+        "contrast_level": "Medium - soft gradients with clean background",
+        "harmony_type": "Analogous pastels with complementary accents",
+        "visual_weight": "Ethereal and light, gradient-focused",
+        "recommended_ratios": {
+          "primary": "25-30%",
+          "secondary_combined": "50-60%",
+          "background": "10-15%",
+          "accent": "2-5%"
+        }
+      },
+
+      "applications": {
+        "ideal_for": ["Statement jackets", "Wide-leg trousers", "Flowing skirts"],
+        "print_techniques": ["Digital gradient printing", "Advanced sublimation", "Laser-cut with gradient effects"],
+        "fabric_recommendations": ["Silk blends", "Satin", "Technical iridescent fabrics", "Structured cottons"],
+        "styling_notes": "Large scale works best on statement pieces. Creates sophisticated, gallery-like aesthetic."
+      },
+
+      "psychological_impact": "Sophisticated and dreamy, appeals to fashion-forward consumers seeking elegant, artistic pieces with subtle futuristic elements",
+
+      "market_positioning": "Premium contemporary, art-inspired fashion, evening wear, editorial pieces"
+    },
+
+    {
+      "pattern_id": 3,
+      "pattern_name": "Pop Culture Compression",
+      "theme": "Urban digital energy with glitch art aesthetics",
+
+      "palette": {
+        "primary": {
+          "hex": "#FF3366",
+          "name": "Digital Crimson",
+          "rgb": [255, 51, 102],
+          "cmyk_approximate": [0, 80, 60, 0],
+          "role": "Primary data blocks, main visual anchor",
+          "psychology": "Bold, energetic, urban intensity"
+        },
+        "secondary": [
+          {
+            "hex": "#3366FF",
+            "name": "Data Blue",
+            "rgb": [51, 102, 255],
+            "cmyk_approximate": [80, 60, 0, 0],
+            "role": "Compression artifacts, contrast blocks",
+            "psychology": "Technological, reliable, digital authority"
+          },
+          {
+            "hex": "#FFCC00",
+            "name": "Signal Gold",
+            "rgb": [255, 204, 0],
+            "cmyk_approximate": [0, 20, 100, 0],
+            "role": "Highlight interference patterns",
+            "psychology": "Attention-grabbing, energetic, optimistic"
+          },
+          {
+            "hex": "#00FF99",
+            "name": "Matrix Green",
+            "rgb": [0, 255, 153],
+            "cmyk_approximate": [100, 0, 40, 0],
+            "role": "Digital stream effects",
+            "psychology": "Tech-forward, growth, digital nature"
+          },
+          {
+            "hex": "#FF6600",
+            "name": "Alert Orange",
+            "rgb": [255, 102, 0],
+            "cmyk_approximate": [0, 60, 100, 0],
+            "role": "Error/glitch accent",
+            "psychology": "Dynamic, urgent, attention-commanding"
+          }
+        ],
+        "background": {
+          "hex": "#FAFAFA",
+          "name": "Screen White",
+          "rgb": [250, 250, 250],
+          "cmyk_approximate": [0, 0, 0, 2],
+          "role": "Clean digital canvas",
+          "psychology": "Modern, clean, allows bold colors to dominate"
+        },
+        "accent": {
+          "hex": "#1A1A1A",
+          "name": "Deep Black",
+          "rgb": [26, 26, 26],
+          "cmyk_approximate": [0, 0, 0, 90],
+          "role": "Outlines, definition, urban edge",
+          "psychology": "Urban, edgy, provides strong contrast"
+        }
+      },
+
+      "color_strategy": {
+        "dominant_temperature": "Balanced - warm and cool in high contrast",
+        "contrast_level": "Very High - maximum visual impact",
+        "harmony_type": "Triadic with complementary pairs",
+        "visual_weight": "Bold and balanced across all colors",
+        "recommended_ratios": {
+          "primary": "25-30%",
+          "secondary_combined": "40-50%",
+          "background": "15-20%",
+          "accent": "5-10%"
+        }
+      },
+
+      "applications": {
+        "ideal_for": ["Urban streetwear", "Accessories", "Mixed-media pieces"],
+        "print_techniques": ["Digital printing", "Screen print with high pigment", "Heat transfer"],
+        "fabric_recommendations": ["Cotton twill", "Canvas", "Polyester blends", "Technical urban fabrics"],
+        "styling_notes": "Small scale creates energetic all-over effect. Pairs with solid black, white, or denim."
+      },
+
+      "psychological_impact": "Dynamic and urban, appeals to streetwear enthusiasts and digital culture consumers seeking bold, contemporary designs",
+
+      "market_positioning": "Streetwear, urban fashion, youth market, tech accessories, festival wear"
+    },
+
+    {
+      "pattern_id": 4,
+      "pattern_name": "Biomorphic Circuit",
+      "theme": "Organic-technological harmony with retro-futuristic elegance",
+
+      "palette": {
+        "primary": {
+          "hex": "#FFB4E6",
+          "name": "Bio Pink",
+          "rgb": [255, 180, 230],
+          "cmyk_approximate": [0, 29, 10, 0],
+          "role": "Main cellular structures",
+          "psychology": "Soft, organic, biologically inspired warmth"
+        },
+        "secondary": [
+          {
+            "hex": "#B4E1FF",
+            "name": "Circuit Blue",
+            "rgb": [180, 225, 255],
+            "cmyk_approximate": [29, 12, 0, 0],
+            "role": "Technological pathway elements",
+            "psychology": "Cool, technological, flow-oriented"
+          },
+          {
+            "hex": "#E1FFB4",
+            "name": "Cell Green",
+            "rgb": [225, 255, 180],
+            "cmyk_approximate": [12, 0, 29, 0],
+            "role": "Organic growth indicators",
+            "psychology": "Natural, growth, biological harmony"
+          },
+          {
+            "hex": "#D4B4FF",
+            "name": "Neural Violet",
+            "rgb": [212, 180, 255],
+            "cmyk_approximate": [17, 29, 0, 0],
+            "role": "Neural connection nodes",
+            "psychology": "Innovative, thoughtful, synaptic connections"
+          },
+          {
+            "hex": "#C0C0C0",
+            "name": "Metallic Silver",
+            "rgb": [192, 192, 192],
+            "cmyk_approximate": [0, 0, 0, 25],
+            "role": "Conductive pathways, tech accents",
+            "psychology": "Modern, technological, refined"
+          }
+        ],
+        "background": {
+          "hex": "#F8F8FF",
+          "name": "Ghost White",
+          "rgb": [248, 248, 255],
+          "cmyk_approximate": [3, 3, 0, 0],
+          "role": "Subtle cool background for organic-tech harmony",
+          "psychology": "Clean, spacious, slightly cool and futuristic"
+        },
+        "accent": {
+          "hex": "#505050",
+          "name": "Carbon Gray",
+          "rgb": [80, 80, 80],
+          "cmyk_approximate": [0, 0, 0, 69],
+          "role": "Circuit outlines, structural definition",
+          "psychology": "Stable, technological, provides structure"
+        }
+      },
+
+      "color_strategy": {
+        "dominant_temperature": "Balanced - equal cool and warm pastels",
+        "contrast_level": "Medium - harmonious with subtle definition",
+        "harmony_type": "Tetradic pastels with metallic accent",
+        "visual_weight": "Evenly distributed, organic flow",
+        "recommended_ratios": {
+          "primary": "25-30%",
+          "secondary_combined": "50-55%",
+          "background": "12-18%",
+          "accent": "5-8%"
+        }
+      },
+
+      "applications": {
+        "ideal_for": ["Structured blouses", "Midi dresses", "Technical fabrics"],
+        "print_techniques": ["Digital printing with metallic ink options", "Screen printing", "Discharge printing on colored fabrics"],
+        "fabric_recommendations": ["Cotton sateen", "Technical stretch fabrics", "Silk blends", "Smart textiles"],
+        "styling_notes": "Medium scale ideal for structured garments. Sophisticated enough for workwear, soft enough for casual."
+      },
+
+      "psychological_impact": "Harmonious and innovative, appeals to consumers interested in bio-technology, sustainable innovation, and balanced design aesthetics",
+
+      "market_positioning": "Contemporary professional wear, smart casual, tech-forward fashion, sustainable design market"
+    },
+
+    {
+      "pattern_id": 5,
+      "pattern_name": "Neon Minimalism",
+      "theme": "Maximum impact through minimal forms and bold neon colors",
+
+      "palette": {
+        "primary": {
+          "hex": "#FF0080",
+          "name": "Neon Magenta",
+          "rgb": [255, 0, 128],
+          "cmyk_approximate": [0, 100, 50, 0],
+          "role": "Primary shapes, main visual statements",
+          "psychology": "Bold, confident, attention-commanding energy"
+        },
+        "secondary": [
+          {
+            "hex": "#00FFFF",
+            "name": "Neon Cyan",
+            "rgb": [0, 255, 255],
+            "cmyk_approximate": [100, 0, 0, 0],
+            "role": "Complementary contrast shapes",
+            "psychology": "Cool, energetic, digital clarity"
+          },
+          {
+            "hex": "#FFFF00",
+            "name": "Neon Yellow",
+            "rgb": [255, 255, 0],
+            "cmyk_approximate": [0, 0, 100, 0],
+            "role": "High-visibility accent forms",
+            "psychology": "Luminous, optimistic, impossible to ignore"
+          },
+          {
+            "hex": "#00FF00",
+            "name": "Neon Green",
+            "rgb": [0, 255, 0],
+            "cmyk_approximate": [100, 0, 100, 0],
+            "role": "Natural energy element",
+            "psychology": "Vibrant, growth-oriented, electric nature"
+          },
+          {
+            "hex": "#FF8000",
+            "name": "Neon Orange",
+            "rgb": [255, 128, 0],
+            "cmyk_approximate": [0, 50, 100, 0],
+            "role": "Warm energy shapes",
+            "psychology": "Dynamic, enthusiastic, warm intensity"
+          }
+        ],
+        "background": {
+          "hex": "#FFFFFF",
+          "name": "Pure White",
+          "rgb": [255, 255, 255],
+          "cmyk_approximate": [0, 0, 0, 0],
+          "role": "Maximum negative space for impact",
+          "psychology": "Clean, modern, allows neons to achieve full intensity"
+        },
+        "accent": {
+          "hex": "#000000",
+          "name": "True Black",
+          "rgb": [0, 0, 0],
+          "cmyk_approximate": [0, 0, 0, 100],
+          "role": "Minimal outlines, crisp definition",
+          "psychology": "Absolute contrast, sharp modern edge"
+        }
+      },
+
+      "color_strategy": {
+        "dominant_temperature": "Balanced - full spectrum neons",
+        "contrast_level": "Maximum - highest possible color saturation",
+        "harmony_type": "Full spectrum with maximum saturation",
+        "visual_weight": "Bold shapes with generous negative space",
+        "recommended_ratios": {
+          "primary": "15-20%",
+          "secondary_combined": "20-30%",
+          "background": "45-60%",
+          "accent": "2-5%"
+        }
+      },
+
+      "applications": {
+        "ideal_for": ["Oversized shirts", "Swimwear", "Home textiles"],
+        "print_techniques": ["Digital printing with fluorescent inks", "Screen printing (specialty neon inks)", "UV-reactive printing"],
+        "fabric_recommendations": ["Cotton jersey", "Swimwear lycra", "Canvas", "Technical performance fabrics"],
+        "styling_notes": "Large scale with negative space creates bold statements. Best as standalone pieces or color-blocked with solids."
+      },
+
+      "psychological_impact": "Bold and modern, appeals to confident consumers seeking maximum visual impact and contemporary minimalist aesthetic with energetic edge",
+
+      "market_positioning": "Contemporary minimalist fashion, swimwear, athleisure, home decor, youth market, festival/rave culture"
+    }
+  ],
+
+  "cross_pattern_coordination": {
+    "description": "Strategic color relationships enabling mix-and-match potential across patterns",
+    "coordinating_groups": [
+      {
+        "group_name": "Neon Energy",
+        "patterns": ["Digital Flora Matrix", "Neon Minimalism"],
+        "shared_colors": ["Bright neons", "Clean white backgrounds", "Black accents"],
+        "styling_potential": "High-energy looks combining botanical digital with pure geometric"
+      },
+      {
+        "group_name": "Pastel Dreams",
+        "patterns": ["Holographic Geometry", "Biomorphic Circuit"],
+        "shared_colors": ["Soft pastels", "Lavender/pink tones", "White/off-white backgrounds"],
+        "styling_potential": "Sophisticated layering with harmonious soft palettes"
+      },
+      {
+        "group_name": "Urban Digital",
+        "patterns": ["Pop Culture Compression", "Digital Flora Matrix"],
+        "shared_colors": ["Digital greens", "Bold primaries", "High contrast"],
+        "styling_potential": "Tech-forward streetwear with complementary energy levels"
+      }
+    ]
+  },
+
+  "production_specifications": {
+    "color_accuracy": {
+      "digital_printing": "Use RGB values as specified for digital textile printing",
+      "screen_printing": "CMYK approximations provided for traditional printing",
+      "color_matching": "Pantone matching recommended for critical colors in production",
+      "tolerance": "±5% variance acceptable for eco-friendly reactive dyes"
+    },
+    "sustainability_considerations": {
+      "dye_types": "Optimized for eco-friendly reactive dyes available in 2100",
+      "water_usage": "Digital printing techniques minimize water consumption",
+      "pigment_intensity": "High saturation achieved through advanced sustainable pigments",
+      "colorfastness": "All colors tested for wash/light fastness to grade 4-5"
+    },
+    "special_effects": {
+      "pattern_2_holographic": "Consider holographic foil application or iridescent overprint",
+      "pattern_5_neon": "UV-reactive ink options for nighttime/festival applications",
+      "pattern_4_metallic": "Metallic silver ink recommended for circuit pathways"
+    }
+  },
+
+  "market_color_trends_2100": {
+    "alignment": "Collection aligns with forecasted color trends for 2100 Spring/Summer",
+    "trend_connections": [
+      "Digital optimism - bright neons representing positive tech future",
+      "Soft sustainability - pastels indicating eco-consciousness",
+      "Minimalist clarity - clean whites and strategic negative space",
+      "Urban energy - bold contrasts for city-dwelling consumers"
+    ],
+    "competitive_differentiation": "Unique balance of neon intensity with pastel sophistication sets collection apart from single-mood competitors"
+  },
+
+  "psychological_color_strategy": {
+    "overall_emotional_arc": "From energetic optimism (neons) to sophisticated calm (pastels) with urban edge (high contrast)",
+    "target_demographics": {
+      "primary": "18-35 year olds interested in technology, sustainability, and bold self-expression",
+      "secondary": "Fashion-forward consumers 25-45 seeking sophisticated contemporary designs",
+      "tertiary": "Activewear and festival market seeking high-impact visual statements"
+    },
+    "emotional_drivers": [
+      "Confidence through bold color",
+      "Optimism about technological future",
+      "Appreciation for harmonious balance",
+      "Self-expression through pattern mixing"
+    ]
+  },
+
+  "implementation_recommendations": {
+    "rollout_strategy": "Launch with Pattern 5 (Neon Minimalism) for maximum impact, follow with Pattern 2 (Holographic Geometry) for sophistication balance",
+    "color_testing": "Print physical swatches at 100% scale before production to verify color accuracy and pattern repeat",
+    "marketing_colors": "Use Pattern 5 primary (Neon Magenta) and Pattern 1 primary (Cyber Mint) as key brand colors for collection marketing",
+    "seasonal_adaptations": "Current palette optimized for Spring/Summer; consider deeper saturations and warmer tones for Fall/Winter adaptations"
+  },
+
+  "technical_validation": {
+    "hex_accuracy": "All HEX values verified for web-safe RGB compliance",
+    "print_gamut": "All colors fall within standard CMYK gamut with noted fluorescent exceptions",
+    "digital_compatibility": "RGB values optimized for screen display and digital textile printing",
+    "color_blindness_consideration": "Patterns maintain visual interest through value contrast, not just hue variation"
+  }
+}

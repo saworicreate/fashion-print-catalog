@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO POP MODERNISM - 2100 Spring/Summer Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            color: #667eea;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #666;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .theme-description {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .pattern-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+        }
+
+        .pattern-image {
+            width: 60%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pattern-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .pattern-card:hover .pattern-image img {
+            transform: scale(1.05);
+        }
+
+        .pattern-details {
+            width: 40%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pattern-id {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .pattern-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .pattern-concept {
+            font-size: 1.05rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        .color-palette {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .color-chip-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .color-chip {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .color-chip:hover {
+            transform: scale(1.1);
+        }
+
+        .color-code {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #555;
+            font-family: 'Courier New', monospace;
+        }
+
+        .color-label {
+            font-size: 0.7rem;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+        .tech-specs {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .tech-specs dl {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 12px;
+        }
+
+        .tech-specs dt {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 0.9rem;
+        }
+
+        .tech-specs dd {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .applications {
+            margin-top: 20px;
+        }
+
+        .app-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .app-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 40px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .pattern-card {
+                flex-direction: column;
+            }
+
+            .pattern-image,
+            .pattern-details {
+                width: 100%;
+            }
+
+            .pattern-image {
+                height: 400px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .pattern-name {
+                font-size: 2rem;
+            }
+
+            .pattern-details {
+                padding: 30px;
+            }
+
+            .tech-specs dl {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .pattern-card {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+
+            .pattern-card:hover {
+                transform: none;
+            }
+
+            .pattern-image img {
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NEO POP MODERNISM</h1>
+            <div class="subtitle">2100 Spring/Summer Collection</div>
+            <p class="theme-description">
+                A fusion of bold pop art aesthetics with modernist sophistication, reimagined for the 22nd century.
+                This collection explores the intersection of digital culture, sustainable futures, and timeless design principles.
+                Vibrant neon hues balanced with soft pastels and clean neutrals, reflecting both optimistic futurism and organic harmony.
+            </p>
+        </header>
+
+        <!-- Pattern 1: Digital Flora Matrix -->
+        <div class="pattern-card">
+            <div class="pattern-image">
+                <img src="./patterns/pattern_1.png" alt="Digital Flora Matrix">
+            </div>
+            <div class="pattern-details">
+                <div class="pattern-id">Pattern 01</div>
+                <h2 class="pattern-name">Digital Flora Matrix</h2>
+                <p class="pattern-concept">
+                    Pixelated botanical elements merge with organic growth patterns, representing the harmony between nature and technology in 2100.
+                </p>
+
+                <div class="section-title">カラーパレット</div>
+                <div class="color-palette">
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #00FF9F;"></span>
+                        <span class="color-code">#00FF9F</span>
+                        <span class="color-label">Primary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FF10F0;"></span>
+                        <span class="color-code">#FF10F0</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #00D4FF;"></span>
+                        <span class="color-code">#00D4FF</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFF045;"></span>
+                        <span class="color-code">#FFF045</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFFFFF;"></span>
+                        <span class="color-code">#FFFFFF</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #F5F5F5;"></span>
+                        <span class="color-code">#F5F5F5</span>
+                        <span class="color-label">Background</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #000000;"></span>
+                        <span class="color-code">#000000</span>
+                        <span class="color-label">Accent</span>
+                    </div>
+                </div>
+
+                <div class="tech-specs">
+                    <dl>
+                        <dt>リピートタイプ</dt>
+                        <dd>Half-drop</dd>
+                        <dt>スケール</dt>
+                        <dd>Medium</dd>
+                        <dt>スタイル</dt>
+                        <dd>Neo-pop, Digital-organic, Geometric</dd>
+                        <dt>ムード</dt>
+                        <dd>Futuristic, Playful, Energetic, Optimistic</dd>
+                    </dl>
+                </div>
+
+                <div class="applications">
+                    <div class="section-title">推奨用途</div>
+                    <div class="app-tags">
+                        <span class="app-tag">T-shirts</span>
+                        <span class="app-tag">Lightweight summer dresses</span>
+                        <span class="app-tag">Athletic wear</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pattern 2: Holographic Geometry -->
+        <div class="pattern-card">
+            <div class="pattern-image">
+                <img src="./patterns/pattern_2.png" alt="Holographic Geometry">
+            </div>
+            <div class="pattern-details">
+                <div class="pattern-id">Pattern 02</div>
+                <h2 class="pattern-name">Holographic Geometry</h2>
+                <p class="pattern-concept">
+                    Clean modernist shapes with holographic iridescent effects, creating depth through color gradient overlays and optical illusions.
+                </p>
+
+                <div class="section-title">カラーパレット</div>
+                <div class="color-palette">
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #C9B3FF;"></span>
+                        <span class="color-code">#C9B3FF</span>
+                        <span class="color-label">Primary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFB3E6;"></span>
+                        <span class="color-code">#FFB3E6</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #B3F0FF;"></span>
+                        <span class="color-code">#B3F0FF</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFFAB3;"></span>
+                        <span class="color-code">#FFFAB3</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #B3FFD9;"></span>
+                        <span class="color-code">#B3FFD9</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFFFFF;"></span>
+                        <span class="color-code">#FFFFFF</span>
+                        <span class="color-label">Background</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #4A4A4A;"></span>
+                        <span class="color-code">#4A4A4A</span>
+                        <span class="color-label">Accent</span>
+                    </div>
+                </div>
+
+                <div class="tech-specs">
+                    <dl>
+                        <dt>リピートタイプ</dt>
+                        <dd>Straight</dd>
+                        <dt>スケール</dt>
+                        <dd>Large</dd>
+                        <dt>スタイル</dt>
+                        <dd>Geometric, Holographic, Modernist</dd>
+                        <dt>ムード</dt>
+                        <dd>Sophisticated, Dreamy, Contemporary, Elegant</dd>
+                    </dl>
+                </div>
+
+                <div class="applications">
+                    <div class="section-title">推奨用途</div>
+                    <div class="app-tags">
+                        <span class="app-tag">Statement jackets</span>
+                        <span class="app-tag">Wide-leg trousers</span>
+                        <span class="app-tag">Flowing skirts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pattern 3: Pop Culture Compression -->
+        <div class="pattern-card">
+            <div class="pattern-image">
+                <img src="./patterns/pattern_3.png" alt="Pop Culture Compression">
+            </div>
+            <div class="pattern-details">
+                <div class="pattern-id">Pattern 03</div>
+                <h2 class="pattern-name">Pop Culture Compression</h2>
+                <p class="pattern-concept">
+                    Abstract data visualization patterns inspired by compressed digital media, representing information overload in vibrant pop art colors.
+                </p>
+
+                <div class="section-title">カラーパレット</div>
+                <div class="color-palette">
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FF3366;"></span>
+                        <span class="color-code">#FF3366</span>
+                        <span class="color-label">Primary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #3366FF;"></span>
+                        <span class="color-code">#3366FF</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFCC00;"></span>
+                        <span class="color-code">#FFCC00</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #00FF99;"></span>
+                        <span class="color-code">#00FF99</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FF6600;"></span>
+                        <span class="color-code">#FF6600</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FAFAFA;"></span>
+                        <span class="color-code">#FAFAFA</span>
+                        <span class="color-label">Background</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #1A1A1A;"></span>
+                        <span class="color-code">#1A1A1A</span>
+                        <span class="color-label">Accent</span>
+                    </div>
+                </div>
+
+                <div class="tech-specs">
+                    <dl>
+                        <dt>リピートタイプ</dt>
+                        <dd>Brick/Offset</dd>
+                        <dt>スケール</dt>
+                        <dd>Small</dd>
+                        <dt>スタイル</dt>
+                        <dd>Abstract, Digital-glitch, Pop-art</dd>
+                        <dt>ムード</dt>
+                        <dd>Dynamic, Urban, Edgy, Contemporary</dd>
+                    </dl>
+                </div>
+
+                <div class="applications">
+                    <div class="section-title">推奨用途</div>
+                    <div class="app-tags">
+                        <span class="app-tag">Urban streetwear</span>
+                        <span class="app-tag">Accessories</span>
+                        <span class="app-tag">Mixed-media pieces</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pattern 4: Biomorphic Circuit -->
+        <div class="pattern-card">
+            <div class="pattern-image">
+                <img src="./patterns/pattern_4.png" alt="Biomorphic Circuit">
+            </div>
+            <div class="pattern-details">
+                <div class="pattern-id">Pattern 04</div>
+                <h2 class="pattern-name">Biomorphic Circuit</h2>
+                <p class="pattern-concept">
+                    Organic cell-like structures interconnected like circuit boards, symbolizing bio-technology integration and sustainable innovation.
+                </p>
+
+                <div class="section-title">カラーパレット</div>
+                <div class="color-palette">
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFB4E6;"></span>
+                        <span class="color-code">#FFB4E6</span>
+                        <span class="color-label">Primary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #B4E1FF;"></span>
+                        <span class="color-code">#B4E1FF</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #E1FFB4;"></span>
+                        <span class="color-code">#E1FFB4</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #D4B4FF;"></span>
+                        <span class="color-code">#D4B4FF</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #C0C0C0;"></span>
+                        <span class="color-code">#C0C0C0</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #F8F8FF;"></span>
+                        <span class="color-code">#F8F8FF</span>
+                        <span class="color-label">Background</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #505050;"></span>
+                        <span class="color-code">#505050</span>
+                        <span class="color-label">Accent</span>
+                    </div>
+                </div>
+
+                <div class="tech-specs">
+                    <dl>
+                        <dt>リピートタイプ</dt>
+                        <dd>Half-drop</dd>
+                        <dt>スケール</dt>
+                        <dd>Medium</dd>
+                        <dt>スタイル</dt>
+                        <dd>Biomorphic, Organic-tech, Retro-futuristic</dd>
+                        <dt>ムード</dt>
+                        <dd>Harmonious, Innovative, Soft, Balanced</dd>
+                    </dl>
+                </div>
+
+                <div class="applications">
+                    <div class="section-title">推奨用途</div>
+                    <div class="app-tags">
+                        <span class="app-tag">Structured blouses</span>
+                        <span class="app-tag">Midi dresses</span>
+                        <span class="app-tag">Technical fabrics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pattern 5: Neon Minimalism -->
+        <div class="pattern-card">
+            <div class="pattern-image">
+                <img src="./patterns/pattern_5.png" alt="Neon Minimalism">
+            </div>
+            <div class="pattern-details">
+                <div class="pattern-id">Pattern 05</div>
+                <h2 class="pattern-name">Neon Minimalism</h2>
+                <p class="pattern-concept">
+                    Ultra-simplified forms with maximum color impact, featuring bold neon shapes on clean backgrounds for a striking modernist statement.
+                </p>
+
+                <div class="section-title">カラーパレット</div>
+                <div class="color-palette">
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FF0080;"></span>
+                        <span class="color-code">#FF0080</span>
+                        <span class="color-label">Primary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #00FFFF;"></span>
+                        <span class="color-code">#00FFFF</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFFF00;"></span>
+                        <span class="color-code">#FFFF00</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #00FF00;"></span>
+                        <span class="color-code">#00FF00</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FF8000;"></span>
+                        <span class="color-code">#FF8000</span>
+                        <span class="color-label">Secondary</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #FFFFFF;"></span>
+                        <span class="color-code">#FFFFFF</span>
+                        <span class="color-label">Background</span>
+                    </div>
+                    <div class="color-chip-wrapper">
+                        <span class="color-chip" style="background-color: #000000;"></span>
+                        <span class="color-code">#000000</span>
+                        <span class="color-label">Accent</span>
+                    </div>
+                </div>
+
+                <div class="tech-specs">
+                    <dl>
+                        <dt>リピートタイプ</dt>
+                        <dd>Straight</dd>
+                        <dt>スケール</dt>
+                        <dd>Large</dd>
+                        <dt>スタイル</dt>
+                        <dd>Minimalist, Neon, Swiss-design</dd>
+                        <dt>ムード</dt>
+                        <dd>Bold, Clean, Impactful, Modern</dd>
+                    </dl>
+                </div>
+
+                <div class="applications">
+                    <div class="section-title">推奨用途</div>
+                    <div class="app-tags">
+                        <span class="app-tag">Oversized shirts</span>
+                        <span class="app-tag">Swimwear</span>
+                        <span class="app-tag">Home textiles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>NEO POP MODERNISM Collection</strong> | 2100 Spring/Summer</p>
+            <p>Design Philosophy: Vibrant neon hues balanced with soft pastels and clean neutrals, reflecting both optimistic futurism and organic harmony.</p>
+            <p style="margin-top: 20px; font-size: 0.8rem;">All patterns optimized for eco-friendly reactive dyes and digital printing technologies.</p>
+        </footer>
+    </div>
+</body>
+</html>
